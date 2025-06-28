@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services – phpfixer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <style>
+    body { font-family: 'Lexend', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="py-4 md:py-8 px-4 bg-gradient-to-b from-neutral-100 to-white" x-data="{ mobileMenuOpen: false }">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="text-2xl font-bold italic text-gray-800">
+        <svg viewBox="0 0 159 38" xmlns="http://www.w3.org/2000/svg" class="fill-neutral-800 h-9">
+            <path d="M7.96588 7.9244H19.0849C20.6892 7.95205 22.0583 8.20099 23.1923 8.6712C24.354 9.14141 25.2668 9.83289 25.9306 10.7456C26.5944 11.6861 27.0093 12.7924 27.1753 14.0648C27.3412 15.3094 27.2444 16.7339 26.8849 18.3381C26.7466 19.0849 26.5391 19.8179 26.2625 20.537C26.0136 21.2285 25.7093 21.9338 25.3498 22.653C24.9625 23.3445 24.52 24.0221 24.0221 24.6859C23.5519 25.3221 23.0126 25.9168 22.404 26.47C21.6572 27.1891 20.8966 27.7838 20.1222 28.254C19.3477 28.6965 18.5594 29.0146 17.7573 29.2082C16.9828 29.4019 16.1807 29.554 15.3509 29.6646C14.5211 29.7476 13.6914 29.7891 12.8616 29.7891H7.88291L6.61985 34.489L0 37.672L7.96588 7.9244ZM12.4467 12.6541L9.12757 25.1008C9.18289 25.1008 9.22438 25.1147 9.25204 25.1423C9.30736 25.1423 9.36268 25.1423 9.418 25.1423C9.44566 25.1423 9.48715 25.1423 9.54246 25.1423C9.59778 25.1423 9.63927 25.1423 9.66693 25.1423C9.74991 25.1423 9.83289 25.1423 9.91587 25.1423C10.0265 25.1423 10.1371 25.1423 10.2478 25.1423C11.5478 25.17 12.7509 25.1147 13.8573 24.9764C14.9914 24.8381 16.0147 24.6306 16.9275 24.354C17.8126 24.0498 18.5871 23.3998 19.2509 22.404C19.9147 21.4083 20.4679 20.0392 20.9104 18.2966C21.2424 16.8307 21.3115 15.6828 21.1179 14.8531C20.9243 14.0233 20.4679 13.4977 19.7488 13.2765C19.0296 13.0552 18.1998 12.9031 17.2594 12.8201C16.3467 12.7095 15.3371 12.6541 14.2307 12.6541C14.0648 12.6818 13.8988 12.6956 13.7329 12.6956C13.5946 12.6956 13.4563 12.6956 13.318 12.6956C13.1797 12.6956 13.0275 12.6956 12.8616 12.6956C12.7233 12.6956 12.585 12.6956 12.4467 12.6956V12.6541Z"/>
+            <path d="M33.3293 0H39.0547L36.9388 7.9244H42.0834C43.4664 7.95205 44.6696 8.11801 45.693 8.42226C46.7164 8.69886 47.56 9.11375 48.2238 9.66693C48.8876 10.2201 49.2887 11.0222 49.427 12.0733C49.5653 13.1243 49.4408 14.4243 49.0536 15.9733L45.3611 29.7891H39.5526L43.0792 16.5956C43.2728 15.9041 43.3558 15.3094 43.3281 14.8116C43.3281 14.3137 43.2313 13.9265 43.0377 13.6499C42.8164 13.3456 42.4707 13.1243 42.0005 12.986C41.5302 12.8478 40.9356 12.7786 40.2164 12.7786L35.6526 12.7371L31.0889 29.7891H25.3634L33.3293 0Z"/>
+            <path d="M54.1386 7.9244H65.2576C66.8619 7.95205 68.231 8.20099 69.365 8.6712C70.5267 9.14141 71.4395 9.83289 72.1033 10.7456C72.7671 11.6861 73.182 12.7924 73.348 14.0648C73.5139 15.3094 73.4171 16.7339 73.0575 18.3381C72.9193 19.0849 72.7118 19.8179 72.4352 20.537C72.1863 21.2285 71.882 21.9338 71.5225 22.653C71.1352 23.3445 70.6927 24.0221 70.1948 24.6859C69.7246 25.3221 69.1852 25.9168 68.5767 26.47C67.8299 27.1891 67.0693 27.7838 66.2948 28.254C65.5204 28.6965 64.7321 29.0146 63.93 29.2082C63.1555 29.4019 62.3534 29.554 61.5236 29.6646C60.6938 29.7476 59.8641 29.7891 59.0343 29.7891H54.0556L52.7925 34.489L46.1727 37.672L54.1386 7.9244ZM58.6194 12.6541L55.3003 25.1008C55.3556 25.1008 55.3971 25.1147 55.4247 25.1423C55.4801 25.1423 55.5354 25.1423 55.5907 25.1423C55.6183 25.1423 55.6598 25.1423 55.7152 25.1423C55.7705 25.1423 55.812 25.1423 55.8396 25.1423C55.9226 25.1423 56.0056 25.1423 56.0886 25.1423C56.1992 25.1423 56.3098 25.1423 56.4205 25.1423C57.7205 25.17 58.9236 25.1147 60.03 24.9764C61.164 24.8381 62.1874 24.6306 63.1002 24.354C63.9853 24.0498 64.7598 23.3998 65.4236 22.404C66.0874 21.4083 66.6406 20.0392 67.0831 18.2966C67.415 16.8307 67.4842 15.6828 67.2906 14.8531C67.097 14.0233 66.6406 13.4977 65.9214 13.2765C65.2023 13.0552 64.3725 12.9031 63.4321 12.8201C62.5193 12.7095 61.5098 12.6541 60.4034 12.6541C60.2375 12.6818 60.0715 12.6956 59.9055 12.6956C59.7672 12.6956 59.6289 12.6956 59.4907 12.6956C59.3524 12.6956 59.2002 12.6956 59.0343 12.6956C58.896 12.6956 58.7577 12.6956 58.6194 12.6956V12.6541Z"/>
+            <path d="M78.2158 12.2807H74.0669L75.2286 7.9244H79.3775C79.3775 7.86908 79.3775 7.81376 79.3775 7.75844C79.4051 7.70312 79.4328 7.6478 79.4605 7.59248C79.4605 7.53717 79.4605 7.48185 79.4605 7.42653C79.4881 7.37121 79.5158 7.30206 79.5434 7.21908C79.8754 6.02973 80.2073 4.99251 80.5392 4.10741C80.8987 3.22231 81.286 2.47551 81.7009 1.867C82.0881 1.28616 82.7658 0.843611 83.7338 0.539357C84.7019 0.235105 85.9466 0.0691499 87.4678 0.0414909L92.9444 0L91.8242 4.23188C91.7965 4.23188 91.755 4.24571 91.6997 4.27337C91.672 4.27337 91.6444 4.27337 91.6167 4.27337C91.5614 4.27337 91.5199 4.27337 91.4923 4.27337C91.4646 4.27337 91.4231 4.27337 91.3678 4.27337C91.3401 4.27337 91.2987 4.27337 91.2433 4.27337C91.2157 4.27337 91.1742 4.25954 91.1189 4.23188C91.0912 4.23188 91.0497 4.23188 90.9944 4.23188C90.9667 4.23188 90.9252 4.23188 90.8699 4.23188C90.8146 4.23188 90.7593 4.23188 90.704 4.23188C90.6487 4.23188 90.5933 4.23188 90.538 4.23188C90.455 4.23188 90.3859 4.23188 90.3306 4.23188C90.2753 4.23188 90.2199 4.23188 90.1646 4.23188C90.1093 4.23188 90.0402 4.23188 89.9572 4.23188C89.9019 4.23188 89.8465 4.21805 89.7912 4.19039C89.7359 4.19039 89.6806 4.19039 89.6253 4.19039C89.5699 4.19039 89.5146 4.19039 89.4593 4.19039C89.2104 4.19039 88.9614 4.20422 88.7125 4.23188C88.4636 4.23188 88.2285 4.25953 88.0072 4.31485C87.7583 4.34251 87.5508 4.39783 87.3849 4.48081C87.2189 4.53613 87.0668 4.60528 86.9285 4.68826C86.7349 4.79889 86.5551 4.93719 86.3891 5.10314C86.2508 5.24144 86.1402 5.39357 86.0572 5.55952C85.9742 5.75314 85.8913 5.94675 85.8083 6.14037C85.753 6.30632 85.6976 6.47228 85.6423 6.63824C85.6147 6.72122 85.587 6.79036 85.5593 6.84568C85.5593 6.901 85.5593 6.95632 85.5593 7.01164C85.5317 7.06696 85.504 7.12227 85.4764 7.17759C85.4764 7.23291 85.4764 7.28823 85.4764 7.34355C85.4764 7.39887 85.4625 7.45419 85.4349 7.50951C85.4349 7.56482 85.421 7.62014 85.3934 7.67546C85.3934 7.73078 85.3796 7.7861 85.3519 7.84142C85.3519 7.86908 85.3381 7.91057 85.3104 7.96588L90.8284 7.9244L89.6668 12.2807H84.1902L79.502 29.7891H73.5275L78.2158 12.2807Z"/>
+            <path d="M93.4257 29.7891H87.3683L93.2183 7.9244H99.2757L93.4257 29.7891ZM99.9395 5.43506H93.8821L95.3342 0H101.392L99.9395 5.43506Z"/>
+            <path d="M128.512 29.7891C127.738 29.7891 126.977 29.7476 126.23 29.6647C125.511 29.5817 124.806 29.4434 124.114 29.2498C123.423 29.0562 122.814 28.7657 122.289 28.3785C121.763 27.9913 121.307 27.4934 120.92 26.8849C120.588 26.4147 120.339 25.903 120.173 25.3498C120.034 24.769 119.938 24.1743 119.882 23.5658C119.855 22.9296 119.869 22.3073 119.924 21.6988C119.979 21.0626 120.062 20.4126 120.173 19.7488C120.2 19.6935 120.214 19.6382 120.214 19.5828C120.242 19.4999 120.27 19.4169 120.297 19.3339C120.325 19.2786 120.339 19.2233 120.339 19.1679C120.366 19.085 120.394 19.002 120.422 18.919C120.422 18.8637 120.422 18.8222 120.422 18.7945C120.449 18.7392 120.477 18.6839 120.505 18.6286C120.505 18.6009 120.505 18.5594 120.505 18.5041C120.532 18.4488 120.546 18.4073 120.546 18.3797C120.574 18.2967 120.602 18.2137 120.629 18.1307C120.684 18.0201 120.726 17.9095 120.754 17.7988C120.975 17.1627 121.224 16.5541 121.5 15.9733C121.777 15.3648 122.095 14.7563 122.455 14.1478C122.814 13.5393 123.215 12.9723 123.658 12.4467C124.128 11.8935 124.64 11.3819 125.193 10.9116C125.912 10.3031 126.645 9.80527 127.392 9.41804C128.139 9.03081 128.899 8.74039 129.674 8.54677C130.448 8.35316 131.223 8.21486 131.997 8.13188C132.772 8.02125 133.546 7.96593 134.321 7.96593L142.784 7.92444L141.54 12.4882H133.906C133.104 12.5159 132.357 12.5989 131.665 12.7372C131.001 12.8478 130.393 13.0138 129.84 13.235C129.287 13.4563 128.802 13.8574 128.388 14.4382C128 14.9914 127.668 15.7244 127.392 16.6371L140.461 16.5956L139.216 21.1594H126.189C125.967 22.0998 125.898 22.8605 125.981 23.4413C126.064 24.0222 126.313 24.4232 126.728 24.6445C127.115 24.8381 127.613 24.9902 128.222 25.1009C128.858 25.2115 129.605 25.2668 130.462 25.2668L138.138 25.2253L136.934 29.7891H128.512Z"/>
+            <path d="M144.417 7.92444H154.125C155.674 7.9521 156.849 8.14571 157.652 8.50528C158.481 8.83719 158.924 9.36272 158.979 10.0819C159.035 10.7733 158.979 11.6031 158.813 12.5712C158.675 13.5116 158.454 14.5765 158.149 15.7659C158.122 15.8765 158.094 15.9871 158.066 16.0978C158.039 16.2084 158.011 16.319 157.984 16.4297C157.956 16.485 157.928 16.5403 157.901 16.5956C157.901 16.651 157.901 16.7063 157.901 16.7616C157.873 16.8446 157.845 16.9137 157.818 16.969C157.818 17.0244 157.804 17.0797 157.776 17.135L152.258 17.0935C152.286 17.0382 152.3 16.969 152.3 16.8861C152.327 16.8031 152.355 16.7201 152.382 16.6371C152.41 16.5818 152.424 16.5403 152.424 16.5127C152.452 16.485 152.465 16.4435 152.465 16.3882C152.465 16.3605 152.465 16.3467 152.465 16.3467C152.465 16.319 152.465 16.2914 152.465 16.2637C152.493 16.2361 152.507 16.2084 152.507 16.1807C152.784 15.185 152.963 14.3967 153.046 13.8159C153.129 13.2074 153.102 12.8201 152.963 12.6542C152.853 12.4882 152.521 12.3638 151.968 12.2808C151.414 12.1978 150.64 12.1563 149.644 12.1563C149.589 12.1563 149.534 12.1563 149.478 12.1563C149.423 12.1563 149.368 12.1563 149.312 12.1563C149.285 12.1563 149.257 12.1563 149.229 12.1563C149.202 12.1563 149.188 12.1563 149.188 12.1563C149.16 12.1563 149.133 12.1563 149.105 12.1563C149.077 12.1563 149.05 12.1563 149.022 12.1563L144.334 29.7891H138.567L144.417 7.92444Z"/>
+            <path d="M106.606 18.8775L101.42 7.92444H108.141L111.045 14.5212L117.642 7.92444H124.28L113.203 19.002L118.306 29.7891H111.585L108.639 23.4413L102.333 29.7891H95.6528L106.606 18.8775Z"/>
+        </svg>
+      </div>
+      <nav class="hidden md:flex md:items-center space-x-8 font-medium">
+        <a href="#services" class="hover:text-purple-700">Services</a>
+        <a href="#blog" class="hover:text-purple-700">Blog</a>
+        <a href="#pricing" class="hover:text-purple-700">Pricing</a>
+        <a href="#contact" class="ml-4 px-5 py-3 bg-gradient-to-b from-purple-600 to-indigo-800 text-white rounded-xl hover:bg-purple-700 transition shadow-md">Contact Me</a>
+      </nav>
+      <button class="md:hidden p-2" @click="mobileMenuOpen = !mobileMenuOpen">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div x-show="mobileMenuOpen" x-transition class="md:hidden mt-4 pb-4">
+      <div class="flex flex-col space-y-2">
+        <a href="#services" class="hover:text-purple-700">Services</a>
+        <a href="#blog" class="hover:text-purple-700">Blog</a>
+        <a href="#pricing" class="hover:text-purple-700">Pricing</a>
+        <a href="#contact" class="mt-6 px-5 py-3 bg-purple-600 text-white rounded-2xl hover:bg-purple-700 transition text-center">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-12">
+    <div class="text-center mb-16">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">PHP Services That Actually Work</h1>
+      <p class="text-xl text-neutral-800 max-w-3xl mx-auto">I fix broken websites, rescue legacy code, and keep your PHP applications running smoothly. No drama, no jargon—just reliable solutions that get your business back online.</p>
+    </div>
+
+    <!-- Emergency Services -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">Emergency Fixes</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-neutral-100 rounded-xl p-6 shadow-sm">
+          <div class="text-purple-600 mb-4">
+            <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Critical Bug Fixes</h3>
+          <p class="text-neutral-700 mb-4">Your site is down or showing errors? I'll diagnose and fix the issue fast, with clear communication throughout the process.</p>
+          <ul class="text-sm text-neutral-600 space-y-1">
+            <li>• Fatal errors and white screens</li>
+            <li>• Database connection issues</li>
+            <li>• Plugin conflicts</li>
+            <li>• Performance bottlenecks</li>
+          </ul>
+        </div>
+        <div class="bg-neutral-100 rounded-xl p-6 shadow-sm">
+          <div class="text-purple-600 mb-4">
+            <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Security Vulnerabilities</h3>
+          <p class="text-neutral-700 mb-4">Found a security issue? I'll patch it immediately and help prevent future vulnerabilities.</p>
+          <ul class="text-sm text-neutral-600 space-y-1">
+            <li>• SQL injection fixes</li>
+            <li>• XSS vulnerability patches</li>
+            <li>• Outdated plugin updates</li>
+            <li>• Security audit reports</li>
+          </ul>
+        </div>
+        <div class="bg-neutral-100 rounded-xl p-6 shadow-sm">
+          <div class="text-purple-600 mb-4">
+            <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Hosting Migration</h3>
+          <p class="text-neutral-700 mb-4">Need to move your site to a new host? I'll handle the migration safely with zero downtime.</p>
+          <ul class="text-sm text-neutral-600 space-y-1">
+            <li>• Database migration</li>
+            <li>• File transfer</li>
+            <li>• DNS configuration</li>
+            <li>• Post-migration testing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Maintenance Services -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">Ongoing Maintenance</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-neutral-100 rounded-xl p-8 shadow-sm">
+          <h3 class="text-2xl font-bold mb-4">Monthly Retainer</h3>
+          <p class="text-neutral-700 mb-6">Proactive maintenance to prevent issues before they happen. Perfect for agencies and businesses who want peace of mind.</p>
+          <ul class="space-y-3 text-neutral-700">
+            <li class="flex items-start gap-3">
+              <span class="text-purple-600 font-bold">✓</span>
+              <span>Regular security updates and patches</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-purple-600 font-bold">✓</span>
+              <span>Performance monitoring and optimization</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-purple-600 font-bold">✓</span>
+              <span>Backup verification and disaster recovery</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-purple-600 font-bold">✓</span>
+              <span>Priority support for urgent issues</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-purple-600 font-bold">✓</span>
+              <span>Monthly health reports and recommendations</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-neutral-100 rounded-xl p-8 shadow-sm">
+          <h3 class="text-2xl font-bold mb-4">Quarterly Maintenance</h3>
+          <p class="text-neutral-700 mb-6">Regular check-ups and updates for sites that need occasional attention but don't require monthly monitoring.</p>
+          <ul class="space-y-3 text-neutral-700">
+            <li class="flex items-start gap-3">
+              <span class="text-purple-600 font-bold">✓</span>
+              <span>Security and plugin updates</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-purple-600 font-bold">✓</span>
+              <span>Performance optimization</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-purple-600 font-bold">✓</span>
+              <span>Code quality improvements</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-purple-600 font-bold">✓</span>
+              <span>Backup testing and verification</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-purple-600 font-bold">✓</span>
+              <span>Detailed quarterly reports</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legacy Code Services -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">Legacy Code Rescue</h2>
+      <div class="bg-neutral-100 rounded-xl p-8 shadow-sm">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-2xl font-bold mb-4">Modernize Without Rebuilding</h3>
+            <p class="text-neutral-700 mb-6">Got old PHP code that's hard to maintain? I'll help you modernize it incrementally, keeping your site running while improving its structure.</p>
+            <ul class="space-y-2 text-neutral-700">
+              <li>• PHP version upgrades (5.x to 8.x)</li>
+              <li>• Deprecated function replacements</li>
+              <li>• Code refactoring and optimization</li>
+              <li>• Security hardening</li>
+              <li>• Documentation and training</li>
+            </ul>
+          </div>
+          <div class="text-center">
+            <div class="text-6xl mb-4">🔧</div>
+            <p class="text-sm text-neutral-600">"The best code is the code that works and can be maintained."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section (from home page) -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">How I Work</h2>
+      <div class="flex flex-col lg:flex-row justify-between gap-6">
+        <div class="flex-1 bg-neutral-100 rounded-xl p-6 flex flex-col md:flex-row items-center text-center md:text-left gap-4 shadow-sm">
+          <div class="text-4xl">🔍</div>
+          <div>
+            <div class="font-bold mb-2 text-xl">Analyse</div>
+            <div class="text-sm text-neutral-700">I reproduce the bug and trace it through your stack to understand the root cause.</div>
+          </div>
+        </div>
+        <div class="flex-1 bg-neutral-100 rounded-xl p-6 flex flex-col md:flex-row items-center text-center md:text-left gap-4 shadow-sm">
+          <div class="text-4xl">⚡</div>
+          <div>
+            <div class="font-bold mb-2 text-xl">Fix</div>
+            <div class="text-sm text-neutral-700">I implement a focused solution with rollback safety and thorough testing.</div>
+          </div>
+        </div>
+        <div class="flex-1 bg-neutral-100 rounded-xl p-6 flex flex-col md:flex-row items-center text-center md:text-left gap-4 shadow-sm">
+          <div class="text-4xl">📋</div>
+          <div>
+            <div class="font-bold mb-2 text-xl">Document</div>
+            <div class="text-sm text-neutral-700">I provide a detailed report with future-proofing tips and recommendations.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">Recent Success Stories</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-neutral-100 rounded-xl p-6 shadow-sm">
+          <div class="text-sm text-purple-600 font-bold mb-2">E-commerce Site Rescue</div>
+          <h3 class="text-xl font-bold mb-3">Fixed Critical Payment Bug</h3>
+          <p class="text-neutral-700 mb-4">A UK e-commerce site was losing thousands in failed transactions. I identified and fixed a PHP session handling bug within 4 hours.</p>
+          <div class="text-sm text-neutral-600">
+            <strong>Result:</strong> 100% payment success rate restored, £15k+ in recovered revenue
+          </div>
+        </div>
+        <div class="bg-neutral-100 rounded-xl p-6 shadow-sm">
+          <div class="text-sm text-purple-600 font-bold mb-2">Legacy System Modernization</div>
+          <h3 class="text-xl font-bold mb-3">PHP 5.3 to 8.1 Upgrade</h3>
+          <p class="text-neutral-700 mb-4">Helped a SaaS company upgrade their 10-year-old PHP application without any downtime or data loss.</p>
+          <div class="text-sm text-neutral-600">
+            <strong>Result:</strong> 40% performance improvement, enhanced security, easier maintenance
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="text-center bg-gradient-to-r from-purple-50 to-indigo-50 rounded-2xl p-8 md:p-12">
+      <h2 class="text-3xl font-bold mb-4 bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">Ready to Fix Your PHP Issues?</h2>
+      <p class="text-lg text-neutral-700 mb-6 max-w-2xl mx-auto">Whether you need an emergency fix or ongoing maintenance, I'm here to help. Let's discuss your needs and get your site back online.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="px-8 py-4 bg-purple-600 text-white rounded-2xl hover:bg-purple-700 transition font-semibold">Get Started</a>
+        <a href="/pricing.html" class="px-8 py-4 border-2 border-purple-600 text-purple-600 rounded-2xl hover:bg-purple-50 transition font-semibold">View Pricing</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same as home) -->
+  <footer class="max-w-7xl mx-auto border-t border-gray-200 mt-8">
+    <div class="py-10 px-4 md:px-0 md:py-8 flex flex-col md:flex-row md:justify-between gap-8 text-neutral-700">
+      <div class="flex-1">
+        <svg viewBox="0 0 159 38" xmlns="http://www.w3.org/2000/svg" class="h-6 fill-neutral-700 mb-2">
+            <path d="M7.96588 7.9244H19.0849C20.6892 7.95205 22.0583 8.20099 23.1923 8.6712C24.354 9.14141 25.2668 9.83289 25.9306 10.7456C26.5944 11.6861 27.0093 12.7924 27.1753 14.0648C27.3412 15.3094 27.2444 16.7339 26.8849 18.3381C26.7466 19.0849 26.5391 19.8179 26.2625 20.537C26.0136 21.2285 25.7093 21.9338 25.3498 22.653C24.9625 23.3445 24.52 24.0221 24.0221 24.6859C23.5519 25.3221 23.0126 25.9168 22.404 26.47C21.6572 27.1891 20.8966 27.7838 20.1222 28.254C19.3477 28.6965 18.5594 29.0146 17.7573 29.2082C16.9828 29.4019 16.1807 29.554 15.3509 29.6646C14.5211 29.7476 13.6914 29.7891 12.8616 29.7891H7.88291L6.61985 34.489L0 37.672L7.96588 7.9244ZM12.4467 12.6541L9.12757 25.1008C9.18289 25.1008 9.22438 25.1147 9.25204 25.1423C9.30736 25.1423 9.36268 25.1423 9.418 25.1423C9.44566 25.1423 9.48715 25.1423 9.54246 25.1423C9.59778 25.1423 9.63927 25.1423 9.66693 25.1423C9.74991 25.1423 9.83289 25.1423 9.91587 25.1423C10.0265 25.1423 10.1371 25.1423 10.2478 25.1423C11.5478 25.17 12.7509 25.1147 13.8573 24.9764C14.9914 24.8381 16.0147 24.6306 16.9275 24.354C17.8126 24.0498 18.5871 23.3998 19.2509 22.404C19.9147 21.4083 20.4679 20.0392 20.9104 18.2966C21.2424 16.8307 21.3115 15.6828 21.1179 14.8531C20.9243 14.0233 20.4679 13.4977 19.7488 13.2765C19.0296 13.0552 18.1998 12.9031 17.2594 12.8201C16.3467 12.7095 15.3371 12.6541 14.2307 12.6541C14.0648 12.6818 13.8988 12.6956 13.7329 12.6956C13.5946 12.6956 13.4563 12.6956 13.318 12.6956C13.1797 12.6956 13.0275 12.6956 12.8616 12.6956C12.7233 12.6956 12.585 12.6956 12.4467 12.6956V12.6541Z"/>
+            <path d="M33.3293 0H39.0547L36.9388 7.9244H42.0834C43.4664 7.95205 44.6696 8.11801 45.693 8.42226C46.7164 8.69886 47.56 9.11375 48.2238 9.66693C48.8876 10.2201 49.2887 11.0222 49.427 12.0733C49.5653 13.1243 49.4408 14.4243 49.0536 15.9733L45.3611 29.7891H39.5526L43.0792 16.5956C43.2728 15.9041 43.3558 15.3094 43.3281 14.8116C43.3281 14.3137 43.2313 13.9265 43.0377 13.6499C42.8164 13.3456 42.4707 13.1243 42.0005 12.986C41.5302 12.8478 40.9356 12.7786 40.2164 12.7786L35.6526 12.7371L31.0889 29.7891H25.3634L33.3293 0Z"/>
+            <path d="M54.1386 7.9244H65.2576C66.8619 7.95205 68.231 8.20099 69.365 8.6712C70.5267 9.14141 71.4395 9.83289 72.1033 10.7456C72.7671 11.6861 73.182 12.7924 73.348 14.0648C73.5139 15.3094 73.4171 16.7339 73.0575 18.3381C72.9193 19.0849 72.7118 19.8179 72.4352 20.537C72.1863 21.2285 71.882 21.9338 71.5225 22.653C71.1352 23.3445 70.6927 24.0221 70.1948 24.6859C69.7246 25.3221 69.1852 25.9168 68.5767 26.47C67.8299 27.1891 67.0693 27.7838 66.2948 28.254C65.5204 28.6965 64.7321 29.0146 63.93 29.2082C63.1555 29.4019 62.3534 29.554 61.5236 29.6646C60.6938 29.7476 59.8641 29.7891 59.0343 29.7891H54.0556L52.7925 34.489L46.1727 37.672L54.1386 7.9244ZM58.6194 12.6541L55.3003 25.1008C55.3556 25.1008 55.3971 25.1147 55.4247 25.1423C55.4801 25.1423 55.5354 25.1423 55.5907 25.1423C55.6183 25.1423 55.6598 25.1423 55.7152 25.1423C55.7705 25.1423 55.812 25.1423 55.8396 25.1423C55.9226 25.1423 56.0056 25.1423 56.0886 25.1423C56.1992 25.1423 56.3098 25.1423 56.4205 25.1423C57.7205 25.17 58.9236 25.1147 60.03 24.9764C61.164 24.8381 62.1874 24.6306 63.1002 24.354C63.9853 24.0498 64.7598 23.3998 65.4236 22.404C66.0874 21.4083 66.6406 20.0392 67.0831 18.2966C67.415 16.8307 67.4842 15.6828 67.2906 14.8531C67.097 14.0233 66.6406 13.4977 65.9214 13.2765C65.2023 13.0552 64.3725 12.9031 63.4321 12.8201C62.5193 12.7095 61.5098 12.6541 60.4034 12.6541C60.2375 12.6818 60.0715 12.6956 59.9055 12.6956C59.7672 12.6956 59.6289 12.6956 59.4907 12.6956C59.3524 12.6956 59.2002 12.6956 59.0343 12.6956C58.896 12.6956 58.7577 12.6956 58.6194 12.6956V12.6541Z"/>
+            <path d="M78.2158 12.2807H74.0669L75.2286 7.9244H79.3775C79.3775 7.86908 79.3775 7.81376 79.3775 7.75844C79.4051 7.70312 79.4328 7.6478 79.4605 7.59248C79.4605 7.53717 79.4605 7.48185 79.4605 7.42653C79.4881 7.37121 79.5158 7.30206 79.5434 7.21908C79.8754 6.02973 80.2073 4.99251 80.5392 4.10741C80.8987 3.22231 81.286 2.47551 81.7009 1.867C82.0881 1.28616 82.7658 0.843611 83.7338 0.539357C84.7019 0.235105 85.9466 0.0691499 87.4678 0.0414909L92.9444 0L91.8242 4.23188C91.7965 4.23188 91.755 4.24571 91.6997 4.27337C91.672 4.27337 91.6444 4.27337 91.6167 4.27337C91.5614 4.27337 91.5199 4.27337 91.4923 4.27337C91.4646 4.27337 91.4231 4.27337 91.3678 4.27337C91.3401 4.27337 91.2987 4.27337 91.2433 4.27337C91.2157 4.27337 91.1742 4.25954 91.1189 4.23188C91.0912 4.23188 91.0497 4.23188 90.9944 4.23188C90.9667 4.23188 90.9252 4.23188 90.8699 4.23188C90.8146 4.23188 90.7593 4.23188 90.704 4.23188C90.6487 4.23188 90.5933 4.23188 90.538 4.23188C90.455 4.23188 90.3859 4.23188 90.3306 4.23188C90.2753 4.23188 90.2199 4.23188 90.1646 4.23188C90.1093 4.23188 90.0402 4.23188 89.9572 4.23188C89.9019 4.23188 89.8465 4.21805 89.7912 4.19039C89.7359 4.19039 89.6806 4.19039 89.6253 4.19039C89.5699 4.19039 89.5146 4.19039 89.4593 4.19039C89.2104 4.19039 88.9614 4.20422 88.7125 4.23188C88.4636 4.23188 88.2285 4.25953 88.0072 4.31485C87.7583 4.34251 87.5508 4.39783 87.3849 4.48081C87.2189 4.53613 87.0668 4.60528 86.9285 4.68826C86.7349 4.79889 86.5551 4.93719 86.3891 5.10314C86.2508 5.24144 86.1402 5.39357 86.0572 5.55952C85.9742 5.75314 85.8913 5.94675 85.8083 6.14037C85.753 6.30632 85.6976 6.47228 85.6423 6.63824C85.6147 6.72122 85.587 6.79036 85.5593 6.84568C85.5593 6.901 85.5593 6.95632 85.5593 7.01164C85.5317 7.06696 85.504 7.12227 85.4764 7.17759C85.4764 7.23291 85.4764 7.28823 85.4764 7.34355C85.4764 7.39887 85.4625 7.45419 85.4349 7.50951C85.4349 7.56482 85.421 7.62014 85.3934 7.67546C85.3934 7.73078 85.3796 7.7861 85.3519 7.84142C85.3519 7.86908 85.3381 7.91057 85.3104 7.96588L90.8284 7.9244L89.6668 12.2807H84.1902L79.502 29.7891H73.5275L78.2158 12.2807Z"/>
+            <path d="M93.4257 29.7891H87.3683L93.2183 7.9244H99.2757L93.4257 29.7891ZM99.9395 5.43506H93.8821L95.3342 0H101.392L99.9395 5.43506Z"/>
+            <path d="M128.512 29.7891C127.738 29.7891 126.977 29.7476 126.23 29.6647C125.511 29.5817 124.806 29.4434 124.114 29.2498C123.423 29.0562 122.814 28.7657 122.289 28.3785C121.763 27.9913 121.307 27.4934 120.92 26.8849C120.588 26.4147 120.339 25.903 120.173 25.3498C120.034 24.769 119.938 24.1743 119.882 23.5658C119.855 22.9296 119.869 22.3073 119.924 21.6988C119.979 21.0626 120.062 20.4126 120.173 19.7488C120.2 19.6935 120.214 19.6382 120.214 19.5828C120.242 19.4999 120.27 19.4169 120.297 19.3339C120.325 19.2786 120.339 19.2233 120.339 19.1679C120.366 19.085 120.394 19.002 120.422 18.919C120.422 18.8637 120.422 18.8222 120.422 18.7945C120.449 18.7392 120.477 18.6839 120.505 18.6286C120.505 18.6009 120.505 18.5594 120.505 18.5041C120.532 18.4488 120.546 18.4073 120.546 18.3797C120.574 18.2967 120.602 18.2137 120.629 18.1307C120.684 18.0201 120.726 17.9095 120.754 17.7988C120.975 17.1627 121.224 16.5541 121.5 15.9733C121.777 15.3648 122.095 14.7563 122.455 14.1478C122.814 13.5393 123.215 12.9723 123.658 12.4467C124.128 11.8935 124.64 11.3819 125.193 10.9116C125.912 10.3031 126.645 9.80527 127.392 9.41804C128.139 9.03081 128.899 8.74039 129.674 8.54677C130.448 8.35316 131.223 8.21486 131.997 8.13188C132.772 8.02125 133.546 7.96593 134.321 7.96593L142.784 7.92444L141.54 12.4882H133.906C133.104 12.5159 132.357 12.5989 131.665 12.7372C131.001 12.8478 130.393 13.0138 129.84 13.235C129.287 13.4563 128.802 13.8574 128.388 14.4382C128 14.9914 127.668 15.7244 127.392 16.6371L140.461 16.5956L139.216 21.1594H126.189C125.967 22.0998 125.898 22.8605 125.981 23.4413C126.064 24.0222 126.313 24.4232 126.728 24.6445C127.115 24.8381 127.613 24.9902 128.222 25.1009C128.858 25.2115 129.605 25.2668 130.462 25.2668L138.138 25.2253L136.934 29.7891H128.512Z"/>
+            <path d="M144.417 7.92444H154.125C155.674 7.9521 156.849 8.14571 157.652 8.50528C158.481 8.83719 158.924 9.36272 158.979 10.0819C159.035 10.7733 158.979 11.6031 158.813 12.5712C158.675 13.5116 158.454 14.5765 158.149 15.7659C158.122 15.8765 158.094 15.9871 158.066 16.0978C158.039 16.2084 158.011 16.319 157.984 16.4297C157.956 16.485 157.928 16.5403 157.901 16.5956C157.901 16.651 157.901 16.7063 157.901 16.7616C157.873 16.8446 157.845 16.9137 157.818 16.969C157.818 17.0244 157.804 17.0797 157.776 17.135L152.258 17.0935C152.286 17.0382 152.3 16.969 152.3 16.8861C152.327 16.8031 152.355 16.7201 152.382 16.6371C152.41 16.5818 152.424 16.5403 152.424 16.5127C152.452 16.485 152.465 16.4435 152.465 16.3882C152.465 16.3605 152.465 16.3467 152.465 16.3467C152.465 16.319 152.465 16.2914 152.465 16.2637C152.493 16.2361 152.507 16.2084 152.507 16.1807C152.784 15.185 152.963 14.3967 153.046 13.8159C153.129 13.2074 153.102 12.8201 152.963 12.6542C152.853 12.4882 152.521 12.3638 151.968 12.2808C151.414 12.1978 150.64 12.1563 149.644 12.1563C149.589 12.1563 149.534 12.1563 149.478 12.1563C149.423 12.1563 149.368 12.1563 149.312 12.1563C149.285 12.1563 149.257 12.1563 149.229 12.1563C149.202 12.1563 149.188 12.1563 149.188 12.1563C149.16 12.1563 149.133 12.1563 149.105 12.1563C149.077 12.1563 149.05 12.1563 149.022 12.1563L144.334 29.7891H138.567L144.417 7.92444Z"/>
+            <path d="M106.606 18.8775L101.42 7.92444H108.141L111.045 14.5212L117.642 7.92444H124.28L113.203 19.002L118.306 29.7891H111.585L108.639 23.4413L102.333 29.7891H95.6528L106.606 18.8775Z"/>
+        </svg>
+        <p class="text-xs/4 max-w-md mb-4 text-neutral-700">Expert PHP troubleshooting, legacy code rescue, and performance tuning for businesses, agencies, and founders. Fast, reliable, and drama-free fixes for Laravel, WordPress, and custom PHP sites.</p>
+      </div>
+      <div class="flex-1 flex flex-col items-start md:items-end">
+        <div class="flex flex-wrap gap-4 md:gap-4 text-sm">
+            <a href="#services" class="hover:text-purple-700">Services</a>
+            <a href="#blog" class="hover:text-purple-700">Blog</a>
+            <a href="#pricing" class="hover:text-purple-700">Pricing</a>
+            <a href="#contact" class="hover:text-purple-700">Contact</a>
+            <a href="/privacy-policy" class="hover:text-purple-700">Privacy Policy</a>
+        </div>
+        <div class="text-xs/4 text-left md:text-right text-neutral-400 py-4">PHPfixer is a trading name of Tripleweb Ltd registered in England and Wales (No. 474923167).<br> All rights reserved &copy; 2025.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html> 

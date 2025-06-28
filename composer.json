@@ -1,0 +1,22 @@
+{
+  "name": "tripleweb/phpfixer",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Tamas Erdelyi",
+      "homepage": "https://tripleweb.co.uk"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "terdelyi/phanstatic": "dev-main"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/terdelyi/phanstatic.git"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
