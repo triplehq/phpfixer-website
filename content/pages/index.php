@@ -7,7 +7,7 @@
                 <h2 class="text-3xl md:text-6xl font-bold mb-4 leading-[1.20] bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">I fix broken websites and<span class="hidden md:inline"><br></span> fragile codebases</h2>
                 <p class="text-base font-light text-lg/8 md:pr-10 mt-5 text-neutral-700">Legacy codebase? Random crashes? Cursed pages? Upgrades gone wrong?<br>I'm the web handyman agencies and business owners keep on speed dial.</p>
                 <div class="w-full mt-12">
-                    <h2 class="text-xl font-bold mb-5 leading-[1.20] bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">I specialise in problems like</h2>
+                    <h2 class="text-xl font-semibold mb-5 leading-[1.20] bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">I specialise in problems like</h2>
                     <div class="font-light flex flex-col md:flex-row gap-4 md:gap-16 text-neutral-700">
                         <ul class="pl-0 space-y-1">
                             <li><span class="text-purple-600 font-bold mr-2">✓</span>Fixing AI-generated or legacy spaghetti code</li>
@@ -144,7 +144,7 @@
     <!-- CTA: Second Opinion -->
     <section class="px-4 py-12">
         <div class="max-w-7xl mx-auto text-center">
-            <h3 class="text-3xl md:text-4xl font-medium mb-4 leading-[1.20] bg-gradient-to-t from-neutral-800 to-neutral-600 bg-clip-text text-transparent">Ready to stop firefighting and start fixing?</h3>
+            <h3 class="text-3xl md:text-4xl font-medium mb-4 leading-[1.20] bg-gradient-to-t from-neutral-800 to-neutral-600 bg-clip-text text-transparent">Tired of firefighting? Let’s fix it for good.</h3>
             <a href="#contact" class="inline-block mt-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-lg font-semibold rounded-2xl shadow-md hover:scale-105 hover:bg-purple-700 transition">Request a bug check</a>
         </div>
     </section>

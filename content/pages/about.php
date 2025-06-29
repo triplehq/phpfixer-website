@@ -4,10 +4,10 @@
         <div class="max-w-7xl mx-auto flex gap-20">
             <div class="w-2/3">
                 <div class="mb-10">
-                    <h3 class="text-4xl md:text-5xl font-semibold mb-8 leading-[1.20] bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">Not every website needs a rebuild</h3>
-                    <p class="mb-6 text-lg font-light text-neutral-700">In web development, most people focus on the big builds. New sites, big launches, complex apps. Projects with deadlines, changing requirements, and a handover when it’s done. Then the client gets an invoice, and the team moves on.</p>
+                    <h2 class="text-4xl md:text-5xl font-semibold mb-8 leading-[1.20] bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">Not every website needs a rebuild</h2>
+                    <p class="mb-6 text-lg font-light text-neutral-700">In web development, most people focus on the big budgets. New sites, complex applications, projects with deadlines, changing requirements, and a handover when it’s done. Then the client gets an invoice, and the team moves on.</p>
                     <p class="mb-6 text-lg font-light text-neutral-700">But what happens months or years later when something breaks?</p>
-                    <p class="mb-6 text-lg font-light text-neutral-700">Websites aren’t finished the day they go live. Code ages, plugins get abandoned or introduce security problems, servers upgrade, and platforms move forward. Your website is a marketing channel or your sales tool, it should be optimised regularly.</p>
+                    <p class="mb-6 text-lg font-light text-neutral-700">Websites aren’t finished the day they go live. Code ages, packages get abandoned, plugins built by different developers introduce security problems, server architectures upgrade, and platforms move forward. Your website is your number one marketing channel or your primary sales tool, it should be maintained regularly.</p>
                 </div>
                 <div class="mb-10">
                     <h3 class="text-4xl md:text-3xl font-semibold mb-6 leading-[1.20] bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">The reality for many business owners</h3>
@@ -16,9 +16,9 @@
                     <p class="mb-6 text-lg font-light text-neutral-700">That’s where I help.</p>
                 </div>
                 <div>
-                    <h3 class="text-4xl md:text-3xl font-semibold mb-6 leading-[1.20] bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">The mission</h3>
-                    <p class="mb-6 text-lg font-light text-neutral-700">Over the years I’ve seen a gap in the market for people who look after websites, not just build them. Most developers prefer greenfield projects. I like the kind of work where you come in, fix something, and make someone’s life easier.</p>
-                    <p class="mb-6 text-lg font-light text-neutral-700">I believe maintenance matters. It might not be glamorous, but it’s valuable. Fixing small problems often leads to long-term trust. I’ve seen that happen many times.</p>
+                    <h3 class="text-4xl md:text-3xl font-semibold mb-6 leading-[1.20] bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">My mission</h3>
+                    <p class="mb-6 text-lg font-light text-neutral-700">Over the years, I’ve seen a gap in the market for people who look after websites, not just build them. Most developers prefer greenfield projects. I like the kind of work where you come in, fix something, and make someone’s life easier.</p>
+                    <p class="mb-6 text-lg font-light text-neutral-700">I believe maintenance matters. It might not be glamorous, but it’s valuable. I believe fixing the small things keeps your website – and your business – strong.</p>
                     <p class="mb-6 text-lg font-light text-neutral-700">If your site is broken, unstable, or just confusing to work with, I’m here to help you get it back under control.</p>
                 </div>
             </div>

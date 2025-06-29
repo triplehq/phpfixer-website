@@ -2,7 +2,7 @@
 
     <main class="px-4 py-12">
         <div class="max-w-7xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-bold mb-8 leading-tight bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">Invest in reliability</h1>
+            <h1 class="text-4xl md:text-5xl font-semibold mb-8 leading-tight bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">Invest in reliability</h1>
             <p class="mb-12 text-lg font-light text-neutral-800">Every project is different and I don't believe in one-size-fits-all pricing. What I do believe in is <strong class="font-bold">clarity</strong>, <strong class="font-bold">value</strong> and <strong class="font-bold">fixing your problems</strong>.</p>
         </div>
 
@@ -52,9 +52,9 @@
                     <h2 class="text-2xl font-bold mb-3 bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">How does pricing work</h2>
                     <ul class="list-disc font-light pl-6 text-neutral-800 space-y-2">
                         <li>We start with a free, no-obligation call to understand your needs</li>
-                        <li>I review your site and requirements, then provide a clear, fixed quote</li>
-                        <li>No work starts until you approve the plan and price.</li>
-                        <li>For ongoing retainers you can cancel anytime.</li>
+                        <li>I review your site and requirements, then provide a quote</li>
+                        <li>No work starts until you approve the plan and price</li>
+                        <li>For ongoing retainers you can cancel anytime</li>
                     </ul>
                     <h2 class="mt-12 text-2xl font-bold mb-3 bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">Why trust me?</h2>
                     <ul class="list-disc font-light pl-6 text-neutral-800 space-y-2">
