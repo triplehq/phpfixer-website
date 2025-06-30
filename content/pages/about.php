@@ -1,8 +1,8 @@
 <?php include 'content/pages/_partials/header.php'; ?>
 
     <main class="px-4 py-12">
-        <div class="max-w-7xl mx-auto flex gap-20">
-            <div class="w-2/3">
+        <div class="max-w-7xl mx-auto w-full lg:flex gap-10 lg:gap-30">
+            <div class="lg:w-2/3">
                 <div class="mb-10">
                     <h2 class="text-4xl md:text-5xl font-semibold mb-8 leading-[1.20] bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">Not every website needs a rebuild</h2>
                     <p class="mb-6 text-lg font-light text-neutral-700">In web development, most people focus on the big budgets. New sites, complex applications, projects with deadlines, changing requirements, and a handover when it’s done. Then the client gets an invoice, and the team moves on.</p>
@@ -22,7 +22,7 @@
                     <p class="mb-6 text-lg font-light text-neutral-700">If your site is broken, unstable, or just confusing to work with, I’m here to help you get it back under control.</p>
                 </div>
             </div>
-            <div class="w-1/3">
+            <div class="mt-10 lg:mt-0 lg:w-1/3">
                 <div class="rounded-xl bg-neutral-100 p-8 shadow-sm">
                     <h3 class="text-4xl md:text-3xl mb-6 font-semibold mb-6 leading-[1.15] bg-gradient-to-t from-neutral-800 to-neutral-600 bg-clip-text text-transparent">Behind PHPfixer</h3>
                     <p class="mb-6 font-light text-base/7 text-neutral-700">I’m a senior software developer with 24 years of hands-on experience, mostly working with PHP and modern web tech. I've built and maintained everything from content-heavy websites to complex backend systems — including a lot of legacy projects that needed stability and care.</p>

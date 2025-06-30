@@ -37,7 +37,7 @@
             <a href="<?php echo url('pricing'); ?>" class="hover:text-purple-700<?php if ($page->is('/pricing/')) :?> font-semibold<?php endif; ?>">Pricing</a>
             <a href="<?php echo url('about'); ?>" class="hover:text-purple-700<?php if ($page->is('/about/')) :?> font-semibold<?php endif; ?>">About</a>
             <?php /*<a href="<?php echo url('blog'); ?>" class="hover:text-purple-700<?php if ($page->is('/blog/')) :?> font-semibold<?php endif; ?>">Blog</a>  */ ?>
-            <a href="<?php echo url('contact'); ?>" class="ml-4 px-5 py-3 bg-gradient-to-b from-purple-600 to-indigo-800 text-white rounded-xl hover:bg-purple-700 transition shadow-md hover:scale-105 hover:bg-purple-700 transition">Contact Me</a>
+            <a href="<?php echo url('contact'); ?>" class="ml-4 px-5 py-3 bg-gradient-to-b from-green-500 to-emerald-600 text-white rounded-xl transition shadow-md hover:scale-105 transition">Contact Me</a>
         </nav>
         <button class="md:hidden p-2" @click="mobileMenuOpen = !mobileMenuOpen">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,8 +51,8 @@
             <a href="<?php echo url('services'); ?>" class="hover:text-purple-700">Services</a>
             <a href="<?php echo url('pricing'); ?>" class="hover:text-purple-700">Pricing</a>
             <a href="<?php echo url('about'); ?>" class="hover:text-purple-700">About</a>
-            <a href="<?php echo url('blog'); ?>" class="hover:text-purple-700">Blog</a>
-            <a href="<?php echo url('contact'); ?>" class="mt-6 px-5 py-3 bg-purple-600 text-white rounded-2xl hover:bg-purple-700 transition text-center">Contact Me</a>
+            <?php /*<a href="<?php echo url('blog'); ?>" class="hover:text-purple-700">Blog</a>  */ ?>
+            <a href="<?php echo url('contact'); ?>" class="mt-6 px-5 py-3 bg-gradient-to-b from-green-500 to-emerald-600 text-white rounded-2xl transition hover:scale-105 text-center">Contact Me</a>
         </div>
     </div>
 </header>
