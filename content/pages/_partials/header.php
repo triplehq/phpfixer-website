@@ -13,6 +13,7 @@
     <style>
         body { font-family: 'Lexend', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; }
     </style>
+    <script src="https://cdn.usefathom.com/script.js" data-site="JWEZPVEF" defer></script>
 </head>
 <body class="bg-white text-gray-800" x-data="{ showContact: false }">
 <!-- Header -->
