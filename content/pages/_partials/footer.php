@@ -1,5 +1,5 @@
     <footer class="max-w-7xl mx-auto">
-        <div class="py-10 px-4 md:px-0 md:py-8 flex flex-col md:flex-row md:justify-between gap-8 text-neutral-700">
+        <div class="py-10 px-8 md:px-4 md:px-0 md:py-8 flex flex-col md:flex-row md:justify-between gap-8 text-neutral-700">
             <div class="flex-1">
                 <svg viewBox="0 0 159 38" xmlns="http://www.w3.org/2000/svg" class="h-6 fill-stone-700">
                     <path d="M7.96588 7.9244H19.0849C20.6892 7.95205 22.0583 8.20099 23.1923 8.6712C24.354 9.14141 25.2668 9.83289 25.9306 10.7456C26.5944 11.6861 27.0093 12.7924 27.1753 14.0648C27.3412 15.3094 27.2444 16.7339 26.8849 18.3381C26.7466 19.0849 26.5391 19.8179 26.2625 20.537C26.0136 21.2285 25.7093 21.9338 25.3498 22.653C24.9625 23.3445 24.52 24.0221 24.0221 24.6859C23.5519 25.3221 23.0126 25.9168 22.404 26.47C21.6572 27.1891 20.8966 27.7838 20.1222 28.254C19.3477 28.6965 18.5594 29.0146 17.7573 29.2082C16.9828 29.4019 16.1807 29.554 15.3509 29.6646C14.5211 29.7476 13.6914 29.7891 12.8616 29.7891H7.88291L6.61985 34.489L0 37.672L7.96588 7.9244ZM12.4467 12.6541L9.12757 25.1008C9.18289 25.1008 9.22438 25.1147 9.25204 25.1423C9.30736 25.1423 9.36268 25.1423 9.418 25.1423C9.44566 25.1423 9.48715 25.1423 9.54246 25.1423C9.59778 25.1423 9.63927 25.1423 9.66693 25.1423C9.74991 25.1423 9.83289 25.1423 9.91587 25.1423C10.0265 25.1423 10.1371 25.1423 10.2478 25.1423C11.5478 25.17 12.7509 25.1147 13.8573 24.9764C14.9914 24.8381 16.0147 24.6306 16.9275 24.354C17.8126 24.0498 18.5871 23.3998 19.2509 22.404C19.9147 21.4083 20.4679 20.0392 20.9104 18.2966C21.2424 16.8307 21.3115 15.6828 21.1179 14.8531C20.9243 14.0233 20.4679 13.4977 19.7488 13.2765C19.0296 13.0552 18.1998 12.9031 17.2594 12.8201C16.3467 12.7095 15.3371 12.6541 14.2307 12.6541C14.0648 12.6818 13.8988 12.6956 13.7329 12.6956C13.5946 12.6956 13.4563 12.6956 13.318 12.6956C13.1797 12.6956 13.0275 12.6956 12.8616 12.6956C12.7233 12.6956 12.585 12.6956 12.4467 12.6956V12.6541Z"/>
@@ -23,81 +23,81 @@
                      <a href="#blog" class="hover:text-purple-700">Blog</a>
                     <a href="/privacy-policy" class="hover:text-purple-700">Privacy Policy</a> */?>
                 </div>
-                <div class="text-xs/5 text-left md:text-right text-stone-500 py-4">PHPfixer is a trading name of Tripleweb Ltd registered in England and Wales (No. 474923167).<br> All rights reserved &copy; 2025.</div>
-            </div>
-        </div>
-
-        <!-- Contact Modal -->
-        <div x-show="showContact" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 flex items-center justify-center">
-            <!-- Drop layer -->
-            <div class="absolute inset-0 bg-gradient-to-b from-neutral-900 to-neutral-700 opacity-80" @click="showContact = false"></div>
-            <!-- Modal -->
-            <div x-show="showContact" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-95 translate-y-4" x-transition:enter-end="opacity-100 scale-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 scale-100 translate-y-0" x-transition:leave-end="opacity-0 scale-95 translate-y-4" class="relative bg-white rounded-xl shadow-lg max-w-xl w-full mx-2 sm:mx-0 p-4 md:p-10 z-10" x-data="{ success: false, error: false }" id="contact-modal-alpine">
-                <button @click="showContact = false" class="absolute top-3 right-5 text-neutral-400 hover:text-neutral-700 text-3xl leading-none">&times;</button>
-                <h2 class="text-2xl md:text-3xl font-semibold mt-4 mb-4 leading-tight bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">Get your website back on track</h2>
-                <p class="mb-6 text-neutral-700 font-light">Tell me what’s not working, what you’re aiming for, or what’s holding your site back. The more details you share now, the faster I can help you with a clear solution.</p>
-                <form name="contact" netlify netlify-honeypot="bot-field" class="space-y-4" id="modal-contact-form">
-                    <input type="hidden" name="form-name" value="contact">
-                    <input type="hidden" name="bot-field">
-                    <template x-if="success">
-                        <div class="p-3 rounded bg-green-100 text-green-800 text-center">Thank you! Your message has been sent.</div>
-                    </template>
-                    <template x-if="error">
-                        <div class="p-3 rounded bg-red-100 text-red-800 text-center">Sorry, something went wrong. Please try again.</div>
-                    </template>
-                    <div x-show="!success">
-                        <div class="mb-4 text-neutral-700">
-                            <label class="block text-sm font-medium mb-1" for="contact-name">Your name</label>
-                            <input id="contact-name" name="name" type="text" class="w-full border border-neutral-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" autocomplete="name" required>
-                        </div>
-                        <div class="mb-4 text-neutral-700">
-                            <label class="block text-sm font-medium mb-1" for="contact-email">Email address</label>
-                            <input id="contact-email" name="email" type="email" class="w-full border border-neutral-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" autocomplete="email" required>
-                        </div>
-                        <div class="mb-4 text-neutral-700">
-                            <label class="block text-sm font-medium mb-1" for="contact-email">Website (optional but helpful)</label>
-                            <input id="contact-email" name="email" type="text" class="w-full border border-neutral-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" autocomplete="website">
-                        </div>
-                        <div class="mb-4 text-neutral-700">
-                            <label class="block text-sm font-medium mb-1" for="contact-message">How can I help?</label>
-                            <textarea id="contact-message" name="message" rows="4" class="w-full border border-neutral-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" required></textarea>
-                            <div class="text-xs font-light text-neutral-500">Describe the issue, error message, or what you need fixed or upgraded. For longer messages, I recommend writing them elsewhere first and then copying them here.</div>
-                        </div>
-                        <div class="pt-2">
-                            <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold py-2 rounded-lg shadow hover:from-purple-700 hover:to-indigo-700 transition">
-                                Let's fix it!
-                            </button>
-                        </div>
-                    </div>
-                </form>
+                <div class="text-xs/5 text-left md:text-right text-stone-500 py-4">PHPfixer is a trading name of Tripleweb Ltd registered in England and Wales (No. 474923167).<br class="hidden md:block"> All rights reserved &copy; 2025.</div>
             </div>
         </div>
     </footer>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const form = document.getElementById("modal-contact-form");
-  const alpineRoot = document.getElementById("contact-modal-alpine");
-  if (form && alpineRoot) {
-    form.addEventListener("submit", function(event) {
-      event.preventDefault();
-      const formData = new FormData(form);
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString()
-      })
-      .then(() => {
-        if (alpineRoot.__x) alpineRoot.__x.$data.success = true;
-        form.reset();
-      })
-      .catch(error => {
-        if (alpineRoot.__x) alpineRoot.__x.$data.error = true;
-      });
-    });
-  }
-});
-</script>
+    <!-- Contact Modal -->
+    <div x-show="showContact" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 flex items-center justify-center">
+        <!-- Drop layer -->
+        <div class="absolute inset-0 bg-gradient-to-b from-neutral-900 to-neutral-700 opacity-80" @click="showContact = false"></div>
+        <!-- Modal -->
+        <div x-show="showContact" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-95 translate-y-4" x-transition:enter-end="opacity-100 scale-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 scale-100 translate-y-0" x-transition:leave-end="opacity-0 scale-95 translate-y-4" class="relative bg-white rounded-xl shadow-lg max-w-xl w-full mx-2 sm:mx-0 p-4 md:p-10 z-10" x-data="{ success: false, error: false }" id="contact-modal-alpine">
+            <button @click="showContact = false" class="absolute top-3 right-5 text-neutral-400 hover:text-neutral-700 text-3xl leading-none">&times;</button>
+            <h2 class="text-2xl md:text-3xl font-semibold mt-4 mb-4 leading-tight bg-gradient-to-r from-purple-700 via-indigo-500 to-purple-400 bg-clip-text text-transparent">Get your website back on track</h2>
+            <p class="mb-6 text-neutral-700 font-light">Tell me what’s not working, what you’re aiming for, or what’s holding your site back. The more details you share now, the faster I can help you with a clear solution.</p>
+            <form name="contact" netlify netlify-honeypot="bot-field" class="space-y-4" id="modal-contact-form">
+                <input type="hidden" name="form-name" value="contact">
+                <input type="hidden" name="bot-field">
+                <template x-if="success">
+                    <div class="p-3 rounded bg-green-100 text-green-800 text-center">Thank you! Your message has been sent.</div>
+                </template>
+                <template x-if="error">
+                    <div class="p-3 rounded bg-red-100 text-red-800 text-center">Sorry, something went wrong. Please try again.</div>
+                </template>
+                <div x-show="!success">
+                    <div class="mb-4 text-neutral-700">
+                        <label class="block text-sm font-medium mb-1" for="contact-name">Your name</label>
+                        <input id="contact-name" name="name" type="text" class="w-full border border-neutral-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" autocomplete="name" required>
+                    </div>
+                    <div class="mb-4 text-neutral-700">
+                        <label class="block text-sm font-medium mb-1" for="contact-email">Email address</label>
+                        <input id="contact-email" name="email" type="email" class="w-full border border-neutral-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" autocomplete="email" required>
+                    </div>
+                    <div class="mb-4 text-neutral-700">
+                        <label class="block text-sm font-medium mb-1" for="contact-email">Website (optional but helpful)</label>
+                        <input id="contact-email" name="email" type="text" class="w-full border border-neutral-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" autocomplete="website">
+                    </div>
+                    <div class="mb-4 text-neutral-700">
+                        <label class="block text-sm font-medium mb-1" for="contact-message">How can I help?</label>
+                        <textarea id="contact-message" name="message" rows="4" class="w-full border border-neutral-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" required></textarea>
+                        <div class="text-xs font-light text-neutral-500">Describe the issue, error message, or what you need fixed or upgraded. For longer messages, I recommend writing them elsewhere first and then copying them here.</div>
+                    </div>
+                    <div class="pt-2">
+                        <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold py-2 rounded-lg shadow hover:from-purple-700 hover:to-indigo-700 transition">
+                            Let's fix it!
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const form = document.getElementById("modal-contact-form");
+          const alpineRoot = document.getElementById("contact-modal-alpine");
+          if (form && alpineRoot) {
+            form.addEventListener("submit", function(event) {
+              event.preventDefault();
+              const formData = new FormData(form);
+              fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString()
+              })
+              .then(() => {
+                if (alpineRoot.__x) alpineRoot.__x.$data.success = true;
+                form.reset();
+              })
+              .catch(error => {
+                if (alpineRoot.__x) alpineRoot.__x.$data.error = true;
+              });
+            });
+          }
+        });
+        </script>
 
 </body>
 </html>
