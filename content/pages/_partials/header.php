@@ -7,11 +7,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHPFixer - Fixing Broken Websites & PHP Code</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=archivo:300,400,500,600,700,800|inter:300,400,500,600,700,800" rel="stylesheet" />
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <style>
-        body { font-family: 'Lexend', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; }
+        h2.title { font-family: 'Archivo', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; }
+        body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; }
     </style>
     <script src="https://cdn.usefathom.com/script.js" data-site="JWEZPVEF" defer></script>
 </head>
@@ -19,9 +22,9 @@
 <!-- Header -->
 <header class="py-4 md:py-8 px-4 bg-gradient-to-b from-neutral-100 to-white" x-data="{ mobileMenuOpen: false }">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <div class="text-2xl font-bold italic text-gray-800">
+        <div>
             <a href="<?php echo url('/'); ?>">
-                <svg viewBox="0 0 159 38" xmlns="http://www.w3.org/2000/svg" class="fill-neutral-800 h-9">
+                <svg viewBox="0 0 159 38" xmlns="http://www.w3.org/2000/svg" class="fill-stone-700 h-8">
                     <path d="M7.96588 7.9244H19.0849C20.6892 7.95205 22.0583 8.20099 23.1923 8.6712C24.354 9.14141 25.2668 9.83289 25.9306 10.7456C26.5944 11.6861 27.0093 12.7924 27.1753 14.0648C27.3412 15.3094 27.2444 16.7339 26.8849 18.3381C26.7466 19.0849 26.5391 19.8179 26.2625 20.537C26.0136 21.2285 25.7093 21.9338 25.3498 22.653C24.9625 23.3445 24.52 24.0221 24.0221 24.6859C23.5519 25.3221 23.0126 25.9168 22.404 26.47C21.6572 27.1891 20.8966 27.7838 20.1222 28.254C19.3477 28.6965 18.5594 29.0146 17.7573 29.2082C16.9828 29.4019 16.1807 29.554 15.3509 29.6646C14.5211 29.7476 13.6914 29.7891 12.8616 29.7891H7.88291L6.61985 34.489L0 37.672L7.96588 7.9244ZM12.4467 12.6541L9.12757 25.1008C9.18289 25.1008 9.22438 25.1147 9.25204 25.1423C9.30736 25.1423 9.36268 25.1423 9.418 25.1423C9.44566 25.1423 9.48715 25.1423 9.54246 25.1423C9.59778 25.1423 9.63927 25.1423 9.66693 25.1423C9.74991 25.1423 9.83289 25.1423 9.91587 25.1423C10.0265 25.1423 10.1371 25.1423 10.2478 25.1423C11.5478 25.17 12.7509 25.1147 13.8573 24.9764C14.9914 24.8381 16.0147 24.6306 16.9275 24.354C17.8126 24.0498 18.5871 23.3998 19.2509 22.404C19.9147 21.4083 20.4679 20.0392 20.9104 18.2966C21.2424 16.8307 21.3115 15.6828 21.1179 14.8531C20.9243 14.0233 20.4679 13.4977 19.7488 13.2765C19.0296 13.0552 18.1998 12.9031 17.2594 12.8201C16.3467 12.7095 15.3371 12.6541 14.2307 12.6541C14.0648 12.6818 13.8988 12.6956 13.7329 12.6956C13.5946 12.6956 13.4563 12.6956 13.318 12.6956C13.1797 12.6956 13.0275 12.6956 12.8616 12.6956C12.7233 12.6956 12.585 12.6956 12.4467 12.6956V12.6541Z"/>
                     <path d="M33.3293 0H39.0547L36.9388 7.9244H42.0834C43.4664 7.95205 44.6696 8.11801 45.693 8.42226C46.7164 8.69886 47.56 9.11375 48.2238 9.66693C48.8876 10.2201 49.2887 11.0222 49.427 12.0733C49.5653 13.1243 49.4408 14.4243 49.0536 15.9733L45.3611 29.7891H39.5526L43.0792 16.5956C43.2728 15.9041 43.3558 15.3094 43.3281 14.8116C43.3281 14.3137 43.2313 13.9265 43.0377 13.6499C42.8164 13.3456 42.4707 13.1243 42.0005 12.986C41.5302 12.8478 40.9356 12.7786 40.2164 12.7786L35.6526 12.7371L31.0889 29.7891H25.3634L33.3293 0Z"/>
                     <path d="M54.1386 7.9244H65.2576C66.8619 7.95205 68.231 8.20099 69.365 8.6712C70.5267 9.14141 71.4395 9.83289 72.1033 10.7456C72.7671 11.6861 73.182 12.7924 73.348 14.0648C73.5139 15.3094 73.4171 16.7339 73.0575 18.3381C72.9193 19.0849 72.7118 19.8179 72.4352 20.537C72.1863 21.2285 71.882 21.9338 71.5225 22.653C71.1352 23.3445 70.6927 24.0221 70.1948 24.6859C69.7246 25.3221 69.1852 25.9168 68.5767 26.47C67.8299 27.1891 67.0693 27.7838 66.2948 28.254C65.5204 28.6965 64.7321 29.0146 63.93 29.2082C63.1555 29.4019 62.3534 29.554 61.5236 29.6646C60.6938 29.7476 59.8641 29.7891 59.0343 29.7891H54.0556L52.7925 34.489L46.1727 37.672L54.1386 7.9244ZM58.6194 12.6541L55.3003 25.1008C55.3556 25.1008 55.3971 25.1147 55.4247 25.1423C55.4801 25.1423 55.5354 25.1423 55.5907 25.1423C55.6183 25.1423 55.6598 25.1423 55.7152 25.1423C55.7705 25.1423 55.812 25.1423 55.8396 25.1423C55.9226 25.1423 56.0056 25.1423 56.0886 25.1423C56.1992 25.1423 56.3098 25.1423 56.4205 25.1423C57.7205 25.17 58.9236 25.1147 60.03 24.9764C61.164 24.8381 62.1874 24.6306 63.1002 24.354C63.9853 24.0498 64.7598 23.3998 65.4236 22.404C66.0874 21.4083 66.6406 20.0392 67.0831 18.2966C67.415 16.8307 67.4842 15.6828 67.2906 14.8531C67.097 14.0233 66.6406 13.4977 65.9214 13.2765C65.2023 13.0552 64.3725 12.9031 63.4321 12.8201C62.5193 12.7095 61.5098 12.6541 60.4034 12.6541C60.2375 12.6818 60.0715 12.6956 59.9055 12.6956C59.7672 12.6956 59.6289 12.6956 59.4907 12.6956C59.3524 12.6956 59.2002 12.6956 59.0343 12.6956C58.896 12.6956 58.7577 12.6956 58.6194 12.6956V12.6541Z"/>
@@ -33,12 +36,12 @@
                 </svg>
             </a>
         </div>
-        <nav class="hidden md:flex md:items-center space-x-8">
-            <a href="<?php echo url('services'); ?>" class="hover:text-purple-700<?php if ($page->is('/services/')) :?> font-semibold<?php endif; ?>">Services</a>
-            <a href="<?php echo url('pricing'); ?>" class="hover:text-purple-700<?php if ($page->is('/pricing/')) :?> font-semibold<?php endif; ?>">Pricing</a>
-            <a href="<?php echo url('about'); ?>" class="hover:text-purple-700<?php if ($page->is('/about/')) :?> font-semibold<?php endif; ?>">About</a>
+        <nav class="hidden md:flex md:items-center space-x-8 text-stone-700">
+            <a href="<?php echo url('services'); ?>" class="hover:text-purple-700  font-semibold<?php if ($page->is('/services/')) :?> font-bold<?php endif; ?>">Services</a>
+            <a href="<?php echo url('pricing'); ?>" class="hover:text-purple-700 font-semibold<?php if ($page->is('/pricing/')) :?> font-bold<?php endif; ?>">Pricing</a>
+            <a href="<?php echo url('about'); ?>" class="hover:text-purple-700  font-semibold<?php if ($page->is('/about/')) :?> font-bold<?php endif; ?>">About</a>
             <?php /*<a href="<?php echo url('blog'); ?>" class="hover:text-purple-700<?php if ($page->is('/blog/')) :?> font-semibold<?php endif; ?>">Blog</a>  */ ?>
-            <a href="#contact" @click.prevent="showContact = true" class="ml-4 px-5 py-3 bg-gradient-to-b from-green-500 to-emerald-600 text-white rounded-xl transition shadow-md hover:scale-105 transition">Contact Me</a>
+            <a href="#contact" @click.prevent="showContact = true" class="ml-4 px-4 py-2 font-semibold bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-600 transition">Get a quote!</a>
         </nav>
         <button class="md:hidden p-2" @click="mobileMenuOpen = !mobileMenuOpen">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -49,11 +52,11 @@
     <!-- Mobile Menu -->
     <div x-show="mobileMenuOpen" x-transition class="md:hidden mt-4 pb-4">
         <div class="flex flex-col space-y-2">
-            <a href="<?php echo url('services'); ?>" class="hover:text-purple-700">Services</a>
-            <a href="<?php echo url('pricing'); ?>" class="hover:text-purple-700">Pricing</a>
-            <a href="<?php echo url('about'); ?>" class="hover:text-purple-700">About</a>
+            <a href="<?php echo url('services'); ?>" class="hover:text-purple-700 font-semibold">Services</a>
+            <a href="<?php echo url('pricing'); ?>" class="hover:text-purple-700 font-semibold">Pricing</a>
+            <a href="<?php echo url('about'); ?>" class="hover:text-purple-700 font-semibold">About</a>
             <?php /*<a href="<?php echo url('blog'); ?>" class="hover:text-purple-700">Blog</a>  */ ?>
-            <a href="#contact" @click.prevent="showContact = true" class="mt-6 px-5 py-3 bg-gradient-to-b from-green-500 to-emerald-600 text-white rounded-2xl transition hover:scale-105 text-center">Contact Me</a>
+            <a href="#contact" @click.prevent="showContact = true" class="mt-6 px-4 py-2 bg-gradient-to-b from-green-500 to-emerald-600 text-white rounded-2xl transition hover:scale-105 text-center">Get a quote!</a>
         </div>
     </div>
 </header>
