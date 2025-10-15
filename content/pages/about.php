@@ -28,7 +28,7 @@
                     <p class="mb-6 font-light text-base/7 text-neutral-700">I’m a senior software developer with 24 years of hands-on experience, mostly working with PHP and modern web tech. I've built and maintained everything from content-heavy websites to complex backend systems — including a lot of legacy projects that needed stability and care.</p>
                     <p class="mb-6 font-light text-base/7 text-neutral-700">I work well in messy environments, and I’m comfortable modernising old code without rewriting everything from scratch. I believe in simplicity, clear communication, and writing software that lasts.</p>
                     <div>
-                        <a href="#contact" class="inline-block mt-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold rounded-2xl shadow-md hover:scale-105 hover:bg-purple-700 transition">View my LinkedIn</a>
+                        <a href="#contact" @click.prevent="showContact = true" class="inline-block mt-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold rounded-2xl shadow-md hover:scale-105 hover:bg-purple-700 transition">View my LinkedIn</a>
                     </div>
                 </div>
             </div>
