@@ -150,7 +150,7 @@
         <div class="max-w-7xl mx-auto flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-center border-t border-stone-100/30 shadow-sm p-12 rounded-2xl bg-gradient-to-t from-stone-100">
             <h3 class="text-2xl lg:text-4xl text-center md:text-left font-semibold bg-gradient-to-t from-neutral-800 to-neutral-600 bg-clip-text text-transparent">Tired of firefighting? Let’s fix it for good.</h3>
             <div>
-                <a href="#contact" @click.prevent="showContact = true" class="inline-block px-6 py-3 md:text-lg font-semibold rounded-2xl bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-600 transition">Request a bug check</a>
+                <a href="#contact" @click.prevent="showContact = true" class="inline-block px-6 py-3 md:text-lg font-semibold rounded-2xl bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:scale-110 transition duration-100">Request a bug check</a>
             </div>
         </div>
     </section>

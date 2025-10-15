@@ -14,11 +14,11 @@
                 <p class="text-xs/4 max-w-md mt-4 text-stone-500 font-light">Expert PHP troubleshooting, legacy code rescue, and performance tuning for businesses, agencies, and founders. Fast, reliable, and drama-free fixes for Laravel, WordPress, and custom PHP sites.</p>
             </div>
             <div class="flex-1 flex flex-col items-start md:items-end">
-                <div class="flex flex-wrap gap-4 md:gap-4 text-sm">
-                    <a href="<?php echo url('services'); ?>" class="hover:text-purple-700">Services</a>
-                    <a href="<?php echo url('pricing'); ?>" class="hover:text-purple-700">Pricing</a>
-                    <a href="<?php echo url('about'); ?>" class="hover:text-purple-700">About</a>
-                    <a href="#contact" @click.prevent="showContact = true" class="hover:text-purple-700">Contact</a>
+                <div class="flex flex-wrap gap-4 md:gap-4">
+                    <a href="<?php echo url('services'); ?>" class="hover:text-blue-700">Services</a>
+                    <a href="<?php echo url('pricing'); ?>" class="hover:text-blue-700">Pricing</a>
+                    <a href="<?php echo url('about'); ?>" class="hover:text-blue-700">About</a>
+                    <a href="#contact" @click.prevent="showContact = true" class="hover:text-blue-700">Contact</a>
                 </div>
                 <div class="text-xs/5 text-left md:text-right text-stone-500 py-4">PHPFixer is a trading name of Tripleweb Ltd registered in England and Wales (No. 474923167).<br class="hidden md:block"> All rights reserved &copy; 2025.</div>
             </div>
