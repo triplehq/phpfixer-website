@@ -9,14 +9,7 @@
   ],
   "require": {
     "php": ">=8.2",
-    "terdelyi/phanstatic": "dev-main"
+    "terdelyi/phanstatic": "^1.0.0"
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/terdelyi/phanstatic.git"
-    }
-  ],
-  "minimum-stability": "dev",
   "prefer-stable": true
 }

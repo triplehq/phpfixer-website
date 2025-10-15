@@ -1,20 +1,14 @@
 <?php
 
-use Terdelyi\Phanstatic\Config\ConfigBuilder;
+use Terdelyi\Phanstatic\Models\Config;
 
 if (getenv('ENV') === 'production') {
-    $baseUrl = getenv('URL');
+    $baseUrl = getenv('URL') ?? '';
 } else {
     $baseUrl = getenv('DEPLOY_URL') ? getenv('DEPLOY_URL') : 'http://localhost:8000';
 }
 
-return ConfigBuilder::make()
-    ->setBaseUrl($baseUrl)
-    ->setTitle('PHPfixer')
-    ->addCollection(
-        'blog',
-        'Blog',
-        'blog',
-        10
-    )
-    ->build();
+return new Config(
+    baseUrl: $baseUrl,
+    title:'PHPFixer'
+);
