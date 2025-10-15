@@ -15,6 +15,10 @@
     <style>
         h2.title { font-family: 'Archivo', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; }
         body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; }
+        @keyframes fire {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.4); }
+        }
     </style>
     <script src="https://cdn.usefathom.com/script.js" data-site="JWEZPVEF" defer></script>
 </head>
