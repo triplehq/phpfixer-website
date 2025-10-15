@@ -1,12 +1,12 @@
 <?php include 'content/pages/_partials/header.php'; ?>
 
     <!-- Hero Section -->
-    <section class="px-8 md:px-4 pb-8 py-10 relative">
+    <section class="px-6 md:px-4 pb-8 py-10 relative">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
             <div class="w-full lg:w-2/3">
-                <h2 class="text-4xl title md:text-6xl font-bold mb-4 leading-[1.20] text-stone-700">We fix broken websites and<span class="hidden md:inline"><br></span> fragile codebases</h2>
-                <p class="text-base font-light md:text-lg/8 md:pr-10 mt-5 text-stone-700">Legacy codebase? Random crashes? Cursed pages? Upgrades gone wrong?<br class="hidden md:block"> PHPFixer is the handyman agencies and business owners keep on speed dial.</p>
-                <div class="show sm:hidden w-64 justify-center mt-8 md:mt-0">
+                <h2 class="text-center md:text-left text-4xl title md:text-6xl font-bold mb-4 leading-[1.20] text-stone-700">We fix broken websites and<span class="hidden md:inline"><br></span> fragile codebases</h2>
+                <p class="text-center md:text-left text-base font-light md:text-lg/8 md:pr-10 mt-5 text-stone-700">Legacy codebase? Random crashes? Cursed pages? Upgrades gone wrong?<br class="hidden md:block"> PHPFixer is the handyman agencies and business owners keep on speed dial.</p>
+                <div class="show sm:hidden w-64 justify-center mt-8 md:mt-0 mx-auto">
                     <img src="<?php echo asset('images/doctor-elephant.png'); ?>" alt="Dr ElePHPant">
                 </div>
                 <div class="w-full mt-12">
@@ -39,7 +39,7 @@
     </section>
 
     <!-- Process Section -->
-    <section class="px-8 md:px-4 py-16">
+    <section class="px-6 md:px-4 py-16">
         <div class="max-w-7xl mx-auto">
             <h3 class="text-4xl text-center font-bold mb-6 bg-gradient-to-b from-stone-800 to-stone-500 bg-clip-text text-transparent">Fixing your code without burning everything down</h3>
             <p class="mb-8 text-lg font-light text-neutral-700 text-center">You don't need a rewrite if something doesn't work. You need a fix! We diagnose the problem, find a solution and making it work again.</p>
@@ -70,7 +70,7 @@
     </section>
 
     <!-- What I work with -->
-    <section class="px-8 md:px-4 py-6">
+    <section class="px-6 md:px-4 py-6">
         <div class="max-w-7xl mx-auto bg-gradient-to-b from-blue-700 via-sky-700 to-sky-800 p-5 md:p-10 rounded-xl">
             <h3 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-t from-neutral-300 to-white bg-clip-text text-transparent text-center">All-inclusive maintenance services</h3>
             <p class="mb-6 text-lg text-neutral-200">We use modern tools and workflows to stabilize, maintain, and extend existing PHP projects. No cowboy hacks, no unnecessary rebuilds. Keep what works, fix what's broken, and make it easier to move forward.</p>
@@ -125,7 +125,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="px-8 md:px-4 py-12">
+    <section class="px-6 md:px-4 py-12">
         <div class="max-w-7xl mx-auto">
             <h3 class="text-3xl md:text-5xl text-center font-bold mb-10 bg-gradient-to-b from-stone-800 to-stone-500 bg-clip-text text-transparent">What our clients said about us</h3>
             <div class="grid grid-cols-1 lg:grid-cols-3 space-y-6 lg:space-y-0 gap-8 lg:gap-10">
@@ -146,7 +146,7 @@
     </section>
 
     <!-- CTA: Second Opinion -->
-    <section class="px-8 md:px-4 py-16">
+    <section class="px-6 md:px-4 py-16">
         <div class="max-w-7xl mx-auto flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-center border-t border-stone-100/30 shadow-sm p-12 rounded-2xl bg-gradient-to-t from-stone-100">
             <h3 class="text-2xl lg:text-4xl text-center md:text-left font-semibold bg-gradient-to-t from-neutral-800 to-neutral-600 bg-clip-text text-transparent">Tired of firefighting? Let’s fix it for good.</h3>
             <div>

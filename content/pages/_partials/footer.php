@@ -1,4 +1,4 @@
-    <footer class="max-w-7xl mx-auto py-4 md:pt-8 md:pb-4 px-8 lg:px-0 lg:pb-12 md:px-4">
+    <footer class="max-w-7xl mx-auto py-4 md:pt-8 md:pb-4 px-6 lg:px-0 lg:pb-12 md:px-4">
         <div class="flex flex-col md:flex-row md:justify-between gap-8 text-stone-700">
             <div class="flex-1">
                 <svg viewBox="0 0 159 38" xmlns="http://www.w3.org/2000/svg" class="h-6 fill-stone-700">
