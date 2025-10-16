@@ -73,7 +73,7 @@
     <!-- What I work with -->
     <section class="sm:px-6 md:px-4 py-0 md:py-6">
         <div class="w-full sm:max-w-7xl mx-auto bg-gradient-to-b from-blue-700 via-sky-700 to-sky-800 px-6 py-6 md:py-10 p-5 md:p-10 sm:rounded-xl">
-            <h3 class="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-t from-neutral-300 to-white bg-clip-text text-transparent text-center">All-inclusive maintenance services</h3>
+            <h3 class="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-t from-neutral-300 to-white bg-clip-text text-transparent text-center">All-inclusive<br class="sm:hidden"> maintenance services</h3>
             <p class="mb-6 text-lg text-neutral-200">We use modern tools and workflows to stabilize, maintain, and extend existing PHP projects. No cowboy hacks, no unnecessary rebuilds. Keep what works, fix what's broken, and make it easier to move forward.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 text-base mb-2 text-neutral-100">
                 <div class="bg-white/15 border border-white/30 rounded-xl p-6 shadow-md">
@@ -118,7 +118,7 @@
     <!-- CTA: Second Opinion -->
     <section class="px-6 md:px-4 py-8 md:py-16 md:pb-10">
         <div class="max-w-7xl mx-auto flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-center p-12 border border-zinc-200 rounded-xl">
-            <h3 class="text-2xl lg:text-4xl text-center md:text-left font-semibold bg-gradient-to-t from-blue-800/80 to-blue-700 bg-clip-text text-transparent leading-tight">Tired of firefighting? Let's fix it for good.</h3>
+            <h3 class="text-3xl lg:text-4xl text-center md:text-left font-semibold bg-gradient-to-t from-blue-800/80 to-blue-700 bg-clip-text text-transparent leading-tight">Tired of firefighting? Let's fix it for good.</h3>
             <div>
                 <a href="#contact" @click.prevent="showContact = true" class="inline-block px-6 py-3 md:text-lg font-semibold rounded-2xl bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:scale-110 transition duration-100">
                     Request a bug check today
