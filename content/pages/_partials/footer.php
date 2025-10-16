@@ -11,7 +11,7 @@
                     <path d="M144.417 7.92444H154.125C155.674 7.9521 156.849 8.14571 157.652 8.50528C158.481 8.83719 158.924 9.36272 158.979 10.0819C159.035 10.7733 158.979 11.6031 158.813 12.5712C158.675 13.5116 158.454 14.5765 158.149 15.7659C158.122 15.8765 158.094 15.9871 158.066 16.0978C158.039 16.2084 158.011 16.319 157.984 16.4297C157.956 16.485 157.928 16.5403 157.901 16.5956C157.901 16.651 157.901 16.7063 157.901 16.7616C157.873 16.8446 157.845 16.9137 157.818 16.969C157.818 17.0244 157.804 17.0797 157.776 17.135L152.258 17.0935C152.286 17.0382 152.3 16.969 152.3 16.8861C152.327 16.8031 152.355 16.7201 152.382 16.6371C152.41 16.5818 152.424 16.5403 152.424 16.5127C152.452 16.485 152.465 16.4435 152.465 16.3882C152.465 16.3605 152.465 16.3467 152.465 16.3467C152.465 16.319 152.465 16.2914 152.465 16.2637C152.493 16.2361 152.507 16.2084 152.507 16.1807C152.784 15.185 152.963 14.3967 153.046 13.8159C153.129 13.2074 153.102 12.8201 152.963 12.6542C152.853 12.4882 152.521 12.3638 151.968 12.2808C151.414 12.1978 150.64 12.1563 149.644 12.1563C149.589 12.1563 149.534 12.1563 149.478 12.1563C149.423 12.1563 149.368 12.1563 149.312 12.1563C149.285 12.1563 149.257 12.1563 149.229 12.1563C149.202 12.1563 149.188 12.1563 149.188 12.1563C149.16 12.1563 149.133 12.1563 149.105 12.1563C149.077 12.1563 149.05 12.1563 149.022 12.1563L144.334 29.7891H138.567L144.417 7.92444Z"/>
                     <path d="M106.606 18.8775L101.42 7.92444H108.141L111.045 14.5212L117.642 7.92444H124.28L113.203 19.002L118.306 29.7891H111.585L108.639 23.4413L102.333 29.7891H95.6528L106.606 18.8775Z"/>
                 </svg>
-                <p class="text-xs/4 max-w-md mt-4 text-stone-500 font-light">Expert PHP troubleshooting, legacy code rescue, and performance tuning for businesses, agencies, and founders. Fast, reliable, and drama-free fixes for Laravel, WordPress, and custom PHP sites.</p>
+                <p class="text-xs/4 max-w-md mt-4 text-zinc-500">Expert PHP troubleshooting, legacy code rescue, and performance tuning for businesses, agencies, and founders. Fast, reliable, and drama-free fixes for Laravel, WordPress, and custom PHP sites.</p>
             </div>
             <div class="flex-1 flex flex-col items-start md:items-end">
                 <div class="flex flex-wrap gap-4 md:gap-4">
@@ -20,7 +20,7 @@
                     <a href="<?php echo url('about'); ?>" class="hover:text-blue-700">About</a>
                     <a href="#contact" @click.prevent="showContact = true" class="hover:text-blue-700">Contact</a>
                 </div>
-                <div class="text-xs/5 text-left md:text-right text-stone-500 py-4">PHPFixer is a trading name of Tripleweb Ltd registered in England and Wales (No. 474923167).<br class="hidden md:block"> All rights reserved &copy; 2025.</div>
+                <div class="text-xs/4 text-left md:text-right text-zinc-500 py-4">PHPFixer is a trading name of Tripleweb Ltd registered in England and Wales (No. 474923167).<br class="hidden md:block"> All rights reserved &copy; 2025.</div>
             </div>
         </div>
     </footer>
