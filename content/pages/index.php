@@ -117,7 +117,7 @@
 
     <!-- CTA: Second Opinion -->
     <section class="px-6 md:px-4 py-8 md:py-16 md:pb-10">
-        <div class="max-w-7xl mx-auto flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-center p-12 border border-zinc-200 rounded-xl">
+        <div class="max-w-7xl mx-auto flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-center py-12 px-6 md:p-12 border border-zinc-200 rounded-xl">
             <h3 class="text-3xl lg:text-4xl text-center md:text-left font-semibold bg-gradient-to-t from-blue-800/80 to-blue-700 bg-clip-text text-transparent leading-tight">Tired of firefighting? Let's fix it for good.</h3>
             <div>
                 <a href="#contact" @click.prevent="showContact = true" class="inline-block px-6 py-3 md:text-lg font-semibold rounded-2xl bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:scale-110 transition duration-100">
