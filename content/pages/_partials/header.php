@@ -5,8 +5,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHPFixer - Fixing Broken Websites & PHP Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Professional PHP code maintenance and bugfixing services">
+    <meta property="og:title" content="PHPFixer - Fixing Broken Websites & PHP Code">
+    <meta property="og:image" content="<?php echo asset('images/og-image.png'); ?>">
+    <meta property="og:description" content="Professional PHP code maintenance and bugfixing services">
+    <title>PHPFixer – Fixing broken websites & PHP code</title>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=archivo:300,400,500,600,700,800|inter:300,400,500,600,700,800" rel="stylesheet" />
 
