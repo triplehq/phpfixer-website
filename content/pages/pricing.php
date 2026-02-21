@@ -49,10 +49,10 @@
         <section class="mb-16">
             <div class="max-w-7xl mx-auto flex justify-between">
                 <div>
-                    <h2 class="text-3xl font-semibold mb-6 text-zinc-700 text-transparent">Our approach</h2>
+                    <h2 class="text-3xl font-semibold mb-6 text-zinc-700 text-transparent">My approach</h2>
                     <ul class="list-disc font-light pl-6 text-neutral-800 space-y-2">
-                        <li>I start with a free, no-obligation call to understand your needs</li>
-                        <li>Then review your site or application with the requirements, then provide a quote</li>
+                        <li>We start with a free, no-obligation call to understand your situation</li>
+                        <li>Then I review your site or application with the requirements and provide a quote</li>
                         <li>No work starts until you approve the plan and price</li>
                         <li>For ongoing retainers you can cancel your plan anytime</li>
                     </ul>
@@ -61,7 +61,7 @@
                         <li>I have more than 25 years of experience working on PHP and web projects</li>
                         <li>I'm trusted by agencies, founders and businesses across the UK & EU</li>
                         <li>Clear, honest communication (I hate technical BS just as much as you do!)</li>
-                        <li>I'm fast, reliable, and always focused on your business goals</li>
+                        <li>I'm fast, reliable, and your business goals are my priority</li>
                     </ul>
                 </div>
                 <div class="align-right">

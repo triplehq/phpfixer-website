@@ -4,7 +4,7 @@
     <section class="px-6 md:px-4 pb-8 py-10 relative">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
             <div class="w-full lg:w-2/3">
-                <h2 class="text-center md:text-left text-4xl title md:text-6xl font-bold mb-4 leading-[1] text-zinc-700">The PHP handyman that <span class="inline hidden md:block"></span> agencies and business owners keep on speed dial</h2>
+                <h2 class="text-center md:text-left text-4xl title md:text-6xl font-bold mb-4 leading-[1.05] text-zinc-700">The PHP handyman <span class="inline hidden md:block"></span> that businesses keep on speed dial</h2>
                 <p class="text-center md:text-left text-base font-light md:text-xl/8 md:pr-10 mt-5 text-stone-700">Legacy codebase? Random errors? Upgrades gone wrong? I can help!</p>
                 <div class="show sm:hidden w-64 justify-center mt-8 md:mt-0 mx-auto">
                     <img src="<?php echo asset('images/doctor-elephant.png'); ?>" alt="Dr ElePHPant" loading="eager">
