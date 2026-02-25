@@ -2,8 +2,15 @@
 
 use Terdelyi\Phanstatic\Models\Config;
 
-// For local development, leave empty for relative paths
-$baseUrl = getenv('DEPLOY_PRIME_URL') ?: getenv('URL') ?: '';
+$context = getenv('CONTEXT');
+
+if ($context === 'production') {
+    $baseUrl = getenv('URL') ?: '';
+} elseif ($context === 'deploy-preview' || $context === 'branch-deploy') {
+    $baseUrl = getenv('DEPLOY_PRIME_URL') ?: '';
+} else {
+    $baseUrl = getenv('LOCAL_URL') ?: 'localhost:3000';
+}
 
 return new Config(
     baseUrl: $baseUrl,
