@@ -2,9 +2,9 @@
 
     <!-- Hero Section -->
     <section class="px-6 md:px-4 py-0 mb-16">
-        <div class="max-w-7xl mx-auto text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight bg-gradient-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent">All-inclusive maintenance services</h1>
-            <p class="text-lg md:text-xl font-light text-stone-700 max-w-3xl mx-auto">Modern tools and workflows to stabilise, maintain, and extend your PHP projects. No cowboy hacks, no unnecessary rebuilds.</p>
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight bg-linear-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent">All-inclusive maintenance services</h1>
+            <p class="text-lg md:text-xl font-light text-stone-700 max-w-3xl">Modern tools and workflows to stabilise, maintain, and extend your PHP projects. No cowboy hacks, no unnecessary rebuilds.</p>
         </div>
     </section>
 
@@ -21,7 +21,7 @@
                             <p class="text-base text-stone-600 font-light leading-relaxed">Keep your PHP codebase modern, secure, and maintainable with version upgrades and best practices.</p>
                         </div>
                     </div>
-                    <ul class="space-y-2 text-stone-700 ml-16">
+                    <ul class="space-y-2 text-stone-700">
                         <li class="flex items-start"><span class="text-blue-600 font-bold mr-3">•</span><span class="font-light">Version upgrades (PHP 5.6 → 8.4)</span></li>
                         <li class="flex items-start"><span class="text-blue-600 font-bold mr-3">•</span><span class="font-light">Modern practices and coding standards</span></li>
                         <li class="flex items-start"><span class="text-blue-600 font-bold mr-3">•</span><span class="font-light">Code audits and security reviews</span></li>
@@ -37,7 +37,7 @@
                             <p class="text-base text-stone-600 font-light leading-relaxed">Upgrade and maintain Laravel, Symfony, WordPress, and other PHP frameworks safely and efficiently.</p>
                         </div>
                     </div>
-                    <ul class="space-y-2 text-stone-700 ml-16">
+                    <ul class="space-y-2 text-stone-700">
                         <li class="flex items-start"><span class="text-blue-600 font-bold mr-3">•</span><span class="font-light">Laravel and Symfony core upgrades</span></li>
                         <li class="flex items-start"><span class="text-blue-600 font-bold mr-3">•</span><span class="font-light">WordPress, CraftCMS, Statamic updates</span></li>
                         <li class="flex items-start"><span class="text-blue-600 font-bold mr-3">•</span><span class="font-light">Plugin and dependency audits</span></li>
@@ -53,7 +53,7 @@
                             <p class="text-base text-stone-600 font-light leading-relaxed">Optimise queries, implement caching, and improve overall site performance to handle more traffic efficiently.</p>
                         </div>
                     </div>
-                    <ul class="space-y-2 text-stone-700 ml-16">
+                    <ul class="space-y-2 text-stone-700">
                         <li class="flex items-start"><span class="text-blue-600 font-bold mr-3">•</span><span class="font-light">Query optimisation (MySQL, MariaDB, Postgres)</span></li>
                         <li class="flex items-start"><span class="text-blue-600 font-bold mr-3">•</span><span class="font-light">Caching layers (Redis, OPCache, Memcached, Cloudflare)</span></li>
                         <li class="flex items-start"><span class="text-blue-600 font-bold mr-3">•</span><span class="font-light">Queue workers (Redis, RabbitMQ, Amazon SQS)</span></li>
@@ -69,7 +69,7 @@
                             <p class="text-base text-stone-600 font-light leading-relaxed">Set up reliable hosting, deployment pipelines, and monitoring to catch issues before they become problems.</p>
                         </div>
                     </div>
-                    <ul class="space-y-2 text-stone-700 ml-16">
+                    <ul class="space-y-2 text-stone-700">
                         <li class="flex items-start"><span class="text-blue-600 font-bold mr-3">•</span><span class="font-light">Shared hosting, VPS, and cloud infrastructure</span></li>
                         <li class="flex items-start"><span class="text-blue-600 font-bold mr-3">•</span><span class="font-light">Containerisation (Docker, Kubernetes)</span></li>
                         <li class="flex items-start"><span class="text-blue-600 font-bold mr-3">•</span><span class="font-light">CI/CD pipelines (GitHub Actions, GitLab CI)</span></li>
