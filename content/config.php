@@ -2,11 +2,8 @@
 
 use Terdelyi\Phanstatic\Models\Config;
 
-if (getenv('ENV') === 'production') {
-    $baseUrl = getenv('URL') ?? '';
-} else {
-    $baseUrl = getenv('DEPLOY_URL') ? getenv('DEPLOY_URL') : 'http://localhost:8000';
-}
+// For local development, leave empty for relative paths
+$baseUrl = getenv('DEPLOY_PRIME_URL') ?: getenv('URL') ?: '';
 
 return new Config(
     baseUrl: $baseUrl,

@@ -1,0 +1,32 @@
+[build]
+  command = "npm run build:all"
+  publish = "dist"
+
+# Ensure environment variables are available during build
+[build.environment]
+  PHP_VERSION = "8.2"
+
+# Settings for all deploy contexts
+[context.production]
+  command = "npm run build:all"
+
+[context.deploy-preview]
+  command = "npm run build:all"
+
+[context.branch-deploy]
+  command = "npm run build:all"
+
+# Redirect /path/index.html to /path/ for clean URLs
+# This prevents duplicate content issues for SEO
+[[redirects]]
+  from = "/*/index.html"
+  to = "/:splat/"
+  status = 301
+  force = true
+
+# Redirect /index.html to / (homepage)
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
