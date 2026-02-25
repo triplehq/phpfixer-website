@@ -5,7 +5,8 @@
       "Bash(npm run build:*)",
       "Bash(php vendor/bin/phanstatic build:*)",
       "Bash(test:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(npm run build:all:*)"
     ]
   }
 }

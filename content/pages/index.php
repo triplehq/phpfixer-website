@@ -1,7 +1,7 @@
 <?php include 'content/pages/_partials/header.php'; ?>
 
     <!-- Hero Section -->
-    <section class="px-6 md:px-4 pb-8 py-10 relative">
+    <section class="px-6 md:px-4 pb-8 py-0 relative">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
             <div class="w-full lg:w-2/3">
                 <h2 class="text-center md:text-left text-4xl title md:text-6xl font-bold mb-4 leading-[1.05] text-zinc-700">The PHP handyman <span class="inline hidden md:block"></span> that businesses keep on speed dial</h2>
@@ -70,11 +70,11 @@
 
     <!-- What I work with -->
     <section class="sm:px-6 md:px-4 py-0 md:py-6">
-        <div class="w-full sm:max-w-7xl mx-auto bg-gradient-to-b from-blue-700 via-sky-700 to-sky-800 px-6 py-6 md:py-10 p-5 md:p-10 sm:rounded-xl">
+        <div class="hero-exclusive w-full sm:max-w-7xl mx-auto px-6 py-6 md:py-10 p-5 md:p-10 sm:rounded-xl">
             <h3 class="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-t from-neutral-300 to-white bg-clip-text text-transparent text-center">All-inclusive<br class="sm:hidden"> maintenance services for your PHP codebase</h3>
             <p class="mb-6 text-lg text-neutral-200">I use modern tools and workflows to stabilise, maintain, and extend existing PHP projects. No cowboy hacks, no unnecessary rebuilds. Keep what works, fix what's broken, and make it easier to move forward.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 text-base mb-2 text-neutral-100">
-                <div class="bg-white/15 border border-white/30 rounded-xl p-6 shadow-md">
+                <div class="hero-card rounded-xl p-6">
                     <h4 class="font-bold text-lg mb-2 text-white">PHP improvements</h4>
                     <ul class="space-y-1 list-disc list-inside font-light">
                         <li>Version upgrades</li>
@@ -83,7 +83,7 @@
                         <li>Version control</li>
                     </ul>
                 </div>
-                <div class="bg-white/15 border border-white/30 rounded-xl p-6 shadow-md">
+                <div class="hero-card rounded-xl p-6">
                     <h4 class="font-bold text-lg mb-2 text-white">Frameworks & CMS</h4>
                     <ul class="space-y-1 list-disc list-inside font-light">
                         <li>Upgrading Laravel and Symfony cores</li>
@@ -92,7 +92,7 @@
                         <li>Fixing your backup strategy</li>
                     </ul>
                 </div>
-                <div class="bg-white/15 border border-white/30 rounded-xl p-6 shadow-md">
+                <div class="hero-card rounded-xl p-6">
                     <h4 class="font-bold text-lg mb-2 text-white">Database & performance</h4>
                     <ul class="space-y-1 list-disc list-inside font-light">
                         <li>Query optimisation (MySQL, MariaDB, Postgres)</li>
@@ -100,7 +100,7 @@
                         <li>Queue workers (Redis, Rabbit MQ, Amazon SQS)</li>
                     </ul>
                 </div>
-                <div class="bg-white/15 border border-white/30 rounded-xl p-6 shadow-md">
+                <div class="hero-card rounded-xl p-6">
                     <h4 class="font-bold text-lg mb-2 text-white">DevOps & monitoring</h4>
                     <ul class="space-y-1 list-disc list-inside font-light">
                         <li>Shared and VPS hosting</li>
