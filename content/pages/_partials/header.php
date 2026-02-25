@@ -5,21 +5,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHPFixer - Fixing Broken Websites & PHP Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Professional PHP code maintenance and bugfixing services">
+    <meta property="og:title" content="PHPFixer - Fixing Broken Websites & PHP Code">
+    <meta property="og:image" content="<?php echo asset('images/og-image.png'); ?>">
+    <meta property="og:description" content="Professional PHP code maintenance and bugfixing services">
+    <title>PHPFixer – Fixing broken websites & PHP code</title>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=archivo:300,400,500,600,700,800|inter:300,400,500,600,700,800" rel="stylesheet" />
-
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <style>
-        h2.title { font-family: 'Archivo', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; }
-        body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; }
-        @keyframes fire {
-            0%, 100% { filter: brightness(1); }
-            50% { filter: brightness(1.4); }
-        }
-    </style>
+    <link rel="stylesheet" href="<?php echo asset('css/main.css'); ?>">
+    <script type="module" src="<?php echo asset('js/main.js'); ?>"></script>
     <script src="https://cdn.usefathom.com/script.js" data-site="JWEZPVEF" defer></script>
 </head>
 <body class="bg-white text-gray-800" x-data="{ showContact: false }">
