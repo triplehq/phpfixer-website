@@ -30,13 +30,12 @@
         <!-- Drop layer -->
         <div class="absolute inset-0 bg-zinc-100/90 backdrop-blur" @click="showContact = false"></div>
         <!-- Modal -->
-        <div x-show="showContact" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-95 translate-y-4" x-transition:enter-end="opacity-100 scale-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 scale-100 translate-y-0" x-transition:leave-end="opacity-0 scale-95 translate-y-4" class="relative bg-white rounded-xl shadow-lg max-w-xl w-full mx-2 sm:mx-0 p-4 md:p-10 z-10" x-data="{ success: false, error: false }" id="contact-modal-alpine">
+        <div x-show="showContact" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-95 translate-y-4" x-transition:enter-end="opacity-100 scale-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 scale-100 translate-y-0" x-transition:leave-end="opacity-0 scale-95 translate-y-4" class="relative bg-white rounded-xl shadow-lg max-w-xl w-full mx-2 sm:mx-0 p-4 md:p-10 z-10" x-data="contactForm()">
             <button @click="showContact = false" class="absolute top-3 right-5 text-stone-400 hover:text-stone-700 text-3xl leading-none">&times;</button>
             <h2 class="text-2xl md:text-3xl font-semibold mt-4 mb-4 leading-tight bg-gradient-to-b from-stone-800 to-stone-500 bg-clip-text text-transparent">Get your website back on track!</h2>
             <p class="mb-6 text-stone-700 font-light">Tell us what's not working – the more details you share now, the faster we can help you with a clear solution.</p>
-            <form name="contact" netlify netlify-honeypot="bot-field" class="space-y-4" id="modal-contact-form">
-                <input type="hidden" name="form-name" value="contact">
-                <input type="hidden" name="bot-field">
+            <form @submit.prevent="submit()" class="space-y-4">
+                <input type="text" x-model="bot" name="bot-field" class="hidden" tabindex="-1" autocomplete="off">
                 <template x-if="success">
                     <div class="p-3 rounded bg-green-100 text-green-800 text-center">Thank you! Your message has been sent.</div>
                 </template>
@@ -46,55 +45,31 @@
                 <div x-show="!success">
                     <div class="mb-4 text-stone-700">
                         <label class="block text-sm font-medium mb-1" for="contact-name">Your name</label>
-                        <input id="contact-name" name="name" type="text" class="w-full border border-stone-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" autocomplete="name" required>
+                        <input id="contact-name" type="text" x-model="name" class="w-full border border-stone-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" autocomplete="name" required>
                     </div>
                     <div class="mb-4 text-stone-700">
                         <label class="block text-sm font-medium mb-1" for="contact-email">Email address</label>
-                        <input id="contact-email" name="email" type="email" class="w-full border border-stone-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" autocomplete="email" required>
+                        <input id="contact-email" type="email" x-model="email" class="w-full border border-stone-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" autocomplete="email" required>
                     </div>
                     <div class="mb-4 text-stone-700">
-                        <label class="block text-sm font-medium mb-1" for="contact-email">Website (optional, but helpful)</label>
-                        <input id="contact-email" name="email" type="text" class="w-full border border-stone-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" autocomplete="website">
+                        <label class="block text-sm font-medium mb-1" for="contact-website">Website (optional, but helpful)</label>
+                        <input id="contact-website" type="text" x-model="website" class="w-full border border-stone-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" autocomplete="url">
                     </div>
                     <div class="mb-4 text-stone-700">
                         <label class="block text-sm font-medium mb-1" for="contact-message">How we can help?</label>
-                        <textarea id="contact-message" name="message" rows="4" class="w-full border border-stone-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" required></textarea>
+                        <textarea id="contact-message" x-model="message" rows="4" class="w-full border border-stone-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" required></textarea>
                         <div class="text-xs font-light text-stone-500 mt-1">Describe the issue, error message, or what you need fixed or upgraded. For longer messages, we recommend writing them elsewhere first and then copying them here.</div>
                     </div>
                     <div class="pt-2">
-                        <button type="submit" class="w-full inline-block px-6 py-3 md:text-lg font-semibold rounded-2xl bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-600 transition">
-                            Send message
+                        <button type="submit" :disabled="loading" class="w-full inline-block px-6 py-3 md:text-lg font-semibold rounded-2xl bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-600 transition disabled:opacity-60 disabled:cursor-not-allowed">
+                            <span x-show="!loading">Send message</span>
+                            <span x-show="loading">Sending…</span>
                         </button>
                     </div>
                 </div>
             </form>
         </div>
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          const form = document.getElementById("modal-contact-form");
-          const alpineRoot = document.getElementById("contact-modal-alpine");
-          if (form && alpineRoot) {
-            form.addEventListener("submit", function(event) {
-              event.preventDefault();
-              const formData = new FormData(form);
-              fetch("/", {
-                method: "POST",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams(formData).toString()
-              })
-              .then(() => {
-                if (alpineRoot.__x) alpineRoot.__x.$data.success = true;
-                form.reset();
-              })
-              .catch(error => {
-                if (alpineRoot.__x) alpineRoot.__x.$data.error = true;
-              });
-            });
-          }
-        });
-    </script>
 
 </body>
 </html>

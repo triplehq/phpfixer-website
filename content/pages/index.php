@@ -7,17 +7,16 @@
                 <h2 class="text-center md:text-left text-4xl title md:text-6xl font-bold mb-4 leading-[1.05] text-zinc-700">The handyman businesses <span class="inline hidden md:block"></span>keep on speed dial</h2>
                 <p class="text-center md:text-left text-base font-light md:text-xl/8 md:pr-10 mt-5 text-stone-700">Legacy codebase? Random errors? Upgrades gone wrong? I can help!</p>
                 <div class="show sm:hidden w-64 justify-center mt-8 md:mt-0 mx-auto">
-                    <img src="<?php echo asset('images/doctor-elephant.png'); ?>" alt="Dr ElePHPant" loading="eager">
+                    <img src="<?php echo asset('images/mechanic-elephant.png'); ?>" alt="The handyman" loading="eager">
                 </div>
                 <div class="w-full mt-12">
                     <h2 class="text-xl font-semibold mb-5 leading-[1.20] text-stone-600">I specialise in problems like</h2>
                     <div class="font-light flex flex-col md:flex-row gap-1 md:gap-16 text-stone-700">
                         <ul class="space-y-1">
-                            <li><span class="text-blue-600 font-bold mr-2">✓</span>AI-generated code</li>
+                            <li><span class="text-blue-600 font-bold mr-2">✓</span>Fixing AI-generated code</li>
                             <li><span class="text-blue-600 font-bold mr-2">✓</span>Legacy codebase</li>
                             <li><span class="text-blue-600 font-bold mr-2">✓</span>Deprecated functions</li>
                             <li><span class="text-blue-600 font-bold mr-2">✓</span>Slow or crashing sites</li>
-                            <li><span class="text-blue-600 font-bold mr-2">✓</span>500 Internal Server Errors</li>
                             <li><span class="text-blue-600 font-bold mr-2">✓</span>Memory leaks and performance bottlenecks</li>
                         </ul>
                         <ul class="space-y-1">
@@ -31,7 +30,7 @@
                 </div>
             </div>
             <div class="hidden lg:flex w-full md:w-1/3 justify-center mt-8 md:mt-0">
-                <img src="<?php echo asset('images/doctor-elephant.png'); ?>" alt="Dr ElePHPant" loading="eager">
+                <img src="<?php echo asset('images/mechanic-elephant.png'); ?>" alt="The handyman" loading="eager">
             </div>
         </div>
     </section>
