@@ -1,16 +1,26 @@
 <?php
 /** @var $page \Terdelyi\Phanstatic\Models\Page */
+$metaTitle = $metaTitle ?? 'PHPFixer – Fixing broken websites & PHP code';
+$metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bugfixing services';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Professional PHP code maintenance and bugfixing services">
-    <meta property="og:title" content="PHPFixer - Fixing Broken Websites & PHP Code">
+    <meta name="description" content="<?php echo htmlspecialchars($metaDescription); ?>">
+    <meta property="og:title" content="<?php echo htmlspecialchars($metaTitle); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo $page->url; ?>">
     <meta property="og:image" content="<?php echo asset('images/og-image.png'); ?>">
-    <meta property="og:description" content="Professional PHP code maintenance and bugfixing services">
-    <title>PHPFixer – Fixing broken websites & PHP code</title>
+    <meta property="og:description" content="<?php echo htmlspecialchars($metaDescription); ?>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo htmlspecialchars($metaTitle); ?>">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($metaDescription); ?>">
+    <meta name="twitter:image" content="<?php echo asset('images/og-image.png'); ?>">
+    <link rel="canonical" href="<?php echo $page->url; ?>">
+    <title><?php echo htmlspecialchars($metaTitle); ?></title>
+    <link rel="icon" href="<?php echo asset('images/favicon.ico'); ?>" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=archivo:300,400,500,600,700,800|inter:300,400,500,600,700,800" rel="stylesheet" />
     <link rel="stylesheet" href="<?php echo asset('css/main.css'); ?>">

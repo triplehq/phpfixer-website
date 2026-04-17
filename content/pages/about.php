@@ -1,4 +1,8 @@
-<?php include 'content/pages/_partials/header.php'; ?>
+<?php
+$metaTitle = 'About PHPFixer – 25 Years PHP Experience | PHP Freelancer UK';
+$metaDescription = 'Meet the PHP developer behind PHPFixer. 25 years of experience in PHP maintenance, legacy code rescue, and framework upgrades. Trusted by UK & EU businesses.';
+include 'content/pages/_partials/header.php';
+?>
 
     <main class="px-6 md:px-4 py-8 md:py-0 mb-16">
         <div class="max-w-7xl mx-auto w-full lg:flex gap-10 lg:gap-16">
@@ -26,7 +30,7 @@
                 <div class="rounded-xl shadow-sm bg-neutral-50 p-8 sticky top-8">
                     <div class="mb-6 flex justify-center">
                         <div class="w-32 h-32 rounded-full bg-linear-to-br from-neutral-300 to-neutral-400 flex items-center justify-center overflow-hidden shadow-lg">
-                            <img src="https://avatars.githubusercontent.com/u/623128?v=4" />
+                            <img src="<?php echo asset('images/profile.jpg'); ?>" alt="Tamas Erdelyi – Senior PHP Developer">
                         </div>
                     </div>
                     <h3 class="text-2xl md:text-3xl font-bold mb-5 text-center leading-tight bg-linear-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent">Behind PHPFixer</h3>
@@ -39,5 +43,20 @@
             </div>
         </div>
     </main>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Tamas Erdelyi",
+  "jobTitle": "Senior PHP Developer",
+  "url": "https://phpfixer.com/about/",
+  "sameAs": ["https://www.linkedin.com/in/terdelyi/"],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "PHPFixer"
+  }
+}
+</script>
 
 <?php include 'content/pages/_partials/footer.php'; ?>
