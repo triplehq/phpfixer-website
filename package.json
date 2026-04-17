@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:all": "php vendor/bin/phanstatic build && npm run build",
+    "build:all": "php vendor/bin/phanstatic build && npm run build && cp -r public/. dist/",
     "preview": "npm run build:all && php vendor/bin/phanstatic preview",
     "preview:vite": "vite preview"
   },

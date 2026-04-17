@@ -1,8 +1,12 @@
-<?php include 'content/pages/_partials/header.php'; ?>
+<?php
+$metaTitle = 'PHP Developer Pricing – Bug Fixes from £150 | PHPFixer';
+$metaDescription = 'Simple, transparent pricing for PHP bug fixes and monthly maintenance. No fix, no fee. One-off fixes from £150, monthly retainers from £750.';
+include 'content/pages/_partials/header.php';
+?>
 
     <main class="px-4 py-0">
         <div class="max-w-7xl mx-auto">
-            <h1 class="text-center md:text-left text-4xl title md:text-6xl font-bold leading-[1.10] text-zinc-700">Invest in reliability</h1>
+            <h1 class="text-center md:text-left text-4xl title md:text-5xl font-bold leading-[1.10] text-zinc-700">Maintenance plans built around your needs</h1>
             <p class="mt-10 text-xl/8 font-light text-neutral-800">Every project is different, and I don't believe in one-size-fits-all pricing. What I do believe in is <strong class="font-bold">clarity</strong>, <strong class="font-bold">value</strong> and <strong class="font-bold">fixing your problems</strong>.</p>
         </div>
 
@@ -194,5 +198,78 @@
             </div>
         </section>
     </main>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you give me an exact price before seeing my site?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not quite — I need a quick look at your site first, then I will send a fixed quote with no surprises."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast can you fix a bug?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the complexity. Some issues can be resolved in under an hour, others take longer. I will give you a realistic timeframe after the initial review. Any additional hours will be billed as £75 / hour."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with agencies or just site owners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both. I regularly help agencies, founders, and business owners with PHP issues and ongoing support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you work with code written by another developer or agency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. I regularly step into projects where the original developer is unavailable, unresponsive, or no longer involved."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer emergency support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, I do offer limited emergency availability for critical bugs and outages. These are priced accordingly and depend on current workload."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if you can't fix my bug?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If I can't help, you don't pay. I only take on work where I'm confident I can deliver."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you only work with PHP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PHP is my core specialty, but I also work with front-end issues (JavaScript, CSS, HTML) and infrastructure problems related to your PHP stack."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you need access to everything right away?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We start with a quick review and scope discussion. I only request access if we both agreed and happy to move forward. All credentials and data are treated with the utmost care and confidentiality."
+      }
+    }
+  ]
+}
+</script>
 
 <?php include 'content/pages/_partials/footer.php'; ?>

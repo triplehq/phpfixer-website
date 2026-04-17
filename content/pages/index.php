@@ -1,13 +1,17 @@
-<?php include 'content/pages/_partials/header.php'; ?>
+<?php
+$metaTitle = 'PHPFixer – PHP Bug Fixes & Maintenance for Businesses';
+$metaDescription = 'Expert PHP maintenance, bug fixes, and legacy code rescue. Fixed pricing, no-fix no-fee. Trusted by UK & EU agencies and founders.';
+include 'content/pages/_partials/header.php';
+?>
 
     <!-- Hero Section -->
     <section class="px-6 md:px-4 pb-8 py-0 relative">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
             <div class="w-full lg:w-2/3">
-                <h2 class="text-center md:text-left text-4xl title md:text-6xl font-bold mb-4 leading-[1.05] text-zinc-700">The handyman businesses <span class="inline hidden md:block"></span>keep on speed dial</h2>
+                <h1 class="text-center md:text-left text-4xl title md:text-6xl font-bold mb-4 leading-[1.05] text-zinc-700">The handyman businesses <span class="inline hidden md:block"></span>keep on speed dial</h1>
                 <p class="text-center md:text-left text-base font-light md:text-xl/8 md:pr-10 mt-5 text-stone-700">Legacy codebase? Random errors? Upgrades gone wrong? I can help!</p>
                 <div class="show sm:hidden w-64 justify-center mt-8 md:mt-0 mx-auto">
-                    <img src="<?php echo asset('images/mechanic-elephant.png'); ?>" alt="The handyman" loading="eager">
+                    <img src="<?php echo asset('images/mechanic-elephant.png'); ?>" alt="" loading="eager">
                 </div>
                 <div class="w-full mt-12">
                     <h2 class="text-xl font-semibold mb-5 leading-[1.20] text-stone-600">I specialise in problems like</h2>
@@ -30,7 +34,7 @@
                 </div>
             </div>
             <div class="hidden lg:flex w-full md:w-1/3 justify-center mt-8 md:mt-0">
-                <img src="<?php echo asset('images/mechanic-elephant.png'); ?>" alt="The handyman" loading="eager">
+                <img src="<?php echo asset('images/mechanic-elephant.png'); ?>" alt="" loading="eager">
             </div>
         </div>
     </section>
@@ -144,5 +148,23 @@
             </div>
         </div>
     </section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "PHPFixer",
+  "url": "https://phpfixer.com",
+  "description": "Expert PHP maintenance, bug fixes, and legacy code rescue for businesses, agencies, and founders.",
+  "areaServed": ["GB", "EU"],
+  "priceRange": "££",
+  "serviceType": ["PHP Bug Fixing", "PHP Maintenance", "Legacy Code Rescue", "Framework Upgrades"],
+  "provider": {
+    "@type": "Person",
+    "name": "Tamas Erdelyi",
+    "sameAs": "https://www.linkedin.com/in/terdelyi/"
+  }
+}
+</script>
 
 <?php include 'content/pages/_partials/footer.php'; ?>

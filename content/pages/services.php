@@ -1,9 +1,13 @@
-<?php include 'content/pages/_partials/header.php'; ?>
+<?php
+$metaTitle = 'PHP Maintenance Services – Upgrades, Fixes & DevOps | PHPFixer';
+$metaDescription = 'From PHP version upgrades to CMS migrations and performance tuning. Full-service PHP maintenance for agencies and business owners. No cowboy hacks.';
+include 'content/pages/_partials/header.php';
+?>
 
     <!-- Hero Section -->
     <section class="px-6 md:px-4 py-0 mb-16">
         <div class="max-w-7xl mx-auto">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight bg-linear-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent">All-inclusive maintenance services</h1>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight bg-linear-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent">All-inclusive PHP maintenance services</h1>
             <p class="text-lg md:text-xl font-light text-stone-700 max-w-3xl">Modern tools and workflows to stabilise, maintain, and extend your PHP projects. No cowboy hacks, no unnecessary rebuilds.</p>
         </div>
     </section>
@@ -17,7 +21,7 @@
                 <div class="bg-neutral-50 shadow-sm rounded-xl p-8">
                     <div class="flex items-start gap-4 mb-4">
                         <div>
-                            <h3 class="text-2xl font-bold text-stone-800 mb-2">PHP improvements</h3>
+                            <h2 class="text-2xl font-bold text-stone-800 mb-2">PHP improvements</h3>
                             <p class="text-base text-stone-600 font-light leading-relaxed">Keep your PHP codebase modern, secure, and maintainable with version upgrades and best practices.</p>
                         </div>
                     </div>
@@ -33,7 +37,7 @@
                 <div class="bg-neutral-50 shadow-sm rounded-xl p-8">
                     <div class="flex items-start gap-4 mb-4">
                         <div>
-                            <h3 class="text-2xl font-bold text-stone-800 mb-2">Frameworks & CMS</h3>
+                            <h2 class="text-2xl font-bold text-stone-800 mb-2">Frameworks & CMS</h3>
                             <p class="text-base text-stone-600 font-light leading-relaxed">Upgrade and maintain Laravel, Symfony, WordPress, and other PHP frameworks safely and efficiently.</p>
                         </div>
                     </div>
@@ -49,7 +53,7 @@
                 <div class="bg-neutral-50 shadow-sm rounded-xl p-8">
                     <div class="flex items-start gap-4 mb-4">
                         <div>
-                            <h3 class="text-2xl font-bold text-stone-800 mb-2">Database & performance</h3>
+                            <h2 class="text-2xl font-bold text-stone-800 mb-2">Database & performance</h3>
                             <p class="text-base text-stone-600 font-light leading-relaxed">Optimise queries, implement caching, and improve overall site performance to handle more traffic efficiently.</p>
                         </div>
                     </div>
@@ -65,7 +69,7 @@
                 <div class="bg-neutral-50 shadow-sm rounded-xl p-8">
                     <div class="flex items-start gap-4 mb-4">
                         <div>
-                            <h3 class="text-2xl font-bold text-stone-800 mb-2">DevOps & monitoring</h3>
+                            <h2 class="text-2xl font-bold text-stone-800 mb-2">DevOps & monitoring</h3>
                             <p class="text-base text-stone-600 font-light leading-relaxed">Set up reliable hosting, deployment pipelines, and monitoring to catch issues before they become problems.</p>
                         </div>
                     </div>
