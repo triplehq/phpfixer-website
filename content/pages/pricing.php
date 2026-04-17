@@ -78,7 +78,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div x-show="openItem === 1" x-collapse.duration.300ms class="px-5 pb-4 pr-20 text-neutral-700">
+                        <div x-show="openItem === 1" class="px-5 pb-4 pr-20 text-neutral-700">
                             Not quite — I'm good, but not "remote energy healer from daytime telly" good. I need a quick look at your site first, then I will send a fixed quote with no surprises.
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div x-show="openItem === 2" x-collapse.duration.300ms class="px-5 pb-4 pr-20 text-neutral-700">
+                        <div x-show="openItem === 2" class="px-5 pb-4 pr-20 text-neutral-700">
                             It depends on the complexity. Some issues can be resolved in under an hour, others take longer. I will give you a realistic timeframe after the initial review, but usually it has obvious clues if I cannot fix it in an hour. In that case you can decide to carry on or stop. Any additional hours will be billed as £75 / hour.
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div x-show="openItem === 3" x-collapse.duration.300ms class="px-5 pb-4 pr-20 text-neutral-700">
+                        <div x-show="openItem === 3" class="px-5 pb-4 pr-20 text-neutral-700">
                             Both. I regularly help agencies, founders, and business owners with PHP issues and ongoing support.
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div x-show="openItem === 4" x-collapse.duration.300ms class="px-5 pb-4 pr-20 text-neutral-700">
+                        <div x-show="openItem === 4" class="px-5 pb-4 pr-20 text-neutral-700">
                             Absolutely. I regularly step into projects where the original developer is unavailable, unresponsive, or no longer involved.
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div x-show="openItem === 5" x-collapse.duration.300ms class="px-5 pb-4 pr-20 text-neutral-700">
+                        <div x-show="openItem === 5" class="px-5 pb-4 pr-20 text-neutral-700">
                             Yes, I do offer limited emergency availability for critical bugs and outages. These are priced accordingly and depend on current workload. I sometimes booked a few weeks in advance, so get in touch early if possible, but I will always try to help when something breaks.
                         </div>
                     </div>
@@ -138,7 +138,7 @@
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                       </button>
-                      <div x-show="openItem === 10" x-collapse.duration.300ms class="px-5 pb-4 pr-20 text-neutral-700">
+                      <div x-show="openItem === 10" class="px-5 pb-4 pr-20 text-neutral-700">
                         Mainly, yes. But I also have people I work with regularly for specific tasks and I can bring in trusted experts if needed. But I have eyes on each project and I take full responsibility for the quality what each subcontracted work. You will always have a single point of contact and I will be the one doing the work or managing it directly.
                       </div>
                     </div>
@@ -150,7 +150,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div x-show="openItem === 6" x-collapse.duration.300ms class="px-5 pb-4 pr-20 text-neutral-700">
+                        <div x-show="openItem === 6" class="px-5 pb-4 pr-20 text-neutral-700">
                             It's simple: if I can't help, you don't pay. I only take on work where I'm confident I can deliver.
                         </div>
                     </div>
@@ -162,7 +162,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div x-show="openItem === 7" x-collapse.duration.300ms class="px-5 pb-4 pr-20 text-neutral-700">
+                        <div x-show="openItem === 7" class="px-5 pb-4 pr-20 text-neutral-700">
                             As the name suggests PHP is my core specialty, but I also work with front-end issues (JavaScript, CSS, HTML) and infrastructure problems related to your PHP stack.
                         </div>
                     </div>
@@ -174,7 +174,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div x-show="openItem === 8" x-collapse.duration.300ms class="px-5 pb-4 pr-20 text-neutral-700">
+                        <div x-show="openItem === 8" class="px-5 pb-4 pr-20 text-neutral-700">
                             Just <a href="#contact" @click.prevent="showContact = true" class="text-purple-700 underline hover:text-purple-900">contact me</a> for a free, no-pressure chat about what you need.
                         </div>
                     </div>
@@ -186,7 +186,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div x-show="openItem === 9" x-collapse.duration.300ms class="px-5 pb-4 pr-20 text-neutral-700">
+                        <div x-show="openItem === 9" class="px-5 pb-4 pr-20 text-neutral-700">
                             No. We will start with a quick review and scope discussion. I only request access if we both agreed and happy to move forward with the work. All of your credentials and data are treated with the utmost care and confidentiality, and I will only access what is necessary to complete the agreed-upon work.
                         </div>
                     </div>
