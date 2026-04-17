@@ -12,7 +12,7 @@
                 <div class="bg-neutral-100 rounded-xl p-6 shadow-sm flex flex-col">
                     <div class="text-center text-xs uppercase tracking-wider text-purple-700 font-bold mb-2">One-off Bug Check</div>
                     <div class="text-center text-3xl font-bold mb-5">from £150</div>
-                    <p class="mb-4 text-neutral-700 font-light">Get a professional diagnosis and fix for a single bug or error quickly.</p>
+                    <p class="mb-4 text-neutral-700 font-light">Get a professional diagnosis and fix for a single bug or error quickly, without being locked into ongoing work.</p>
                     <ul class="mb-4 space-y-1 text-sm text-neutral-700 flex-1">
                         <li><span class="text-blue-600 font-bold mr-2">✓</span> If I can't fix the problem, <strong>you don't pay</strong></li>
                         <li><span class="text-blue-600 font-bold mr-2">✓</span> Single, straight-forward pricing</li>
@@ -49,31 +49,31 @@
         <section class="mb-16">
             <div class="max-w-7xl mx-auto flex justify-between">
                 <div>
-                    <h2 class="text-3xl font-semibold mb-6 text-zinc-700 text-transparent">My approach</h2>
+                    <h2 class="text-3xl font-semibold mb-6 text-zinc-700 text-transparent">The PHPFixer approach</h2>
                     <ul class="list-disc font-light pl-6 text-neutral-800 space-y-2">
-                        <li>We start with a free, no-obligation call to understand your situation</li>
-                        <li>Then I review your site or application with the requirements and provide a quote</li>
-                        <li>No work starts until you approve the plan and price</li>
-                        <li>For ongoing retainers you can cancel your plan anytime</li>
+                        <li>We start with a <strong class="font-semibold">free, no-obligation call</strong> to understand your situation</li>
+                        <li>Then I review your site or application with the requirements and <strong class="font-semibold">provide a quote</strong></li>
+                      <li><strong class="font-semibold">No work starts</strong> until you approve the plan and price</li>
+                      <li>For ongoing retainers you can <strong class="font-semibold">cancel your plan anytime</strong></li>
                     </ul>
                     <h2 class="mt-16 text-3xl font-semibold mb-6 text-zinc-700">Why trust PHPFixer?</h2>
                     <ul class="list-disc font-light pl-6 text-neutral-800 space-y-2">
-                        <li>I have more than 25 years of experience working on PHP and web projects</li>
+                      <li>I have more than <strong class="font-semibold">25 years of experience</strong> working on PHP and web projects</li>
                         <li>I'm trusted by agencies, founders and businesses across the UK & EU</li>
-                        <li>Clear, honest communication (I hate technical BS just as much as you do!)</li>
-                        <li>I'm fast, reliable, and your business goals are my priority</li>
+                        <li>Clear, honest communication – I hate technical BS just as much as you do!</li>
+                      <li>I'm fast, reliable and <strong class="font-semibold">your business goals are my priority</strong></li>
                     </ul>
                 </div>
                 <div class="align-right">
-                    <img src="<?php echo asset('images/mechanic-elephant.png'); ?>" class="w-104" loading="lazy">
+                    <img src="<?php echo asset('images/doctor-elephant.png'); ?>" alt="How can I help?" class="w-104" loading="lazy">
                 </div>
             </div>
-            <div class="mt-16 max-w-7xl mx-auto">
-                <h2 class="text-3xl font-semibold mb-3 text-zinc-700">Frequently asked questions</h2>
+            <div class="mt-8 max-w-7xl mx-auto">
+                <h2 class="text-3xl font-semibold mb-8 text-zinc-500">Frequently asked questions</h2>
                 <div class="space-y-3 font-light" x-data="{ openItem: 1 }">
                     <div class="faq-item border border-neutral-200 rounded-lg">
                         <button @click="openItem !== 1 && (openItem = 1)" class="faq-button w-full px-5 py-4 text-left flex justify-between items-center transition-colors duration-200" :class="{ 'faq-active': openItem === 1 }">
-                            <span class="font-semibold text-neutral-800">Can you give me an exact price before seeing my site?</span>
+                            <span class="font-semibold text-zinc-500">Can you give me an exact price before seeing my site?</span>
                             <svg class="w-5 h-5 text-neutral-600 transition-transform duration-300 ease-out" :class="{ 'rotate-180': openItem === 1 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
@@ -85,7 +85,7 @@
 
                     <div class="faq-item border border-neutral-200 rounded-lg">
                         <button @click="openItem !== 2 && (openItem = 2)" class="faq-button w-full px-5 py-4 text-left flex justify-between items-center transition-colors duration-200" :class="{ 'faq-active': openItem === 2 }">
-                            <span class="font-semibold text-neutral-800">How fast can you fix a bug?</span>
+                            <span class="font-semibold text-zinc-500">How fast can you fix a bug?</span>
                             <svg class="w-5 h-5 text-neutral-600 transition-transform duration-300 ease-out" :class="{ 'rotate-180': openItem === 2 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
@@ -97,7 +97,7 @@
 
                     <div class="faq-item border border-neutral-200 rounded-lg">
                         <button @click="openItem !== 3 && (openItem = 3)" class="faq-button w-full px-5 py-4 text-left flex justify-between items-center transition-colors duration-200" :class="{ 'faq-active': openItem === 3 }">
-                            <span class="font-semibold text-neutral-800">Do you work with agencies or just site owners?</span>
+                            <span class="font-semibold text-zinc-500">Do you work with agencies or just site owners?</span>
                             <svg class="w-5 h-5 text-neutral-600 transition-transform duration-300 ease-out" :class="{ 'rotate-180': openItem === 3 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
@@ -109,7 +109,7 @@
 
                     <div class="faq-item border border-neutral-200 rounded-lg">
                         <button @click="openItem !== 4 && (openItem = 4)" class="faq-button w-full px-5 py-4 text-left flex justify-between items-center transition-colors duration-200" :class="{ 'faq-active': openItem === 4 }">
-                            <span class="font-semibold text-neutral-800">Can you work with code written by another developer or agency?</span>
+                            <span class="font-semibold text-zinc-500">Can you work with code written by another developer or agency?</span>
                             <svg class="w-5 h-5 text-neutral-600 transition-transform duration-300 ease-out" :class="{ 'rotate-180': openItem === 4 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
@@ -121,7 +121,7 @@
 
                     <div class="faq-item border border-neutral-200 rounded-lg">
                         <button @click="openItem !== 5 && (openItem = 5)" class="faq-button w-full px-5 py-4 text-left flex justify-between items-center transition-colors duration-200" :class="{ 'faq-active': openItem === 5 }">
-                            <span class="font-semibold text-neutral-800">Do you offer emergency support?</span>
+                            <span class="font-semibold text-zinc-500">Do you offer emergency support?</span>
                             <svg class="w-5 h-5 text-neutral-600 transition-transform duration-300 ease-out" :class="{ 'rotate-180': openItem === 5 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
@@ -133,7 +133,7 @@
 
                     <div class="faq-item border border-neutral-200 rounded-lg">
                       <button @click="openItem !== 10 && (openItem = 10)" class="faq-button w-full px-5 py-4 text-left flex justify-between items-center transition-colors duration-200" :class="{ 'faq-active': openItem === 10 }">
-                        <span class="font-semibold text-neutral-800">Wait a second, do you work alone?</span>
+                        <span class="font-semibold text-zinc-500">Wait a second, do you work alone?</span>
                         <svg class="w-5 h-5 text-neutral-600 transition-transform duration-300 ease-out" :class="{ 'rotate-180': openItem === 10 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
@@ -145,7 +145,7 @@
 
                     <div class="faq-item border border-neutral-200 rounded-lg">
                         <button @click="openItem !== 6 && (openItem = 6)" class="faq-button w-full px-5 py-4 text-left flex justify-between items-center transition-colors duration-200" :class="{ 'faq-active': openItem === 6 }">
-                            <span class="font-semibold text-neutral-800">What if you can't fix my bug?</span>
+                            <span class="font-semibold text-zinc-500">What if you can't fix my bug?</span>
                             <svg class="w-5 h-5 text-neutral-600 transition-transform duration-300 ease-out" :class="{ 'rotate-180': openItem === 6 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
@@ -157,7 +157,7 @@
 
                     <div class="faq-item border border-neutral-200 rounded-lg">
                         <button @click="openItem !== 7 && (openItem = 7)" class="faq-button w-full px-5 py-4 text-left flex justify-between items-center transition-colors duration-200" :class="{ 'faq-active': openItem === 7 }">
-                            <span class="font-semibold text-neutral-800">Do you only work with PHP?</span>
+                            <span class="font-semibold text-zinc-500">Do you only work with PHP?</span>
                             <svg class="w-5 h-5 text-neutral-600 transition-transform duration-300 ease-out" :class="{ 'rotate-180': openItem === 7 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
@@ -169,7 +169,7 @@
 
                     <div class="faq-item border border-neutral-200 rounded-lg">
                         <button @click="openItem !== 8 && (openItem = 8)" class="faq-button w-full px-5 py-4 text-left flex justify-between items-center transition-colors duration-200" :class="{ 'faq-active': openItem === 8 }">
-                            <span class="font-semibold text-neutral-800">How do I get started?</span>
+                            <span class="font-semibold text-zinc-500">How do I get started?</span>
                             <svg class="w-5 h-5 text-neutral-600 transition-transform duration-300 ease-out" :class="{ 'rotate-180': openItem === 8 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
@@ -181,7 +181,7 @@
 
                     <div class="faq-item border border-neutral-200 rounded-lg">
                         <button @click="openItem !== 9 && (openItem = 9)" class="faq-button w-full px-5 py-4 text-left flex justify-between items-center transition-colors duration-200" :class="{ 'faq-active': openItem === 9 }">
-                            <span class="font-semibold text-neutral-800">Do you need access to everything right away?</span>
+                            <span class="font-semibold text-zinc-500">Do you need access to everything right away?</span>
                             <svg class="w-5 h-5 text-neutral-600 transition-transform duration-300 ease-out" :class="{ 'rotate-180': openItem === 9 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
