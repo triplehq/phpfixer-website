@@ -6,8 +6,8 @@ include 'content/pages/_partials/header.php';
 
     <main class="px-4 py-0">
         <div class="max-w-7xl mx-auto">
-            <h1 class="text-center md:text-left text-4xl title md:text-5xl font-bold leading-[1.10] text-zinc-700">Maintenance plans built around your needs</h1>
-            <p class="mt-10 text-xl/8 font-light text-neutral-800">Every project is different, and I don't believe in one-size-fits-all pricing. What I do believe in is <strong class="font-bold">clarity</strong>, <strong class="font-bold">value</strong> and <strong class="font-bold">fixing your problems</strong>.</p>
+            <h1 class="text-center md:text-left text-4xl title md:text-5xl font-bold leading-[1.10] tracking-tight text-zinc-700">Maintenance plans built around your needs</h1>
+            <p class="mt-10 text-xl/8 font-light text-neutral-800">Every project is different, and I don't believe in one-size-fits-all pricing. What I do believe in is <strong class="font-bold">clarity</strong>, <strong class="font-bold">value</strong> and <strong class="font-bold">fixing your problems</strong>. Here are a couple of fixed packages to give you an idea, but if these don't suit your needs, you can always request a tailored quote or use them as a starting point.</p>
         </div>
 
         <div class="max-w-7xl mx-auto mt-12 mb-24">
@@ -53,14 +53,14 @@ include 'content/pages/_partials/header.php';
         <section class="mb-16">
             <div class="max-w-7xl mx-auto flex justify-between">
                 <div>
-                    <h2 class="text-3xl font-semibold mb-6 text-zinc-700 text-transparent">The PHPFixer approach</h2>
+                    <h2 class="text-3xl font-semibold mb-6 tracking-tight text-zinc-700 text-transparent">The PHPFixer approach</h2>
                     <ul class="list-disc font-light pl-6 text-neutral-800 space-y-2">
                         <li>We start with a <strong class="font-semibold">free, no-obligation call</strong> to understand your situation</li>
                         <li>Then I review your site or application with the requirements and <strong class="font-semibold">provide a quote</strong></li>
                       <li><strong class="font-semibold">No work starts</strong> until you approve the plan and price</li>
                       <li>For ongoing retainers you can <strong class="font-semibold">cancel your plan anytime</strong></li>
                     </ul>
-                    <h2 class="mt-16 text-3xl font-semibold mb-6 text-zinc-700">Why trust PHPFixer?</h2>
+                    <h2 class="mt-16 text-3xl font-semibold mb-6 tracking-tight text-zinc-700">Why trust PHPFixer?</h2>
                     <ul class="list-disc font-light pl-6 text-neutral-800 space-y-2">
                       <li>I have more than <strong class="font-semibold">25 years of experience</strong> working on PHP and web projects</li>
                         <li>I'm trusted by agencies, founders and businesses across the UK & EU</li>
@@ -73,7 +73,7 @@ include 'content/pages/_partials/header.php';
                 </div>
             </div>
             <div class="mt-8 max-w-7xl mx-auto">
-                <h2 class="text-3xl font-semibold mb-8 text-zinc-500">Frequently asked questions</h2>
+                <h2 class="text-3xl font-semibold mb-8 tracking-tight text-zinc-500">Frequently asked questions</h2>
                 <div class="space-y-3 font-light" x-data="{ openItem: 1 }">
                     <div class="faq-item border border-neutral-200 rounded-lg">
                         <button @click="openItem !== 1 && (openItem = 1)" class="faq-button w-full px-5 py-4 text-left flex justify-between items-center transition-colors duration-200" :class="{ 'faq-active': openItem === 1 }">

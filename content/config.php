@@ -9,7 +9,7 @@ if ($context === 'production') {
 } elseif ($context === 'deploy-preview' || $context === 'branch-deploy') {
     $baseUrl = getenv('DEPLOY_PRIME_URL') ?: '';
 } else {
-    $baseUrl = getenv('LOCAL_URL') ?: 'localhost:3000';
+    $baseUrl = getenv('BASE_URL') ?: 'http://localhost:8082';
 }
 
 return new Config(

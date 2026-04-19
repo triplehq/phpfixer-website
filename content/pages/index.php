@@ -9,13 +9,13 @@ include 'content/pages/_partials/header.php';
     <section class="px-6 md:px-4 pb-8 py-0 relative">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
             <div class="w-full lg:w-2/3">
-                <h1 class="text-center md:text-left text-4xl title md:text-6xl font-bold mb-4 leading-[1.05] text-zinc-700">The handyman businesses <span class="inline hidden md:block"></span>keep on speed dial</h1>
+                <h1 class="text-center md:text-left text-4xl title md:text-6xl font-bold mb-4 leading-[1.05] tracking-tight text-zinc-700">The handyman businesses <span class="inline hidden md:block"></span>keep on speed dial</h1>
                 <p class="text-center md:text-left text-base font-light md:text-xl/8 md:pr-10 mt-5 text-stone-700">Legacy codebase? Random errors? Upgrades gone wrong? I can help!</p>
                 <div class="show sm:hidden w-64 justify-center mt-8 md:mt-0 mx-auto">
                     <img src="<?php echo asset('images/mechanic-elephant.png'); ?>" alt="" fetchpriority="high">
                 </div>
                 <div class="w-full mt-12">
-                    <h2 class="text-xl font-semibold mb-5 leading-[1.20] text-stone-600">I specialise in problems like</h2>
+                    <h2 class="text-xl font-semibold mb-5 leading-[1.20] tracking-tight text-stone-600">I specialise in problems like</h2>
                     <div class="font-light flex flex-col md:flex-row gap-1 md:gap-16 text-stone-700">
                         <ul class="space-y-1">
                             <li><span class="text-blue-600 font-bold mr-2">✓</span>Fixing AI-generated code</li>
@@ -43,7 +43,7 @@ include 'content/pages/_partials/header.php';
     <!-- Process Section -->
     <section class="px-6 md:px-4 pb-12 py-8 md:py-16">
         <div class="max-w-7xl mx-auto">
-            <h3 class="text-3xl md:text-4xl text-center font-bold mb-6 bg-gradient-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent leading-tight">I can fix your code without <span class="bg-clip-text bg-gradient-to-t from-orange-600 via-red-400 to-red-600
+            <h3 class="text-3xl md:text-4xl text-center font-bold mb-6 bg-gradient-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent leading-tight tracking-tight">I can fix your code without <span class="bg-clip-text bg-gradient-to-t from-orange-600 via-red-400 to-red-600
   animate-[fire_2s_infinite] drop-shadow-[0_0_15px_rgba(255,100,0,0.8)]">burning</span> everything down</h3>
             <p class="mb-8 text-lg font-light text-neutral-700 text-center">You don't need a rewrite if something doesn't work or waste thousands for a brand-new website. What you need is a fix! This is my way:</p>
             <div class="flex flex-col lg:flex-row justify-between gap-6 lg:gap-8">
@@ -75,11 +75,11 @@ include 'content/pages/_partials/header.php';
     <!-- What I work with -->
     <section class="sm:px-6 md:px-4 py-0 md:py-6">
         <div class="hero-exclusive w-full sm:max-w-7xl mx-auto px-6 py-6 md:py-10 p-5 md:p-10 sm:rounded-xl">
-            <h3 class="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-t from-neutral-300 to-white bg-clip-text text-transparent text-center">All-inclusive<br class="sm:hidden"> maintenance services for your PHP codebase</h3>
+            <h3 class="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-t from-neutral-300 to-white bg-clip-text text-transparent tracking-tight text-center">All-inclusive<br class="sm:hidden"> maintenance services for your PHP codebase</h3>
             <p class="mb-6 text-lg text-neutral-200">I use modern tools and workflows to stabilise, maintain, and extend existing PHP projects. No cowboy hacks, no unnecessary rebuilds. Keep what works, fix what's broken, and make it easier to move forward.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 text-base mb-2 text-neutral-100">
                 <div class="hero-card rounded-xl p-6">
-                    <h4 class="font-bold text-lg mb-2 text-white">PHP improvements</h4>
+                    <h4 class="font-bold text-lg mb-2 tracking-tight text-white">PHP improvements</h4>
                     <ul class="space-y-1 list-disc list-inside font-light">
                         <li>Version upgrades</li>
                         <li>Modern practices and standards</li>
@@ -88,7 +88,7 @@ include 'content/pages/_partials/header.php';
                     </ul>
                 </div>
                 <div class="hero-card rounded-xl p-6">
-                    <h4 class="font-bold text-lg mb-2 text-white">Frameworks & CMS</h4>
+                    <h4 class="font-bold text-lg mb-2 tracking-tight text-white">Frameworks & CMS</h4>
                     <ul class="space-y-1 list-disc list-inside font-light">
                         <li>Upgrading Laravel and Symfony cores</li>
                         <li>Upgrading WordPress, CraftCMS, Statamic versions</li>
@@ -97,7 +97,7 @@ include 'content/pages/_partials/header.php';
                     </ul>
                 </div>
                 <div class="hero-card rounded-xl p-6">
-                    <h4 class="font-bold text-lg mb-2 text-white">Database & performance</h4>
+                    <h4 class="font-bold text-lg mb-2 tracking-tight text-white">Database & performance</h4>
                     <ul class="space-y-1 list-disc list-inside font-light">
                         <li>Query optimisation (MySQL, MariaDB, Postgres)</li>
                         <li>Caching (Redis, OPCache, Memcached, Cloudflare)</li>
@@ -105,7 +105,7 @@ include 'content/pages/_partials/header.php';
                     </ul>
                 </div>
                 <div class="hero-card rounded-xl p-6">
-                    <h4 class="font-bold text-lg mb-2 text-white">DevOps & monitoring</h4>
+                    <h4 class="font-bold text-lg mb-2 tracking-tight text-white">DevOps & monitoring</h4>
                     <ul class="space-y-1 list-disc list-inside font-light">
                         <li>Shared and VPS hosting</li>
                         <li>Containerisation</li>
@@ -120,7 +120,7 @@ include 'content/pages/_partials/header.php';
     <!-- CTA: Second Opinion -->
     <section class="px-6 md:px-4 py-8 md:py-16 md:pb-10">
         <div class="max-w-7xl mx-auto flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-center py-12 px-6 md:p-12 border border-zinc-200 rounded-xl">
-            <h3 class="text-3xl lg:text-4xl text-center md:text-left font-semibold bg-gradient-to-t from-blue-800/80 to-blue-700 bg-clip-text text-transparent leading-tight">Tired of firefighting? Let's fix it for good.</h3>
+            <h3 class="text-3xl lg:text-4xl text-center md:text-left font-semibold bg-gradient-to-t from-blue-800/80 to-blue-700 bg-clip-text text-transparent leading-tight tracking-tight">Tired of firefighting? Let's fix it for good.</h3>
             <div>
                 <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block px-6 py-3 md:text-lg font-semibold rounded-2xl bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:scale-110 transition duration-100">
                     Request a bug check today
@@ -132,7 +132,7 @@ include 'content/pages/_partials/header.php';
     <!-- Testimonials -->
     <section class="px-6 md:px-4 py-8 pb-20">
         <div class="max-w-7xl mx-auto">
-            <h3 class="text-3xl md:text-5xl text-center font-bold mb-6 md:mb-10 bg-gradient-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent leading-tight">What clients say about PHPFixer</h3>
+            <h3 class="text-3xl md:text-5xl text-center font-bold mb-6 md:mb-10 bg-gradient-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent leading-tight tracking-tight">What clients say about PHPFixer</h3>
             <div class="grid grid-cols-1 lg:grid-cols-3 space-y-6 lg:space-y-0 gap-8 lg:gap-10">
                 <div class="bg-neutral-100 text-base/6 text-stone-700 rounded-xl p-6 shadow-sm relative after:content-[''] after:absolute after:bottom-[-20px] after:left-8 after:w-0 after:h-0 after:border-t-[20px] after:border-t-gray-100 after:border-l-[14px] after:border-l-transparent after:border-r-[14px] after:border-r-transparent after:border-b-0 after:border-b-transparent">
                     <p class="mb-4 font-light">"I have a WordPress website where one of the pages kept showing a 500 error. I spoke with several agencies, but most of them tried to convince me that I need a new website, because I'm not using the correct plugins. I contacted PHPFixer, and within an hour he had identified the issue and gave me a quote to fix it permanently. He saved me a lot of money!"</p>
