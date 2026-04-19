@@ -42,6 +42,7 @@ Alpine.data('contactForm', () => ({
             this.error = true;
         } else {
             this.success = true;
+            fathom.trackEvent('contact form submitted');
             this.name = '';
             this.email = '';
             this.website = '';

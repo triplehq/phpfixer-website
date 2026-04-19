@@ -51,7 +51,7 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
             <a href="<?php echo url('pricing'); ?>" class="hover:text-blue-600 font-semibold<?php if ($page->is('/pricing/')) :?> font-bold<?php endif; ?>">Pricing</a>
             <a href="<?php echo url('about'); ?>" class="hover:text-blue-600  font-semibold<?php if ($page->is('/about/')) :?> font-bold<?php endif; ?>">About</a>
             <?php /*<a href="<?php echo url('blog'); ?>" class="hover:text-blue-600<?php if ($page->is('/blog/')) :?> font-semibold<?php endif; ?>">Blog</a>  */ ?>
-            <a href="#contact" @click.prevent="showContact = true" class="ml-4 px-4 py-2 font-semibold bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:scale-110 transition duration-100">
+            <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="ml-4 px-4 py-2 font-semibold bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:scale-110 transition duration-100">
                 Get a quote
             </a>
         </nav>
@@ -68,7 +68,7 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
             <a href="<?php echo url('pricing'); ?>" class="hover:text-blue-600 font-semibold">Pricing</a>
             <a href="<?php echo url('about'); ?>" class="hover:text-blue-600 font-semibold">About</a>
             <?php /*<a href="<?php echo url('blog'); ?>" class="hover:text-blue-600">Blog</a>  */ ?>
-            <a href="#contact" @click.prevent="showContact = true" class="mt-6 px-4 py-2 bg-gradient-to-b from-cyan-500 to-blue-600 font-semibold text-white rounded-xl shadow-lg hover:bg-blue-600 transition text-center">Get a quote!</a>
+            <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="mt-6 px-4 py-2 bg-gradient-to-b from-cyan-500 to-blue-600 font-semibold text-white rounded-xl shadow-lg hover:bg-blue-600 transition text-center">Get a quote!</a>
         </div>
     </div>
 </header>

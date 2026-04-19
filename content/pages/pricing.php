@@ -22,7 +22,7 @@ include 'content/pages/_partials/header.php';
                         <li><span class="text-blue-600 font-bold mr-2">✓</span> Single, straight-forward pricing</li>
                         <li><span class="text-blue-600 font-bold mr-2">✓</span> Custom quote if it takes longer</li>
                     </ul>
-                    <a href="#contact" @click.prevent="showContact = true" class="inline-block mt-2 px-5 py-3 bg-blue-600 text-white font-semibold text-center rounded-xl hover:bg-blue-700 transition shadow-md">Request a bug check</a>
+                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block mt-2 px-5 py-3 bg-blue-600 text-white font-semibold text-center rounded-xl hover:bg-blue-700 transition shadow-md">Request a bug check</a>
                 </div>
                 <div class="bg-neutral-100 rounded-xl p-6 shadow-sm flex flex-col">
                     <div class="text-center text-xs uppercase tracking-wider text-zinc-700 font-bold mb-2">Monthly Maintenance Retainer</div>
@@ -33,7 +33,7 @@ include 'content/pages/_partials/header.php';
                         <li><span class="text-blue-600 font-bold mr-2">✓</span> Regular updates & monitoring</li>
                         <li><span class="text-blue-600 font-bold mr-2">✓</span> Cancel anytime</li>
                     </ul>
-                    <a href="#contact" @click.prevent="showContact = true" class="inline-block mt-2 px-5 py-3 bg-zinc-700 text-white font-semibold text-center rounded-xl hover:bg-zinc-800 transition shadow-md">Enquire about retainer</a>
+                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block mt-2 px-5 py-3 bg-zinc-700 text-white font-semibold text-center rounded-xl hover:bg-zinc-800 transition shadow-md">Enquire about retainer</a>
                 </div>
                 <div class="bg-neutral-100 rounded-xl p-6 shadow-sm flex flex-col">
                     <div class="text-center text-xs uppercase tracking-wider text-green-700 font-bold mb-2">Custom Project</div>
@@ -44,7 +44,7 @@ include 'content/pages/_partials/header.php';
                         <li><span class="text-blue-600 font-bold mr-2">✓</span> Scoped to your actual needs</li>
                         <li><span class="text-blue-600 font-bold mr-2">✓</span> Tailored pricing</li>
                     </ul>
-                    <a href="#contact" @click.prevent="showContact = true" class="inline-block mt-2 px-5 py-3 bg-green-600 text-white font-semibold text-center rounded-xl hover:bg-green-700 transition shadow-md">Book a call</a>
+                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block mt-2 px-5 py-3 bg-green-600 text-white font-semibold text-center rounded-xl hover:bg-green-700 transition shadow-md">Book a call</a>
                 </div>
             </div>
         </div>
@@ -179,7 +179,7 @@ include 'content/pages/_partials/header.php';
                             </svg>
                         </button>
                         <div x-show="openItem === 8" class="px-5 pb-4 pr-20 text-neutral-700">
-                            Just <a href="#contact" @click.prevent="showContact = true" class="text-purple-700 underline hover:text-purple-900">contact me</a> for a free, no-pressure chat about what you need.
+                            Just <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="text-purple-700 underline hover:text-purple-900">contact me</a> for a free, no-pressure chat about what you need.
                         </div>
                     </div>
 
