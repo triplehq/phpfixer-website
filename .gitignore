@@ -10,3 +10,4 @@ dist
 .env
 .DS_Store
 .idea
+settings.local.json

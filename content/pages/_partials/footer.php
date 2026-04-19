@@ -18,7 +18,7 @@
                     <a href="<?php echo url('services'); ?>" class="hover:text-blue-700">Services</a>
                     <a href="<?php echo url('pricing'); ?>" class="hover:text-blue-700">Pricing</a>
                     <a href="<?php echo url('about'); ?>" class="hover:text-blue-700">About</a>
-                    <a href="#contact" @click.prevent="showContact = true" class="hover:text-blue-700">Contact</a>
+                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="hover:text-blue-700">Contact</a>
                 </div>
                 <div class="text-sm/5 text-left md:text-right text-zinc-500 py-6">PHPFixer is a trading name of Tripleweb Ltd registered in England and Wales (No. 474923167).<br class="hidden md:block"> All rights reserved &copy; 2025.</div>
             </div>
@@ -26,13 +26,13 @@
     </footer>
 
     <!-- Contact Modal -->
-    <div x-show="showContact" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 flex items-center justify-center">
+    <div x-cloak x-show="showContact" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 flex items-center justify-center">
         <!-- Drop layer -->
         <div class="absolute inset-0 bg-zinc-100/90 backdrop-blur" @click="showContact = false"></div>
         <!-- Modal -->
         <div x-show="showContact" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-95 translate-y-4" x-transition:enter-end="opacity-100 scale-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 scale-100 translate-y-0" x-transition:leave-end="opacity-0 scale-95 translate-y-4" class="relative bg-white rounded-xl shadow-lg max-w-xl w-full mx-2 sm:mx-0 p-4 md:p-10 z-10" x-data="contactForm()">
             <button @click="showContact = false" class="absolute top-3 right-5 text-stone-400 hover:text-stone-700 text-3xl leading-none">&times;</button>
-            <h2 class="text-2xl md:text-3xl font-semibold mt-4 mb-4 leading-tight bg-gradient-to-b from-stone-800 to-stone-500 bg-clip-text text-transparent">Get your website back on track!</h2>
+            <h2 class="text-2xl md:text-3xl font-semibold mt-4 mb-4 leading-tight tracking-tight bg-gradient-to-b from-stone-800 to-stone-500 bg-clip-text text-transparent">Get your website back on track!</h2>
             <p class="mb-6 text-stone-700 font-light">Tell us what's not working – the more details you share now, the faster we can help you with a clear solution.</p>
             <form @submit.prevent="submit()" class="space-y-4">
                 <input type="text" x-model="bot" name="bot-field" class="hidden" tabindex="-1" autocomplete="off">
