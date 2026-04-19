@@ -21,6 +21,9 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
     <link rel="canonical" href="<?php echo $page->url; ?>">
     <title><?php echo htmlspecialchars($metaTitle); ?></title>
     <link rel="icon" href="<?php echo asset('images/favicon.ico'); ?>" type="image/x-icon">
+    <?php if (!empty($preloadImage)): ?>
+    <link rel="preload" as="image" href="<?php echo $preloadImage; ?>">
+    <?php endif; ?>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=archivo:300,400,500,600,700,800|inter:300,400,500,600,700,800" rel="stylesheet" />
     <link rel="stylesheet" href="<?php echo asset('css/main.css'); ?>">

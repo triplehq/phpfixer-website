@@ -1,6 +1,7 @@
 <?php
 $metaTitle = 'PHPFixer – PHP Bug Fixes & Maintenance for Businesses';
 $metaDescription = 'Expert PHP maintenance, bug fixes, and legacy code rescue. Fixed pricing, no-fix no-fee. Trusted by UK & EU agencies and founders.';
+$preloadImage = asset('images/mechanic-elephant.png');
 include 'content/pages/_partials/header.php';
 ?>
 
@@ -11,7 +12,7 @@ include 'content/pages/_partials/header.php';
                 <h1 class="text-center md:text-left text-4xl title md:text-6xl font-bold mb-4 leading-[1.05] text-zinc-700">The handyman businesses <span class="inline hidden md:block"></span>keep on speed dial</h1>
                 <p class="text-center md:text-left text-base font-light md:text-xl/8 md:pr-10 mt-5 text-stone-700">Legacy codebase? Random errors? Upgrades gone wrong? I can help!</p>
                 <div class="show sm:hidden w-64 justify-center mt-8 md:mt-0 mx-auto">
-                    <img src="<?php echo asset('images/mechanic-elephant.png'); ?>" alt="" loading="eager">
+                    <img src="<?php echo asset('images/mechanic-elephant.png'); ?>" alt="" fetchpriority="high">
                 </div>
                 <div class="w-full mt-12">
                     <h2 class="text-xl font-semibold mb-5 leading-[1.20] text-stone-600">I specialise in problems like</h2>
@@ -34,7 +35,7 @@ include 'content/pages/_partials/header.php';
                 </div>
             </div>
             <div class="hidden lg:flex w-full md:w-1/3 justify-center mt-8 md:mt-0">
-                <img src="<?php echo asset('images/mechanic-elephant.png'); ?>" alt="" loading="eager">
+                <img src="<?php echo asset('images/mechanic-elephant.png'); ?>" alt="" fetchpriority="high">
             </div>
         </div>
     </section>
