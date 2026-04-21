@@ -93,5 +93,5 @@ Sometimes PHP is fine, but the web server sitting in front of it is the problem 
 <p>Some bugs hide well — a particular database query, a specific request path, a race condition that only fires under load. At that point you need a developer.</p>
 <p>If you've followed these steps and still can't track down the issue — or you'd rather not spend your afternoon debugging someone else's code — this is exactly the kind of thing PHPFixer handles.</p>
 <p>I diagnose PHP emergencies with a clear scope and fixed pricing. Contact me today and tell me about your problem!</p>
-<a href="/pricing" class="blog-cta-button">Request a free bug check →</a>
+<a href="/pricing" class="blog-cta-button" onclick="fathom.trackEvent('blog cta clicked')">Request a free bug check →</a>
 </div>

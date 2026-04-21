@@ -65,6 +65,7 @@ Go through each item and report pass, fail, or not applicable.
 ### Internal links
 - [ ] At least one internal link from an existing page to this post
 - [ ] CTA link in the post points to `/pricing` or a relevant service page
+- [ ] CTA button includes Fathom event: `onclick="fathom.trackEvent('blog cta clicked')"`
 
 ### Build
 - [ ] `npm run build:all` runs without errors
