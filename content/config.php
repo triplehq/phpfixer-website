@@ -1,6 +1,7 @@
 <?php
 
 use Terdelyi\Phanstatic\Models\Config;
+use Terdelyi\Phanstatic\Models\CollectionConfig;
 
 $context = getenv('CONTEXT');
 
@@ -14,5 +15,12 @@ if ($context === 'production') {
 
 return new Config(
     baseUrl: $baseUrl,
-    title:'PHPFixer'
+    title: 'PHPFixer',
+    collections: [
+        'blog' => new CollectionConfig(
+            title: 'Blog',
+            slug: 'blog',
+            pageSize: 10,
+        )
+    ]
 );
