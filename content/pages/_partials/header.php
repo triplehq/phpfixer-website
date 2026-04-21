@@ -10,7 +10,7 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<?php echo htmlspecialchars($metaDescription); ?>">
     <meta property="og:title" content="<?php echo htmlspecialchars($metaTitle); ?>">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="<?php echo $ogType ?? 'website'; ?>">
     <meta property="og:url" content="<?php echo $page->url; ?>">
     <meta property="og:image" content="<?php echo asset('images/og-image.png'); ?>">
     <meta property="og:description" content="<?php echo htmlspecialchars($metaDescription); ?>">
@@ -53,7 +53,7 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
             <a href="<?php echo url('services'); ?>" class="hover:text-blue-600  font-semibold<?php if ($page->is('/services/')) :?> font-bold<?php endif; ?>">Services</a>
             <a href="<?php echo url('pricing'); ?>" class="hover:text-blue-600 font-semibold<?php if ($page->is('/pricing/')) :?> font-bold<?php endif; ?>">Pricing</a>
             <a href="<?php echo url('about'); ?>" class="hover:text-blue-600  font-semibold<?php if ($page->is('/about/')) :?> font-bold<?php endif; ?>">About</a>
-            <?php /*<a href="<?php echo url('blog'); ?>" class="hover:text-blue-600<?php if ($page->is('/blog/')) :?> font-semibold<?php endif; ?>">Blog</a>  */ ?>
+            <a href="<?php echo url('blog'); ?>" class="hover:text-blue-600 font-semibold<?php if ($page->is('/blog/')) :?> font-bold<?php endif; ?>">Blog</a>
             <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="ml-4 px-4 py-2 font-semibold bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:scale-110 transition duration-100">
                 Get a quote
             </a>
@@ -70,7 +70,7 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
             <a href="<?php echo url('services'); ?>" class="hover:text-blue-600 font-semibold">Services</a>
             <a href="<?php echo url('pricing'); ?>" class="hover:text-blue-600 font-semibold">Pricing</a>
             <a href="<?php echo url('about'); ?>" class="hover:text-blue-600 font-semibold">About</a>
-            <?php /*<a href="<?php echo url('blog'); ?>" class="hover:text-blue-600">Blog</a>  */ ?>
+            <a href="<?php echo url('blog'); ?>" class="hover:text-blue-600 font-semibold">Blog</a>
             <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="mt-6 px-4 py-2 bg-gradient-to-b from-cyan-500 to-blue-600 font-semibold text-white rounded-xl shadow-lg hover:bg-blue-600 transition text-center">Get a quote!</a>
         </div>
     </div>

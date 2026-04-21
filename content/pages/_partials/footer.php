@@ -18,6 +18,7 @@
                     <a href="<?php echo url('services'); ?>" class="hover:text-blue-700">Services</a>
                     <a href="<?php echo url('pricing'); ?>" class="hover:text-blue-700">Pricing</a>
                     <a href="<?php echo url('about'); ?>" class="hover:text-blue-700">About</a>
+                    <a href="<?php echo url('blog'); ?>" class="hover:text-blue-700">Blog</a>
                     <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="hover:text-blue-700">Contact</a>
                 </div>
                 <div class="text-sm/5 text-left md:text-right text-zinc-500 py-6">PHPFixer is a trading name of Tripleweb Ltd registered in England and Wales (No. 474923167).<br class="hidden md:block"> All rights reserved &copy; 2025.</div>

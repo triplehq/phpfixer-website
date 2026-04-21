@@ -21,7 +21,7 @@ include 'content/pages/_partials/header.php';
                             <li><span class="text-blue-600 font-bold mr-2">✓</span>Fixing AI-generated code</li>
                             <li><span class="text-blue-600 font-bold mr-2">✓</span>Legacy codebase</li>
                             <li><span class="text-blue-600 font-bold mr-2">✓</span>Deprecated functions</li>
-                            <li><span class="text-blue-600 font-bold mr-2">✓</span>Slow or crashing sites</li>
+                            <li><span class="text-blue-600 font-bold mr-2">✓</span><a href="<?php echo url('blog/emergency-php-checklist'); ?>" class="underline hover:text-blue-600">Slow or crashing sites</a></li>
                             <li><span class="text-blue-600 font-bold mr-2">✓</span>Memory leaks and performance bottlenecks</li>
                         </ul>
                         <ul class="space-y-1">
