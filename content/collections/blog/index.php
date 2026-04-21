@@ -7,7 +7,7 @@ include 'content/pages/_partials/header.php';
     <section class="px-6 md:px-4 py-2">
         <div class="max-w-3xl mx-auto">
             <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight tracking-tight text-zinc-700">Blog</h1>
-            <p class="text-lg font-light text-stone-600 mb-12">Practical guides on PHP bug fixes, legacy code, and upgrades — written by a specialist who fixes these things every day.</p>
+            <p class="text-lg font-light text-stone-600 mb-12">Practical guides on PHP bug fixes, legacy code and upgrades.</p>
 
             <div class="flex flex-col divide-y divide-zinc-200">
                 <?php foreach ($collection->items() as $item) : ?>
