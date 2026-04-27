@@ -12,12 +12,12 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
     <meta property="og:title" content="<?php echo htmlspecialchars($metaTitle); ?>">
     <meta property="og:type" content="<?php echo $ogType ?? 'website'; ?>">
     <meta property="og:url" content="<?php echo $page->url; ?>">
-    <meta property="og:image" content="<?php echo asset('images/og-image.png'); ?>">
+    <meta property="og:image" content="<?php echo $ogImage ?? asset('images/og-image.png'); ?>">
     <meta property="og:description" content="<?php echo htmlspecialchars($metaDescription); ?>">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?php echo htmlspecialchars($metaTitle); ?>">
     <meta name="twitter:description" content="<?php echo htmlspecialchars($metaDescription); ?>">
-    <meta name="twitter:image" content="<?php echo asset('images/og-image.png'); ?>">
+    <meta name="twitter:image" content="<?php echo $ogImage ?? asset('images/og-image.png'); ?>">
     <link rel="canonical" href="<?php echo $page->url; ?>">
     <title><?php echo htmlspecialchars($metaTitle); ?></title>
     <link rel="icon" href="<?php echo asset('images/favicon.ico'); ?>" type="image/x-icon">

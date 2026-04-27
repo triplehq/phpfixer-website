@@ -2,7 +2,8 @@
 title: "What to do when your PHP site goes down (7-step checklist)"
 description: "Your PHP site just went down. Follow this 7-step emergency checklist to diagnose the problem fast without making things worse."
 date: "2026-04-21"
-tags: ["PHP", "Emergency", "Debugging"]
+tags: ["Emergency", "Debugging"]
+image: "images/blog/emergency-php-checklist.jpg"
 ---
 
 Imagine a situation where a page that was working fine an hour ago is now showing a blank screen, a 500 error, or something even less helpful, and you don't know where to start. It can prevent your customers from ordering, submitting a form, or doing whatever they came to your site for.
@@ -91,7 +92,7 @@ Sometimes PHP is fine, but the web server sitting in front of it is the problem 
 <div class="blog-cta">
 <p class="blog-cta-heading">Still can't pinpoint the problem?</p>
 <p>Some bugs hide well — a particular database query, a specific request path, a race condition that only fires under load. At that point you need a developer.</p>
-<p>If you've followed these steps and still can't track down the issue — or you'd rather not spend your afternoon debugging someone else's code — this is exactly the kind of thing PHPFixer handles.</p>
+<p>If you've followed these steps and still can't track down the issue — or you'd rather not spend your afternoon debugging someone else's code — <a href="/services">this is exactly the kind of thing PHPFixer handles</a>.</p>
 <p>I diagnose PHP emergencies with a clear scope and fixed pricing. Contact me today and tell me about your problem!</p>
-<a href="/pricing" class="blog-cta-button" onclick="fathom.trackEvent('blog cta clicked')">Request a free bug check →</a>
+<a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('blog cta clicked')" class="blog-cta-button">Request a free bug check →</a>
 </div>

@@ -2,6 +2,7 @@
 $metaTitle = $page->title . ' | PHPFixer';
 $metaDescription = $page->description ?? '';
 $ogType = 'article';
+$ogImage = !empty($page->meta['image']) ? asset($page->meta['image']) : null;
 include 'content/pages/_partials/header.php';
 ?>
 
@@ -14,8 +15,16 @@ include 'content/pages/_partials/header.php';
                         <span class="text-xs font-medium px-2 py-1 bg-zinc-100 text-zinc-600 rounded"><?php echo $tag; ?></span>
                     <?php endforeach; ?>
                 </div>
-                <h1 class="text-3xl md:text-4xl font-bold leading-tight tracking-tight text-zinc-700"><?php echo $page->title; ?></h1>
+                <h1 class="text-3xl md:text-5xl font-bold leading-tight tracking-tight text-zinc-700"><?php echo $page->title; ?></h1>
             </header>
+
+            <?php if (!empty($page->meta['image'])) : ?>
+                <img
+                    src="<?php echo asset($page->meta['image']); ?>"
+                    alt="<?php echo htmlspecialchars($page->title); ?>"
+                    class="w-full aspect-video object-cover rounded-2xl mb-10"
+                >
+            <?php endif; ?>
 
             <div class="blog-content">
                 <?php echo $page->content; ?>
