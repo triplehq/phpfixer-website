@@ -4,7 +4,7 @@ $metaDescription = 'Simple, transparent pricing for PHP bug fixes and monthly ma
 include 'content/pages/_partials/header.php';
 ?>
 
-    <main class="px-4 py-0">
+    <main class="px-4 py-0" x-data x-init="$store.currency.init()">
         <div class="max-w-7xl mx-auto">
             <h1 class="text-center md:text-left text-4xl title md:text-5xl font-bold leading-[1.10] tracking-tight text-zinc-700">Maintenance plans built around your needs</h1>
             <p class="mt-10 text-xl/8 font-light text-neutral-800">Every project is different, and I don't believe in one-size-fits-all pricing. What I do believe in is <strong class="font-bold">clarity</strong>, <strong class="font-bold">value</strong> and <strong class="font-bold">fixing your problems</strong>. Here are a couple of fixed packages to give you an idea, but if these don't suit your needs, you can always request a tailored quote or use them as a starting point.</p>
@@ -15,7 +15,7 @@ include 'content/pages/_partials/header.php';
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div class="bg-neutral-100 rounded-xl p-6 shadow-sm flex flex-col">
                     <div class="text-center text-xs uppercase tracking-wider text-purple-700 font-bold mb-2">One-off Bug Check</div>
-                    <div class="text-center text-3xl font-bold mb-5">from £150</div>
+                    <div class="text-center text-3xl font-bold mb-5">from <span x-text="$store.currency.symbol + $store.currency.bugCheck">$200</span></div>
                     <p class="mb-4 text-neutral-700 font-light">Get a professional diagnosis and fix for a single bug or error quickly, without being locked into ongoing work.</p>
                     <ul class="mb-4 space-y-1 text-sm text-neutral-700 flex-1">
                         <li><span class="text-blue-600 font-bold mr-2">✓</span> If I can't fix the problem, <strong>you don't pay</strong></li>
@@ -26,7 +26,7 @@ include 'content/pages/_partials/header.php';
                 </div>
                 <div class="bg-neutral-100 rounded-xl p-6 shadow-sm flex flex-col">
                     <div class="text-center text-xs uppercase tracking-wider text-zinc-700 font-bold mb-2">Monthly Maintenance Retainer</div>
-                    <div class="text-center text-3xl font-bold mb-5">from £750 <span class="text-base font-normal">/ month</div>
+                    <div class="text-center text-3xl font-bold mb-5">from <span x-text="$store.currency.symbol + $store.currency.retainer">$1000</span> <span class="text-base font-normal">/ month</span></div>
                     <p class="mb-4 text-neutral-700 font-light">Ongoing updates, fixes, and expert support for your PHP-based site. Ideal for agencies and businesses who want peace of mind.</p>
                     <ul class="mb-4 space-y-1 text-sm text-neutral-700 flex-1">
                         <li><span class="text-blue-600 font-bold mr-2">✓</span> Priority support</li>
