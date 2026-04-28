@@ -1,5 +1,5 @@
-    <footer class="max-w-7xl mx-auto py-4 md:pt-8 md:pb-4 px-6 lg:px-0 lg:pb-12 md:px-4">
-        <div class="flex flex-col md:flex-row md:justify-between gap-8 text-stone-700 pb-8 md:pb-12">
+    <footer class="max-w-7xl mx-auto py-4 md:pt-8 md:pb-4 px-6 lg:px-0 lg:pb-4 md:px-4">
+        <div class="flex flex-col md:flex-row md:justify-between gap-8 text-stone-700 pb-8">
             <!-- Brand -->
             <div class="md:max-w-xs">
                 <svg viewBox="0 0 159 38" xmlns="http://www.w3.org/2000/svg" class="h-6 fill-stone-700">
@@ -18,38 +18,38 @@
             <!-- Nav columns -->
             <div class="flex gap-0">
 
-            <!-- Services -->
-            <div class="w-36">
-                <h3 class="text-sm font-bold text-stone-800 mb-2">Services</h3>
-                <ul class="space-y-1 text-sm text-zinc-500">
-                    <li><a href="<?php echo url('services'); ?>" class="hover:text-blue-700">Services</a></li>
-                    <li><a href="<?php echo url('pricing'); ?>" class="hover:text-blue-700">Pricing</a></li>
-                </ul>
-            </div>
+              <!-- Services -->
+              <div class="w-full sm:w-1/3 md:w-36">
+                  <h3 class="text-sm font-bold text-stone-800 mb-2">Services</h3>
+                  <ul class="space-y-1 text-sm text-zinc-500">
+                      <li><a href="<?php echo url('services'); ?>" class="hover:text-blue-700">Services</a></li>
+                      <li><a href="<?php echo url('pricing'); ?>" class="hover:text-blue-700">Pricing</a></li>
+                  </ul>
+              </div>
 
-            <!-- Company -->
-            <div class="w-36">
-                <h3 class="text-sm font-bold text-stone-800 mb-2">Company</h3>
-                <ul class="space-y-1 text-sm text-zinc-500">
-                    <li><a href="<?php echo url('about'); ?>" class="hover:text-blue-700">About</a></li>
-                    <li><a href="<?php echo url('blog'); ?>" class="hover:text-blue-700">Blog</a></li>
-                    <li><a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="hover:text-blue-700">Contact</a></li>
-                </ul>
-            </div>
+              <!-- Company -->
+              <div class="w-full sm:w-1/3 md:w-36">
+                  <h3 class="text-sm font-bold text-stone-800 mb-2">Company</h3>
+                  <ul class="space-y-1 text-sm text-zinc-500">
+                      <li><a href="<?php echo url('about'); ?>" class="hover:text-blue-700">About</a></li>
+                      <li><a href="<?php echo url('blog'); ?>" class="hover:text-blue-700">Blog</a></li>
+                      <li><a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="hover:text-blue-700">Contact</a></li>
+                  </ul>
+              </div>
 
-            <!-- Legal -->
-            <div class="w-36">
-                <h3 class="text-sm font-bold text-stone-800 mb-2">Legal</h3>
-                <ul class="space-y-1 text-sm text-zinc-500">
-                    <li><a href="<?php echo url('privacy-policy'); ?>" class="hover:text-blue-700">Privacy Policy</a></li>
-                    <li><a href="<?php echo url('terms-of-service'); ?>" class="hover:text-blue-700">Terms of Service</a></li>
-                </ul>
-            </div>
+              <!-- Legal -->
+              <div class="w-full sm:w-1/3 md:w-36">
+                  <h3 class="text-sm font-bold text-stone-800 mb-2">Legal</h3>
+                  <ul class="space-y-1 text-sm text-zinc-500">
+                      <li><a href="<?php echo url('privacy-policy'); ?>" class="hover:text-blue-700">Privacy Policy</a></li>
+                      <li><a href="<?php echo url('terms-of-service'); ?>" class="hover:text-blue-700">Terms of Service</a></li>
+                  </ul>
+              </div>
 
             </div><!-- end nav columns -->
         </div>
 
-        <div class="border-t border-stone-200 pt-6 pb-4 md:pb-8 text-sm text-zinc-500 text-center">
+        <div class="border-t border-stone-100 pt-6 pb-4 text-sm text-zinc-500 text-center">
             PHPFixer is a trading name of Tripleweb Ltd registered in England and Wales (No. 474923167). All rights reserved &copy; <?php echo date('Y') ?>.
         </div>
     </footer>
