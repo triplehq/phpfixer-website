@@ -4,14 +4,6 @@ import './style.css';
 // Import Alpine.js
 import Alpine from 'alpinejs';
 
-// Import Supabase
-import { createClient } from '@supabase/supabase-js';
-
-const supabase = createClient(
-    import.meta.env.VITE_SUPABASE_URL,
-    import.meta.env.VITE_SUPABASE_ANON_KEY
-);
-
 // Contact form component
 Alpine.data('contactForm', () => ({
     name: '',
@@ -31,26 +23,34 @@ Alpine.data('contactForm', () => ({
 
         const currency = Alpine.store('currency');
 
-        const { error } = await supabase
-            .from('enquiries')
-            .insert({
+        try {
+            const body = new URLSearchParams({
+                'form-name': 'contact',
+                'bot-field': this.bot,
                 name: this.name,
                 email: this.email,
-                website: this.website || null,
+                website: this.website || '',
                 message: this.message,
                 currency: currency.symbol + currency.bugCheck + ' / ' + currency.symbol + currency.retainer,
                 timezone: currency.timezone,
             });
 
-        if (error) {
-            this.error = true;
-        } else {
+            const response = await fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: body.toString(),
+            });
+
+            if (!response.ok) throw new Error('Network response was not ok');
+
             this.success = true;
             fathom.trackEvent('contact form submitted');
             this.name = '';
             this.email = '';
             this.website = '';
             this.message = '';
+        } catch {
+            this.error = true;
         }
 
         this.loading = false;
