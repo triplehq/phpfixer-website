@@ -54,6 +54,17 @@
         </div>
     </footer>
 
+    <!-- Hidden form for Netlify bot detection (not shown to users) -->
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+        <input type="text" name="bot-field">
+        <input type="text" name="name">
+        <input type="email" name="email">
+        <input type="text" name="website">
+        <textarea name="message"></textarea>
+        <input type="text" name="currency">
+        <input type="text" name="timezone">
+    </form>
+
     <!-- Contact Modal -->
     <div x-cloak x-show="showContact" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 flex items-center justify-center">
         <!-- Drop layer -->
@@ -64,6 +75,7 @@
             <h2 class="text-2xl md:text-3xl font-semibold mt-4 mb-4 leading-tight tracking-tight bg-gradient-to-b from-stone-800 to-stone-500 bg-clip-text text-transparent">Get your website back on track!</h2>
             <p class="mb-6 text-stone-700 font-light">Tell us what's not working – the more details you share now, the faster we can help you with a clear solution.</p>
             <form @submit.prevent="submit()" class="space-y-4">
+                <input type="hidden" name="form-name" value="contact">
                 <input type="text" x-model="bot" name="bot-field" class="hidden" tabindex="-1" autocomplete="off">
                 <template x-if="success">
                     <div class="p-3 rounded bg-green-100 text-green-800 text-center">Thank you! Your message has been sent.</div>
