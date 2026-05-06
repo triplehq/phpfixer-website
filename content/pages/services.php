@@ -7,7 +7,7 @@ include 'content/pages/_partials/header.php';
     <!-- Hero Section -->
     <section class="px-6 md:px-4 py-0 mb-10">
         <div class="max-w-7xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight tracking-tight bg-linear-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent">All-inclusive PHP maintenance services</h1>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight tracking-tight bg-linear-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent">All-inclusive PHP maintenance services for your business</h1>
             <p class="text-lg md:text-xl font-light text-neutral-700">PHP maintenance done properly. Upgrades, fixes, and performance improvements — no shortcuts, no cowboy hacks.</p>
         </div>
     </section>
@@ -15,7 +15,7 @@ include 'content/pages/_partials/header.php';
     <!-- Services Grid -->
     <section class="px-6 md:px-4 pb-12 md:pb-16">
         <div class="max-w-7xl mx-auto">
-            <div class="bg-neutral-50 shadow-sm rounded-t-xl border border-b-0 border-neutral-200 overflow-hidden">
+            <div class="bg-neutral-50 rounded-t-xl overflow-hidden">
                 <div class="grid grid-cols-1 lg:grid-cols-2">
 
                     <!-- Box 1: Bugs & crashes — tall left, spans 2 rows -->
@@ -123,7 +123,7 @@ include 'content/pages/_partials/header.php';
 
                 <!-- CTA cell — spans full width -->
                 <div class="bg-blue-50 col-span-1 lg:col-span-2 flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-center px-10 py-8">
-                    <h3 class="text-3xl lg:text-4xl text-center md:text-left font-semibold bg-linear-to-t from-blue-800/80 to-blue-700 bg-clip-text text-transparent leading-tight tracking-tight">Let's get your vibe-coded app production-ready</h3>
+                    <h3 class="text-3xl lg:text-4xl text-center md:text-left font-semibold bg-linear-to-t from-blue-800/80 to-blue-700 bg-clip-text text-transparent leading-tight tracking-tight">Let's get your vibe-coded PHP app production-ready</h3>
                     <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block px-6 py-3 md:text-lg font-semibold rounded-xl bg-linear-to-b from-cyan-500 to-blue-600 text-white shadow-lg hover:scale-110 transition duration-100">
                         Get a quote
                     </a>
