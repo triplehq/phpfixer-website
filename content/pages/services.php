@@ -100,30 +100,30 @@ include 'content/pages/_partials/header.php';
     <!-- AI-generated code section + CTA bento -->
     <section class="px-6 md:px-4 pb-20 md:pb-24">
         <div class="max-w-7xl mx-auto">
-            <div class="border border-blue-200 rounded-xl overflow-hidden shadow-sm grid grid-cols-1 lg:grid-cols-2">
+            <div class="border border-sky-200 rounded-xl overflow-hidden shadow-sm grid grid-cols-1 lg:grid-cols-2">
 
                 <!-- Image cell -->
-                <div class="p-10 flex items-center justify-center bg-white border-blue-200 border-b-0 lg:border-b">
+                <div class="p-10 flex items-center justify-center bg-white border-sky-200 border-b-0 lg:border-b">
                     <img src="<?php echo asset('images/elephant-robot.png'); ?>" class="w-1/2 md:w-2/3 mx-auto scale-x-[-1]" loading="lazy" alt="">
                 </div>
 
                 <!-- Text cell -->
-                <div class="p-10 border-b border-blue-200">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight tracking-tight bg-linear-to-b from-blue-700 to-blue-500 bg-clip-text text-transparent">Built with Cursor, Lovable, Bolt, Codex or Claude?</h2>
+                <div class="p-10 border-b border-sky-200">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight tracking-tight bg-linear-to-b from-sky-500 to-sky-700 bg-clip-text text-transparent">Built with Cursor, Lovable, Bolt, Codex or Claude?</h2>
                     <p class="text-base font-light text-neutral-700 leading-relaxed mb-6">AI can write code fast, but architecture, scalability and maintainability are where it consistently falls short. This can be a problem under real traffic, edge cases, or when it needs to connect with the rest of your system. If you've built something with AI assistance, hired someone who did, or inherited a codebase that looks like it was written by a very confident AI agent — I can help.</p>
                     <h3 class="text-lg font-bold tracking-tight text-neutral-800 mb-3">What I fix</h3>
                     <ul class="space-y-2 text-neutral-700">
-                        <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">&#8594;</span><span class="font-light">Code that works in demo but breaks in production</span></li>
-                        <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">&#8594;</span><span class="font-light">Security holes AI tools routinely miss</span></li>
-                        <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">&#8594;</span><span class="font-light">No error handling, no logging, no tests</span></li>
-                        <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">&#8594;</span><span class="font-light">Spaghetti structure that's impossible to extend</span></li>
-                        <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">&#8594;</span><span class="font-light">Dependencies nobody updated or reviewed</span></li>
+                        <li class="flex items-start"><span class="text-sky-600 font-bold mr-2">&#8594;</span><span class="font-light">Code that works in demo but breaks in production</span></li>
+                        <li class="flex items-start"><span class="text-sky-600 font-bold mr-2">&#8594;</span><span class="font-light">Security holes AI tools routinely miss</span></li>
+                        <li class="flex items-start"><span class="text-sky-600 font-bold mr-2">&#8594;</span><span class="font-light">No error handling, no logging, no tests</span></li>
+                        <li class="flex items-start"><span class="text-sky-600 font-bold mr-2">&#8594;</span><span class="font-light">Spaghetti structure that's impossible to extend</span></li>
+                        <li class="flex items-start"><span class="text-sky-600 font-bold mr-2">&#8594;</span><span class="font-light">Dependencies nobody updated or reviewed</span></li>
                     </ul>
                 </div>
 
                 <!-- CTA cell — spans full width -->
-                <div class="bg-blue-50 col-span-1 lg:col-span-2 flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-center px-10 py-8">
-                    <h3 class="text-3xl lg:text-4xl text-center md:text-left font-semibold bg-linear-to-t from-blue-800/80 to-blue-700 bg-clip-text text-transparent leading-tight tracking-tight">Let's get your vibe-coded PHP app production-ready</h3>
+                <div class="bg-sky-50 col-span-1 lg:col-span-2 flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-center px-10 py-8">
+                    <h3 class="text-3xl lg:text-4xl text-center md:text-left font-semibold bg-linear-to-t from-sky-800/80 to-sky-700 bg-clip-text text-transparent leading-tight tracking-tight">Let's get your vibe-coded PHP app production-ready</h3>
                     <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block px-6 py-3 md:text-lg font-semibold rounded-xl bg-linear-to-b from-cyan-500 to-blue-600 text-white shadow-lg hover:scale-110 transition duration-100">
                         Get a quote
                     </a>
