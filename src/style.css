@@ -34,7 +34,7 @@ body {
 
 /* Classy grey hero section */
 .hero-exclusive {
-  background: linear-gradient(135deg, #2d3748 0%, #4a5568 50%, #374151 100%);
+  @apply bg-linear-135 from-[#2d3748] via-[#4a5568] to-[#374151];
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.08) inset,

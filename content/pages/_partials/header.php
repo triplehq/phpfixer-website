@@ -33,7 +33,7 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
 <body class="bg-white text-gray-800" x-data="{ showContact: false }">
 
 <!-- Header -->
-<header class="py-4 md:pt-8 md:pb-12 md:pb-20 px-6 lg:px-0 md:px-4 bg-gradient-to-b from-neutral-100 to-white" x-data="{ mobileMenuOpen: false }">
+<header class="py-4 md:pt-8 md:pb-16 px-6 lg:px-0 md:px-4 bg-linear-to-b from-neutral-100 to-white" x-data="{ mobileMenuOpen: false }">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
         <div>
             <a href="<?php echo url('/'); ?>">
@@ -51,8 +51,8 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
         </div>
         <nav class="hidden md:flex md:items-center space-x-8 text-stone-700">
             <a href="<?php echo url('services'); ?>" class="hover:text-blue-600  font-semibold<?php if ($page->is('/services/')) :?> font-bold<?php endif; ?>">Services</a>
-            <a href="<?php echo url('pricing'); ?>" class="hover:text-blue-600 font-semibold<?php if ($page->is('/pricing/')) :?> font-bold<?php endif; ?>">Pricing</a>
             <a href="<?php echo url('about'); ?>" class="hover:text-blue-600  font-semibold<?php if ($page->is('/about/')) :?> font-bold<?php endif; ?>">About</a>
+            <a href="<?php echo url('pricing'); ?>" class="hover:text-blue-600 font-semibold<?php if ($page->is('/pricing/')) :?> font-bold<?php endif; ?>">Pricing</a>
             <a href="<?php echo url('blog'); ?>" class="hover:text-blue-600 font-semibold<?php if ($page->is('/blog/')) :?> font-bold<?php endif; ?>">Blog</a>
             <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="ml-4 px-4 py-2 font-semibold bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:scale-110 transition duration-100">
                 Get a quote
@@ -68,8 +68,8 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
     <div x-show="mobileMenuOpen" x-transition class="md:hidden mt-4 pb-4">
         <div class="flex flex-col space-y-1">
             <a href="<?php echo url('services'); ?>" class="hover:text-blue-600 font-semibold">Services</a>
-            <a href="<?php echo url('pricing'); ?>" class="hover:text-blue-600 font-semibold">Pricing</a>
             <a href="<?php echo url('about'); ?>" class="hover:text-blue-600 font-semibold">About</a>
+            <a href="<?php echo url('pricing'); ?>" class="hover:text-blue-600 font-semibold">Pricing</a>
             <a href="<?php echo url('blog'); ?>" class="hover:text-blue-600 font-semibold">Blog</a>
             <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="mt-6 px-4 py-2 bg-gradient-to-b from-cyan-500 to-blue-600 font-semibold text-white rounded-xl shadow-lg hover:bg-blue-600 transition text-center">Get a quote!</a>
         </div>
