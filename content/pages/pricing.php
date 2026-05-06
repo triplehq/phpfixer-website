@@ -7,51 +7,51 @@ include 'content/pages/_partials/header.php';
     <main class="px-4 py-0" x-data x-init="$store.currency.init()">
         <div class="max-w-7xl mx-auto">
             <h1 class="text-center md:text-left text-4xl title md:text-5xl font-bold leading-[1.10] tracking-tight text-zinc-700">Maintenance plans built around your needs</h1>
-            <p class="mt-10 text-xl/8 font-light text-neutral-800">Every project is different, and I don't believe in one-size-fits-all pricing. What I do believe in is <strong class="font-bold">clarity</strong>, <strong class="font-bold">value</strong> and <strong class="font-bold">fixing your problems</strong>. Here are a couple of fixed packages to give you an idea, but if these don't suit your needs, you can always request a tailored quote or use them as a starting point.</p>
+            <p class="mt-10 text-xl/8 font-light text-neutral-800">Every project is different, and I don't believe in one-size-fits-all pricing. Here are a couple of fixed packages to give you an idea, but if these don't suit your needs, you can always request a tailored quote or use them as a starting point. Not sure which plan fits? Just get in touch — I'll point you in the right direction.</p>
         </div>
 
         <div class="max-w-7xl mx-auto mt-12 mb-24">
             <!-- Pricing Boxes -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-neutral-100 rounded-xl p-6 shadow-sm flex flex-col">
-                    <div class="text-center text-xs uppercase tracking-wider text-purple-700 font-bold mb-2">One-off Bug Check</div>
+                <div class="bg-neutral-100 rounded-xl p-6 shadow-sm flex flex-col border border-blue-300">
+                    <div class="text-center text-xs uppercase tracking-wider text-blue-700 font-bold mb-2">Emergency fix</div>
                     <div class="text-center text-3xl font-bold mb-5">from <span x-text="$store.currency.symbol + $store.currency.bugCheck">$200</span></div>
-                    <p class="mb-4 text-neutral-700 font-light">Get a professional diagnosis and fix for a single bug or error quickly, without being locked into ongoing work.</p>
+                    <p class="mb-4 text-neutral-700 font-light">One problem, one fix, one price. Most bugs resolved within a day.</p>
                     <ul class="mb-4 space-y-1 text-sm text-neutral-700 flex-1">
                         <li><span class="text-blue-600 font-bold mr-2">✓</span> If I can't fix the problem, <strong>you don't pay</strong></li>
                         <li><span class="text-blue-600 font-bold mr-2">✓</span> Single, straight-forward pricing</li>
                         <li><span class="text-blue-600 font-bold mr-2">✓</span> Custom quote if it takes longer</li>
                     </ul>
-                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block mt-2 px-5 py-3 bg-blue-600 text-white font-semibold text-center rounded-xl hover:bg-blue-700 transition shadow-md">Request a bug check</a>
+                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block mt-2 px-5 py-3 bg-blue-600 text-white font-semibold text-center rounded-xl hover:bg-zinc-800 transition shadow-md">Get it fixed today</a>
                 </div>
                 <div class="bg-neutral-100 rounded-xl p-6 shadow-sm flex flex-col">
-                    <div class="text-center text-xs uppercase tracking-wider text-zinc-700 font-bold mb-2">Monthly Maintenance Retainer</div>
+                    <div class="text-center text-xs uppercase tracking-wider text-zinc-700 font-bold mb-2">Monthly care plan</div>
                     <div class="text-center text-3xl font-bold mb-5">from <span x-text="$store.currency.symbol + $store.currency.retainer">$1000</span> <span class="text-base font-normal">/ month</span></div>
-                    <p class="mb-4 text-neutral-700 font-light">Ongoing updates, fixes, and expert support for your PHP-based site. Ideal for agencies and businesses who want peace of mind.</p>
+                    <p class="mb-4 text-neutral-700 font-light">For businesses who can't afford for things to go wrong. Your PHP stack, looked after every month.</p>
                     <ul class="mb-4 space-y-1 text-sm text-neutral-700 flex-1">
-                        <li><span class="text-blue-600 font-bold mr-2">✓</span> Priority support</li>
-                        <li><span class="text-blue-600 font-bold mr-2">✓</span> Regular updates & monitoring</li>
-                        <li><span class="text-blue-600 font-bold mr-2">✓</span> Cancel anytime</li>
+                        <li><span class="text-neutral-600 font-bold mr-2">✓</span> Priority support</li>
+                        <li><span class="text-neutral-600 font-bold mr-2">✓</span> Regular updates & monitoring</li>
+                        <li><span class="text-neutral-600 font-bold mr-2">✓</span> Cancel anytime</li>
                     </ul>
-                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block mt-2 px-5 py-3 bg-zinc-700 text-white font-semibold text-center rounded-xl hover:bg-zinc-800 transition shadow-md">Enquire about retainer</a>
+                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block mt-2 px-5 py-3 bg-zinc-700 text-white font-semibold text-center rounded-xl hover:bg-zinc-800 transition shadow-md">Get a retainer quote</a>
                 </div>
                 <div class="bg-neutral-100 rounded-xl p-6 shadow-sm flex flex-col">
-                    <div class="text-center text-xs uppercase tracking-wider text-green-700 font-bold mb-2">Custom Project</div>
+                    <div class="text-center text-xs uppercase tracking-wider text-zinc-700 font-bold mb-2">Custom Project</div>
                     <div class="text-center text-3xl font-bold mb-5">Get a quote</div>
                     <p class="mb-4 text-neutral-700 font-light">Legacy code rescue? Site upgrade? Performance bottlenecks? Let's discuss your project and I give you a tailored quote.</p>
                     <ul class="mb-4 space-y-1 text-sm text-neutral-700 flex-1">
-                        <li><span class="text-blue-600 font-bold mr-2">✓</span> Free initial consultation included</li>
-                        <li><span class="text-blue-600 font-bold mr-2">✓</span> Scoped to your actual needs</li>
-                        <li><span class="text-blue-600 font-bold mr-2">✓</span> Tailored pricing</li>
+                        <li><span class="text-neutral-600 font-bold mr-2">✓</span> Free initial consultation included</li>
+                        <li><span class="text-neutral-600 font-bold mr-2">✓</span> Scoped to your actual needs</li>
+                        <li><span class="text-neutral-600 font-bold mr-2">✓</span> Tailored pricing</li>
                     </ul>
-                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block mt-2 px-5 py-3 bg-green-600 text-white font-semibold text-center rounded-xl hover:bg-green-700 transition shadow-md">Book a call</a>
+                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block mt-2 px-5 py-3 bg-zinc-700 text-white font-semibold text-center rounded-xl hover:bg-zinc-800 transition shadow-md">Get a custom quote</a>
                 </div>
             </div>
         </div>
 
         <!-- How Pricing Works & FAQ Side by Side -->
-        <section class="mb-16">
-            <div class="max-w-7xl mx-auto flex justify-between">
+        <section class="mb-18">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
                 <div>
                     <h2 class="text-3xl font-semibold mb-6 tracking-tight text-zinc-700 text-transparent">The PHPFixer approach</h2>
                     <ul class="list-disc font-light pl-6 text-neutral-800 space-y-2">
@@ -60,18 +60,13 @@ include 'content/pages/_partials/header.php';
                       <li><strong class="font-semibold">No work starts</strong> until you approve the plan and price</li>
                       <li>For ongoing retainers you can <strong class="font-semibold">cancel your plan anytime</strong></li>
                     </ul>
-                    <h2 class="mt-16 text-3xl font-semibold mb-6 tracking-tight text-zinc-700">Why trust PHPFixer?</h2>
-                    <ul class="list-disc font-light pl-6 text-neutral-800 space-y-2">
-                      <li>I have more than <strong class="font-semibold">25 years of experience</strong> working on PHP and web projects</li>
-                        <li>I'm trusted by agencies, founders and businesses across the UK & EU</li>
-                        <li>Clear, honest communication – I hate technical BS just as much as you do!</li>
-                      <li>I'm fast, reliable and <strong class="font-semibold">your business goals are my priority</strong></li>
-                    </ul>
                 </div>
                 <div class="align-right">
-                    <img src="<?php echo asset('images/doctor-elephant.png'); ?>" alt="How can I help?" class="w-104" loading="lazy">
+                    <img src="<?php echo asset('images/doctor-elephant.png'); ?>" alt="How can I help?" class="w-64" loading="lazy">
                 </div>
             </div>
+        </section>
+        <section class="mb-18">
             <div class="mt-8 max-w-7xl mx-auto">
                 <h2 class="text-3xl font-semibold mb-8 tracking-tight text-zinc-500">Frequently asked questions</h2>
                 <div class="space-y-3 font-light" x-data="{ openItem: 1 }">
@@ -131,7 +126,7 @@ include 'content/pages/_partials/header.php';
                             </svg>
                         </button>
                         <div x-show="openItem === 5" class="px-5 pb-4 pr-20 text-neutral-700">
-                            Yes, I do offer limited emergency availability for critical bugs and outages. These are priced accordingly and depend on current workload. I sometimes booked a few weeks in advance, so get in touch early if possible, but I will always try to help when something breaks.
+                            Yes, I do offer limited emergency availability for critical bugs and outages. These are priced accordingly and depend on current workload. I am sometimes booked a few weeks in advance, so get in touch early if possible, but I will always try to help when something breaks.
                         </div>
                     </div>
 
@@ -143,7 +138,7 @@ include 'content/pages/_partials/header.php';
                         </svg>
                       </button>
                       <div x-show="openItem === 10" class="px-5 pb-4 pr-20 text-neutral-700">
-                        Mainly, yes. But I also have people I work with regularly for specific tasks and I can bring in trusted experts if needed. But I have eyes on each project and I take full responsibility for the quality what each subcontracted work. You will always have a single point of contact and I will be the one doing the work or managing it directly.
+                        Mainly, yes. But I also have people I work with regularly for specific tasks and I can bring in trusted experts if needed. But I have eyes on each project and I take full responsibility for the quality of each subcontracted work. You will always have a single point of contact and I will be the one doing the work or managing it directly.
                       </div>
                     </div>
 
