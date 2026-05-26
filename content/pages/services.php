@@ -89,7 +89,7 @@ include 'content/pages/_partials/header.php';
                     <p class="mt-3 text-neutral-400 font-light text-base text-center md:text-left">Your website is down right now? <a href="<?php echo url('blog/emergency-php-checklist'); ?>" class="text-neutral-300 hover:text-white underline">Start with our emergency checklist →</a></p>
                 </div>
                 <div>
-                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block px-6 py-3 md:text-lg font-semibold rounded-xl bg-white text-neutral-700 shadow-lg hover:scale-110 transition duration-100">
+                    <a href="https://cal.com/phpfixer/introduction" target="_blank" rel="noopener noreferrer" @click="fathom.trackEvent('book intro call clicked')" class="inline-block px-6 py-3 md:text-lg font-semibold rounded-xl bg-white text-neutral-700 shadow-lg hover:scale-110 transition duration-100">
                         Get a free consultation
                     </a>
                 </div>
@@ -124,7 +124,7 @@ include 'content/pages/_partials/header.php';
                 <!-- CTA cell — spans full width -->
                 <div class="bg-sky-50 col-span-1 lg:col-span-2 flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-center px-10 py-8">
                     <h3 class="text-3xl lg:text-4xl text-center md:text-left font-semibold bg-linear-to-t from-sky-800/80 to-sky-700 bg-clip-text text-transparent leading-tight tracking-tight">Let's get your vibe-coded PHP app production-ready</h3>
-                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block px-6 py-3 md:text-lg font-semibold rounded-xl bg-linear-to-b from-cyan-500 to-blue-600 text-white shadow-lg hover:scale-110 transition duration-100">
+                    <a href="https://cal.com/phpfixer/introduction" target="_blank" rel="noopener noreferrer" @click="fathom.trackEvent('book intro call clicked')" class="inline-block px-6 py-3 md:text-lg font-semibold rounded-xl bg-linear-to-b from-cyan-500 to-blue-600 text-white shadow-lg hover:scale-110 transition duration-100">
                         Get a quote
                     </a>
                 </div>
