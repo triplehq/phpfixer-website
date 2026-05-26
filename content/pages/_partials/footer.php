@@ -33,7 +33,7 @@
                   <ul class="space-y-1 text-sm text-zinc-500">
                       <li><a href="<?php echo url('about'); ?>" class="hover:text-blue-700">About</a></li>
                       <li><a href="<?php echo url('blog'); ?>" class="hover:text-blue-700">Blog</a></li>
-                      <li><a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="hover:text-blue-700">Contact</a></li>
+                      <li><a href="https://cal.com/phpfixer/introduction" target="_blank" rel="noopener noreferrer" @click="fathom.trackEvent('book intro call clicked')" class="hover:text-blue-700">Contact</a></li>
                   </ul>
               </div>
 
