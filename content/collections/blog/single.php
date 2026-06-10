@@ -43,7 +43,7 @@ include 'content/pages/_partials/header.php';
   "@type": "Article",
   "headline": "<?php echo addslashes($page->title); ?>",
   "description": "<?php echo addslashes($page->description ?? ''); ?>",
-  "image": "<?php echo asset('images/og-image.png'); ?>",
+  "image": "<?php echo $ogImage ?? asset('images/og-image.png'); ?>",
   "datePublished": "<?php echo $page->date; ?>",
   "dateModified": "<?php echo $page->updated ?? $page->date; ?>",
   "author": {
