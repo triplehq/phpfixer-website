@@ -65,5 +65,5 @@ Most businesses in this situation are not dealing with a failed system, but with
 <p class="blog-cta-heading">Need help getting your system back under control?</p>
 <p>If your developer has disappeared and you're left with a system you don't fully understand, the priority is to stabilise it quickly and safely.</p>
 <p>PHPFixer can help you take control of your codebase and infrastructure and keep your site running reliably going forward. No more ghosting!</p>
-<a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('blog cta clicked')" class="blog-cta-button">Book a quick call and get your system assessed</a>
+<a href="https://cal.com/phpfixer/introduction?utm_source=phpfixer.com&utm_medium=cta&utm_campaign=intro-call&utm_content=blog-developer-disappears" target="_blank" rel="noopener" @click="fathom.trackEvent('blog cta clicked')" class="blog-cta-button">Book a quick call and get your system assessed</a>
 </div>

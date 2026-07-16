@@ -61,7 +61,7 @@ Alpine.data('contactForm', () => ({
 Alpine.store('currency', {
     symbol: '$',
     bugCheck: '200',
-    retainer: '1000',
+    retainer: '750',
     timezone: '',
     init() {
         const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -82,11 +82,11 @@ Alpine.store('currency', {
         if (tz === 'Europe/London' || lang === 'en-gb') {
             this.symbol = '£';
             this.bugCheck = '150';
-            this.retainer = '750';
+            this.retainer = '550';
         } else if (eurozone.has(tz)) {
             this.symbol = '€';
             this.bugCheck = '170';
-            this.retainer = '900';
+            this.retainer = '650';
         }
     }
 });

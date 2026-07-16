@@ -9,6 +9,9 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<?php echo htmlspecialchars($metaDescription); ?>">
+    <?php if (!empty($noIndex)): ?>
+    <meta name="robots" content="noindex">
+    <?php endif; ?>
     <meta property="og:title" content="<?php echo htmlspecialchars($metaTitle); ?>">
     <meta property="og:type" content="<?php echo $ogType ?? 'website'; ?>">
     <meta property="og:url" content="<?php echo $page->url; ?>">
@@ -28,7 +31,7 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
     <link href="https://fonts.bunny.net/css?family=archivo:300,400,500,600,700,800|inter:300,400,500,600,700,800" rel="stylesheet" />
     <link rel="stylesheet" href="<?php echo asset('css/main.css'); ?>">
     <script type="module" src="<?php echo asset('js/main.js'); ?>"></script>
-    <script src="https://cdn.usefathom.com/script.js" data-site="JWEZPVEF" defer></script>
+    <script src="https://cdn.usefathom.com/script.js" data-site="JWEZPVEF" data-included-domains="phpfixer.com,www.phpfixer.com" defer></script>
 </head>
 <body class="bg-white text-gray-800" x-data="{ showContact: false }">
 
@@ -54,7 +57,7 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
             <a href="<?php echo url('about'); ?>" class="hover:text-blue-600  font-semibold<?php if ($page->is('/about/')) :?> font-bold<?php endif; ?>">About</a>
             <a href="<?php echo url('pricing'); ?>" class="hover:text-blue-600 font-semibold<?php if ($page->is('/pricing/')) :?> font-bold<?php endif; ?>">Pricing</a>
             <a href="<?php echo url('blog'); ?>" class="hover:text-blue-600 font-semibold<?php if ($page->is('/blog/')) :?> font-bold<?php endif; ?>">Blog</a>
-            <a href="https://cal.com/phpfixer/introduction" target="_blank" rel="noopener noreferrer" @click="fathom.trackEvent('book intro call clicked')" class="ml-4 px-4 py-2 font-semibold bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:scale-110 transition duration-100">
+            <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="ml-4 px-4 py-2 font-semibold bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:scale-110 transition duration-100">
                 Get a quote
             </a>
         </nav>
@@ -71,7 +74,7 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
             <a href="<?php echo url('about'); ?>" class="hover:text-blue-600 font-semibold">About</a>
             <a href="<?php echo url('pricing'); ?>" class="hover:text-blue-600 font-semibold">Pricing</a>
             <a href="<?php echo url('blog'); ?>" class="hover:text-blue-600 font-semibold">Blog</a>
-            <a href="https://cal.com/phpfixer/introduction" target="_blank" rel="noopener noreferrer" @click="fathom.trackEvent('book intro call clicked')" class="mt-6 px-4 py-2 bg-gradient-to-b from-cyan-500 to-blue-600 font-semibold text-white rounded-xl shadow-lg hover:bg-blue-600 transition text-center">Get a quote!</a>
+            <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="mt-6 px-4 py-2 bg-gradient-to-b from-cyan-500 to-blue-600 font-semibold text-white rounded-xl shadow-lg hover:bg-blue-600 transition text-center">Get a quote!</a>
         </div>
     </div>
 </header>

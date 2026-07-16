@@ -1,6 +1,6 @@
 <?php
 $metaTitle = 'PHP Developer Pricing – Bug Fixes from £150 | PHPFixer';
-$metaDescription = 'Simple, transparent pricing for PHP bug fixes and monthly maintenance. No fix, no fee. One-off fixes from £150, monthly retainers from £750.';
+$metaDescription = 'Simple, transparent pricing for PHP bug fixes and monthly maintenance. No fix, no fee. One-off fixes from £150, monthly retainers from £550.';
 include 'content/pages/_partials/header.php';
 ?>
 
@@ -22,29 +22,29 @@ include 'content/pages/_partials/header.php';
                         <li><span class="text-blue-600 font-bold mr-2">✓</span> Single, straight-forward pricing</li>
                         <li><span class="text-blue-600 font-bold mr-2">✓</span> Custom quote if it takes longer</li>
                     </ul>
-                    <a href="https://cal.com/phpfixer/introduction" target="_blank" rel="noopener noreferrer" @click="fathom.trackEvent('book intro call clicked')" class="inline-block mt-2 px-5 py-3 bg-blue-600 text-white font-semibold text-center rounded-xl hover:bg-zinc-800 transition shadow-md">Get it fixed today</a>
+                    <a href="https://cal.com/phpfixer/introduction?utm_source=phpfixer.com&utm_medium=cta&utm_campaign=intro-call&utm_content=pricing-bug-fix" target="_blank" rel="noopener" @click="fathom.trackEvent('book intro call clicked')" class="inline-block mt-2 px-5 py-3 bg-blue-600 text-white font-semibold text-center rounded-xl hover:bg-zinc-800 transition shadow-md">Get it fixed today</a>
                 </div>
                 <div class="bg-neutral-100 rounded-xl p-6 shadow-sm flex flex-col">
                     <div class="text-center text-xs uppercase tracking-wider text-zinc-700 font-bold mb-2">Monthly care plan</div>
-                    <div class="text-center text-3xl font-bold mb-5">from <span x-text="$store.currency.symbol + $store.currency.retainer">$1000</span> <span class="text-base font-normal">/ month</span></div>
+                    <div class="text-center text-3xl font-bold mb-5">from <span x-text="$store.currency.symbol + $store.currency.retainer">$750</span> <span class="text-base font-normal">/ month</span></div>
                     <p class="mb-4 text-neutral-700 font-light">For businesses who can't afford for things to go wrong. Your PHP stack, looked after every month.</p>
                     <ul class="mb-4 space-y-1 text-sm text-neutral-700 flex-1">
                         <li><span class="text-neutral-600 font-bold mr-2">✓</span> Priority support</li>
-                        <li><span class="text-neutral-600 font-bold mr-2">✓</span> Regular updates & monitoring</li>
+                        <li><span class="text-neutral-600 font-bold mr-2">✓</span> Regular updates, monitoring & security checks</li>
                         <li><span class="text-neutral-600 font-bold mr-2">✓</span> Cancel anytime</li>
                     </ul>
-                    <a href="https://cal.com/phpfixer/introduction" target="_blank" rel="noopener noreferrer" @click="fathom.trackEvent('book intro call clicked')" class="inline-block mt-2 px-5 py-3 bg-zinc-700 text-white font-semibold text-center rounded-xl hover:bg-zinc-800 transition shadow-md">Get a retainer quote</a>
+                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block mt-2 px-5 py-3 bg-zinc-700 text-white font-semibold text-center rounded-xl hover:bg-zinc-800 transition shadow-md">Get a retainer quote</a>
                 </div>
                 <div class="bg-neutral-100 rounded-xl p-6 shadow-sm flex flex-col">
-                    <div class="text-center text-xs uppercase tracking-wider text-zinc-700 font-bold mb-2">Custom Project</div>
+                    <div class="text-center text-xs uppercase tracking-wider text-zinc-700 font-bold mb-2">Everything else</div>
                     <div class="text-center text-3xl font-bold mb-5">Get a quote</div>
-                    <p class="mb-4 text-neutral-700 font-light">Legacy code rescue? Site upgrade? Performance bottlenecks? Let's discuss your project and I give you a tailored quote.</p>
+                    <p class="mb-4 text-neutral-700 font-light">Legacy code rescue? Site upgrade? Performance bottlenecks? Let's discuss what you need and I'll give you a tailored quote.</p>
                     <ul class="mb-4 space-y-1 text-sm text-neutral-700 flex-1">
                         <li><span class="text-neutral-600 font-bold mr-2">✓</span> Free initial consultation included</li>
                         <li><span class="text-neutral-600 font-bold mr-2">✓</span> Scoped to your actual needs</li>
                         <li><span class="text-neutral-600 font-bold mr-2">✓</span> Tailored pricing</li>
                     </ul>
-                    <a href="https://cal.com/phpfixer/introduction" target="_blank" rel="noopener noreferrer" @click="fathom.trackEvent('book intro call clicked')" class="inline-block mt-2 px-5 py-3 bg-zinc-700 text-white font-semibold text-center rounded-xl hover:bg-zinc-800 transition shadow-md">Get a custom quote</a>
+                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block mt-2 px-5 py-3 bg-zinc-700 text-white font-semibold text-center rounded-xl hover:bg-zinc-800 transition shadow-md">Get a custom quote</a>
                 </div>
             </div>
         </div>
@@ -174,7 +174,7 @@ include 'content/pages/_partials/header.php';
                             </svg>
                         </button>
                         <div x-show="openItem === 8" class="px-5 pb-4 pr-20 text-neutral-700">
-                            Just <a href="https://cal.com/phpfixer/introduction" target="_blank" rel="noopener noreferrer" @click="fathom.trackEvent('book intro call clicked')" class="text-purple-700 underline hover:text-purple-900">book a free call</a> for a free, no-pressure chat about what you need.
+                            Just <a href="https://cal.com/phpfixer/introduction?utm_source=phpfixer.com&utm_medium=cta&utm_campaign=intro-call&utm_content=pricing-faq" target="_blank" rel="noopener" @click="fathom.trackEvent('book intro call clicked')" class="text-purple-700 underline hover:text-purple-900">book a free call</a> for a free, no-pressure chat about what you need.
                         </div>
                     </div>
 

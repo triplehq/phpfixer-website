@@ -179,7 +179,7 @@ include 'content/pages/_partials/header.php';
                             <li>Request correction of inaccurate data</li>
                             <li>Request deletion of your data where applicable</li>
                         </ul>
-                      <p class="mb-4">To exercise your rights, <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="hover:text-blue-700">contact us</a> with "Data Protection" in the subject line.</p>
+                      <p class="mb-4">To exercise your rights, <a href="#contact" @click.prevent="showContact = true" class="hover:text-blue-700">contact us</a> with "Data Protection" in the subject line.</p>
                         <p>You also have the right to lodge a complaint with the Information Commissioner's Office (ICO) via <a href="https://ico.org.uk" class="text-blue-600 underline hover:opacity-80">ico.org.uk</a>.</p>
                     </section>
 

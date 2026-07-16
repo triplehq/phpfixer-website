@@ -10,7 +10,7 @@ include 'content/pages/_partials/header.php';
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
             <div class="w-full lg:w-2/3">
                 <h1 class="text-center my-8 md:my-0 md:text-left text-5xl title md:text-7xl font-bold md:mb-4 leading-[1.02] tracking-tight text-zinc-700">The PHP handyman businesses keep on speed dial</h1>
-                <p class="text-center md:text-left text-lg font-light md:text-xl/8 md:pr-10 mt-5 text-stone-700">For small and mid-size businesses tired of agencies, ghosted developers and being told they need a full rebuild. No fix, no fee. 25+ years experience.</p>
+                <p class="text-center md:text-left text-lg font-light md:text-xl/8 md:pr-10 mt-5 text-stone-700">For small and mid-size businesses tired of agencies, ghosted developers and being told they need a full rebuild. No fix, no fee.</p>
                 <div class="show sm:hidden w-64 justify-center mt-8 md:mt-0 mx-auto">
                     <img src="<?php echo asset('images/mechanic-elephant.png'); ?>" alt="" fetchpriority="high">
                 </div>
@@ -24,7 +24,7 @@ include 'content/pages/_partials/header.php';
     <!-- Process Section -->
     <section class="px-6 md:px-4 pb-12 py-8 md:py-16">
         <div class="max-w-7xl mx-auto">
-            <h3 class="text-3xl md:text-4xl text-center font-bold mb-6 bg-linear-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent leading-tight tracking-tight">I can fix your code without <span class="bg-clip-text bg-gradient-to-t from-orange-600 via-red-400 to-red-600
+            <h3 class="text-3xl md:text-4xl text-center font-bold mb-6 bg-linear-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent leading-tight tracking-tight">I can fix your problem without <span class="bg-clip-text bg-gradient-to-t from-orange-600 via-red-400 to-red-600
   animate-[fire_2s_infinite] drop-shadow-[0_0_15px_rgba(255,100,0,0.8)]">burning</span> everything down</h3>
             <div class="mb-8 text-lg font-light text-neutral-700 text-center">You don't need a rewrite. You need someone who can find the problem, fix it cleanly, and not break anything else in the process.</div>
             <div class="mb-16 flex flex-col lg:flex-row justify-between gap-6 lg:gap-8">
@@ -120,7 +120,7 @@ include 'content/pages/_partials/header.php';
       <div class="max-w-7xl mx-auto flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-center py-6 md:py-12 px-6 md:p-12 border-2 border-blue-100 rounded-xl">
         <h3 class="text-3xl lg:text-4xl text-center md:text-left font-semibold bg-gradient-to-t from-blue-800/80 to-cyan-700 bg-clip-text text-transparent leading-tight tracking-tight">Tired of firefighting? Let's fix it for good.</h3>
         <div>
-          <a href="https://cal.com/phpfixer/introduction" target="_blank" rel="noopener noreferrer" @click="fathom.trackEvent('book intro call clicked')" class="inline-block px-6 py-3 md:text-lg font-semibold rounded-2xl bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:scale-110 transition duration-100">
+          <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block px-6 py-3 md:text-lg font-semibold rounded-2xl bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:scale-110 transition duration-100">
             Get a free quote
           </a>
         </div>
@@ -135,7 +135,7 @@ include 'content/pages/_partials/header.php';
         </div>
         <div class="pb-1">
           <h3 class="text-lg md:text-3xl font-bold tracking-tight text-zinc-100 mb-2">You're in good hands</h3>
-          <p class="text-sm/5 md:text-base/6 font-light text-neutral-200 pb-4 md:pb-0">My name is Tamas. PHP developer with 25+ years of experience, UK-based solo consultant trusted by agencies and SMBs across UK &amp; EU.<span class="hidden md:inline-block"> No unnecessary rebuilds, no technical jargon — just clean fixes and honest communication.</span></p>
+          <p class="text-sm/5 md:text-base/6 font-light text-neutral-200 pb-4 md:pb-0">My name is Tamas. I'm a PHP developer with 25+ years of experience, UK-based solo consultant trusted by agencies and SMBs across UK &amp; EU. <span class="hidden md:inline">I don't offer unnecessary rebuilds, won't use technical jargon and there's no long term commitment — just show me the problem, and I'll fix it for you.</span></p>
         </div>
       </div>
     </section>
