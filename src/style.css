@@ -16,6 +16,21 @@ body {
   50% { filter: brightness(1.4); }
 }
 
+/* Service anchors: smooth scroll, then the target flashes so it is clear which one was picked */
+@keyframes service-highlight {
+  0%, 55% { background-color: rgb(14 165 233 / 0.14); }
+  100% { background-color: transparent; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+  .service-target:target { animation: service-highlight 4.5s ease-out; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-target:target { background-color: rgb(14 165 233 / 0.14); }
+}
+
 /* FAQ Accordion */
 .faq-item {
   @apply transition-all duration-200 ease-in-out;
