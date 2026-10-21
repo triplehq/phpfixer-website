@@ -41,8 +41,8 @@ include 'content/pages/_partials/header.php';
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "<?php echo addslashes($page->title); ?>",
-  "description": "<?php echo addslashes($page->description ?? ''); ?>",
+  "headline": <?php echo json_encode($page->title, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?>,
+  "description": <?php echo json_encode($page->description ?? '', JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?>,
   "image": "<?php echo $ogImage ?? asset('images/og-image.png'); ?>",
   "datePublished": "<?php echo $page->date; ?>",
   "dateModified": "<?php echo $page->updated ?? $page->date; ?>",
