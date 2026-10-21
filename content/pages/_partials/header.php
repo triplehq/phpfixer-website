@@ -35,6 +35,8 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
 </head>
 <body class="bg-white text-gray-800" x-data="{ showContact: false }">
 
+<?php include 'content/pages/_partials/notice.php'; ?>
+
 <!-- Header -->
 <header class="py-4 md:pt-8 md:pb-16 px-6 lg:px-0 md:px-4 bg-linear-to-b from-neutral-100 to-white" x-data="{ mobileMenuOpen: false }">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
