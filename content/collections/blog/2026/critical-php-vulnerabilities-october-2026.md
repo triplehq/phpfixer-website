@@ -6,7 +6,7 @@ tags: ["Security", "Emergency", "Upgrades"]
 image: "images/blog/critical-php-vulnerabilities-october-2026.jpg"
 ---
 
-<blockquote><strong>Updated: 21 October 2026, 14:30 UTC.</strong> PHP has released the fixes and published the full details. This post now reflects the <a href="https://www.php.net/archive/2026.php#2026-10-21-5" target="_blank" rel="noopener">official security advisory</a>.</blockquote>
+<blockquote><strong>Updated: 21 October 2026, 14:30 UTC.</strong> PHP has released the fixes and published the full details. This post now reflects the <a href="https://www.php.net/archive/2026.php#2026-10-21-5" target="_blank" rel="noopener">official security advisory</a>. Correction: an earlier version said no fix was expected for PHP 7.4, 8.0 and 8.1. The PHP team has since published source patches for those versions.</blockquote>
 
 PHP has released emergency security updates for two critical vulnerabilities that can let an attacker run their own code on your server without logging in. The fixed versions are **PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35**, and the PHP team's advice is simple: "All PHP users are strongly encouraged to update immediately."
 
