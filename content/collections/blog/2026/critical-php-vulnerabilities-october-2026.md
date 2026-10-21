@@ -6,7 +6,7 @@ tags: ["Security", "Emergency", "Upgrades"]
 image: "images/blog/critical-php-vulnerabilities-october-2026.jpg"
 ---
 
-<blockquote><strong>Last updated: 21 October 2026, 08:00 UTC.</strong> The official details are due at 14:00 UTC today. I'll update this post as soon as they're out, so check back this afternoon.</blockquote>
+<blockquote><strong>Last updated: 21 October 2026, 08:30 UTC.</strong> The official details are due at 14:00 UTC today. I'll update this post as soon as they're out, so check back this afternoon.</blockquote>
 
 On 20 October, the PHP security team did something it rarely does: it gave public advance notice of an emergency security release. Two critical vulnerabilities, both rated 9.2 out of 10 for severity, will be fixed in a release scheduled for **Wednesday, 21 October 2026 at 14:00 UTC**. PHP powers most of the web, including every WordPress, Drupal, Magento and Craft CMS website, and web applications built with Laravel or Symfony, so if you own a website, there's a good chance this affects you.
 
@@ -30,10 +30,11 @@ Security researchers and news sites have shared more details. Some of them might
 - **The CVE numbers.** The flaws are widely reported as <strong>CVE-2026-109618</strong> and <strong>CVE-2026-109619</strong>, and researchers have nicknamed the pair "php2shell". PHP hasn't confirmed these identifiers yet.
 - **Remote code execution.** Reports describe both flaws as letting an attacker run their own code on your server, without needing to log in. That's the worst kind of web vulnerability: it can mean stolen customer data, a defaced site, malware served to your visitors, or your server being used to attack others.
 - **A leak, and one reproduced exploit.** According to <a href="https://www.huntress.com/blog/php2shell-leaked-critical-php-vulnerabilities" target="_blank" rel="noopener">Huntress</a>, details first appeared in a Hacker News post on the morning of 20 October that was quickly removed, but screenshots spread on social media. The security firm <a href="https://watchtowr.com/intelligence/php-cve-2026-109618-faq/" target="_blank" rel="noopener">watchTowr</a> says it has reproduced one of the two flaws.
+- **An official European warning.** <a href="https://cert.europa.eu/publications/security-advisories/2026-018/" target="_blank" rel="noopener">CERT-EU</a>, the cybersecurity service for the EU institutions, has published an advisory about both flaws. It describes them as potentially allowing remote code execution without logging in, notes that no technical details have been made public, and advises organisations to prepare for immediate patching.
 - **Old versions might be affected.** Several reports suggest the flaws go back many years, possibly as far as PHP 5. If that's true, a very large number of older sites are in scope.
 - **A higher severity score.** Some posts mention a score of 10.0. The official rating is 9.2, which is still critical.
 
-There's one piece of good news: as of the time of writing, neither Huntress nor watchTowr has seen these flaws being exploited in the wild. That might change quickly once the full details are public, because attackers read the same announcements and start scanning for unpatched sites within hours.
+There's one piece of good news: as of the time of writing, neither Huntress nor watchTowr has seen these flaws being exploited in the wild. That might change quickly once the full details are public. The e-commerce security firm Sansec <a href="https://www.securityweek.com/php2shell-mass-exploitation-looms-for-leaked-critical-php-flaws/" target="_blank" rel="noopener">expects mass exploitation to start within minutes of the patch being released</a>, because attackers can study the fix to work out how the flaws work and then scan the internet for sites that haven't updated yet.
 
 ## Why sites on PHP 7 or older are in a difficult position
 
@@ -46,6 +47,8 @@ PHP only fixes security issues in versions that are still supported. Right now, 
 - **PHP 8.1** reached end of life at the end of December 2025.
 
 If the reports are right and these flaws affect older versions too, **no official fix is expected for PHP 7, 8.0 or 8.1.** Some Linux distributions and hosting providers maintain their own patched builds of older PHP versions, and they might backport the fix, but you shouldn't count on that unless your provider has confirmed it in writing.
+
+For anything that can't be patched straight away, CERT-EU recommends isolating internet-facing applications from public networks until a fix can be applied. In practice, that might mean restricting access to a staging site or internal tool so it's only reachable from your office or over a VPN. For a public website it's a much harder call, which is why a supported PHP version is the only real long-term fix.
 
 I covered the wider risk of running an outdated version in <a href="/blog/php-8-0-and-8-1-end-of-life/">PHP 8.0 and 8.1 are end of life</a>. Until now, that risk was mostly theoretical. With two critical, publicly discussed vulnerabilities and no patch coming for old versions, it might become very real for many businesses over the coming weeks.
 
