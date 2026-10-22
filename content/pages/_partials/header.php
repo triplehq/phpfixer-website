@@ -58,7 +58,7 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
             <a href="<?php echo url('services'); ?>" class="hover:text-blue-600  font-semibold<?php if ($page->is('/services/')) :?> font-bold<?php endif; ?>">Services</a>
             <a href="<?php echo url('about'); ?>" class="hover:text-blue-600  font-semibold<?php if ($page->is('/about/')) :?> font-bold<?php endif; ?>">About</a>
             <a href="<?php echo url('pricing'); ?>" class="hover:text-blue-600 font-semibold<?php if ($page->is('/pricing/')) :?> font-bold<?php endif; ?>">Pricing</a>
-            <a href="<?php echo url('tools/end-of-life'); ?>" class="hover:text-blue-600 font-semibold<?php if ($page->is('/tools/end-of-life/')) :?> font-bold<?php endif; ?>">Tools</a>
+            <a href="<?php echo url('tools/eol-tracker'); ?>" class="hover:text-blue-600 font-semibold<?php if ($page->is('/tools/eol-tracker/')) :?> font-bold<?php endif; ?>">Tools</a>
             <a href="<?php echo url('blog'); ?>" class="hover:text-blue-600 font-semibold<?php if ($page->is('/blog/')) :?> font-bold<?php endif; ?>">Blog</a>
             <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="ml-4 px-4 py-2 font-semibold bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:scale-110 transition duration-100">
                 Get a quote
@@ -76,7 +76,7 @@ $metaDescription = $metaDescription ?? 'Professional PHP code maintenance and bu
             <a href="<?php echo url('services'); ?>" class="hover:text-blue-600 font-semibold">Services</a>
             <a href="<?php echo url('about'); ?>" class="hover:text-blue-600 font-semibold">About</a>
             <a href="<?php echo url('pricing'); ?>" class="hover:text-blue-600 font-semibold">Pricing</a>
-            <a href="<?php echo url('tools/end-of-life'); ?>" class="hover:text-blue-600 font-semibold">Tools</a>
+            <a href="<?php echo url('tools/eol-tracker'); ?>" class="hover:text-blue-600 font-semibold">Tools</a>
             <a href="<?php echo url('blog'); ?>" class="hover:text-blue-600 font-semibold">Blog</a>
             <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="mt-6 px-4 py-2 bg-gradient-to-b from-cyan-500 to-blue-600 font-semibold text-white rounded-xl shadow-lg hover:bg-blue-600 transition text-center">Get a quote!</a>
         </div>

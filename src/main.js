@@ -92,7 +92,7 @@ Alpine.store('currency', {
 });
 
 // End of life tracker: status of one release, worked out from today's date so it
-// stays correct between rebuilds. Mirrors $status in content/pages/tools/end-of-life.php.
+// stays correct between rebuilds. Mirrors $status in content/pages/tools/eol-tracker.php.
 Alpine.data('eolStatus', (release) => ({
     get today() {
         return new Date().toISOString().slice(0, 10);
