@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   update:
@@ -21,15 +21,20 @@ jobs:
       - name: Fetch data from endoflife.date
         run: php scripts/fetch-eol.php
 
-      # Commit only when the data changed, so Netlify only rebuilds then
+      # Commit only when the data changed, so Netlify only rebuilds then.
+      # Committing through the API with a personal token makes a signed commit
+      # from an allowed pusher, which master's branch protection requires.
       - name: Commit changes
+        env:
+          GH_TOKEN: ${{ secrets.EOL_PUSH_TOKEN }}
         run: |
           if git diff --quiet content/data/eol.json; then
             echo "No changes"
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          git add content/data/eol.json
-          git commit -m "Update end of life data"
-          git push
+          gh api --method PUT "repos/${{ github.repository }}/contents/content/data/eol.json" \
+            -f message="Update end of life data" \
+            -f content="$(base64 -w0 content/data/eol.json)" \
+            -f sha="$(git rev-parse HEAD:content/data/eol.json)" \
+            -f branch=master \
+            --jq '.commit.html_url'
