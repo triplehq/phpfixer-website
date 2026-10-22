@@ -63,6 +63,8 @@ This is routine work when it's done in the right order. It's the difference betw
 
 If you upgraded to 8.2 a while ago and feel safe: PHP 8.2's security support ends on **31 December 2026**, only a few months from now. If you're planning an upgrade this year, don't make 8.2 the destination, because you'd be arriving on a platform that's about to reach end of life itself. Target PHP 8.3 (supported until the end of 2027) or 8.4 (until the end of 2028) and buy yourself actual breathing room.
 
+These dates move on every year. To see where PHP and the rest of your site stands today, including WordPress, Laravel, MySQL and your server's operating system, check the <a href="/tools/eol-tracker/">EoL tracker</a>. It's updated daily.
+
 <div class="blog-cta">
 <p class="blog-cta-heading">Thinking about upgrading?</p>
 <p>I'll flag anything that would block an upgrade and give you a fixed quote before any work starts.</p>
