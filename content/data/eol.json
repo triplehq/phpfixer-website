@@ -1,0 +1,896 @@
+{
+    "Languages and tools": {
+        "php": {
+            "label": "PHP",
+            "link": "https://endoflife.date/php",
+            "policy": "https://www.php.net/supported-versions.php",
+            "releases": [
+                {
+                    "version": "8.5",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-11-20",
+                    "activeUntil": "2027-12-31",
+                    "eol": "2029-12-31",
+                    "ended": null,
+                    "latest": "8.5.11",
+                    "latestLink": "https://www.php.net/ChangeLog-8.php#8.5.11"
+                },
+                {
+                    "version": "8.4",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2024-11-21",
+                    "activeUntil": "2026-12-31",
+                    "eol": "2028-12-31",
+                    "ended": null,
+                    "latest": "8.4.26",
+                    "latestLink": "https://www.php.net/ChangeLog-8.php#8.4.26"
+                },
+                {
+                    "version": "8.3",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2023-11-23",
+                    "activeUntil": "2025-12-31",
+                    "eol": "2027-12-31",
+                    "ended": null,
+                    "latest": "8.3.35",
+                    "latestLink": "https://www.php.net/ChangeLog-8.php#8.3.35"
+                },
+                {
+                    "version": "8.2",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2022-12-08",
+                    "activeUntil": "2024-12-31",
+                    "eol": "2026-12-31",
+                    "ended": null,
+                    "latest": "8.2.34",
+                    "latestLink": "https://www.php.net/ChangeLog-8.php#8.2.34"
+                },
+                {
+                    "version": "8.1",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2021-11-25",
+                    "activeUntil": "2023-11-25",
+                    "eol": "2025-12-31",
+                    "ended": null,
+                    "latest": "8.1.34",
+                    "latestLink": "https://www.php.net/ChangeLog-8.php#8.1.34"
+                }
+            ]
+        },
+        "nodejs": {
+            "label": "Node.js",
+            "link": "https://endoflife.date/nodejs",
+            "policy": "https://nodejs.org/en/about/previous-releases",
+            "releases": [
+                {
+                    "version": "26",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2026-05-05",
+                    "activeUntil": "2027-10-27",
+                    "eol": "2029-04-30",
+                    "ended": null,
+                    "latest": "26.12.1",
+                    "latestLink": "https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V26.md#26.12.1"
+                },
+                {
+                    "version": "24",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2025-05-06",
+                    "activeUntil": "2026-10-20",
+                    "eol": "2028-04-30",
+                    "ended": null,
+                    "latest": "24.22.1",
+                    "latestLink": "https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V24.md#24.22.1"
+                },
+                {
+                    "version": "22",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2024-04-24",
+                    "activeUntil": "2025-10-21",
+                    "eol": "2027-04-30",
+                    "ended": null,
+                    "latest": "22.23.4",
+                    "latestLink": "https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md#22.23.4"
+                },
+                {
+                    "version": "20",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2023-04-18",
+                    "activeUntil": "2024-10-22",
+                    "eol": "2026-04-30",
+                    "ended": null,
+                    "latest": "20.20.2",
+                    "latestLink": "https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V20.md#20.20.2"
+                }
+            ]
+        },
+        "composer": {
+            "label": "Composer",
+            "link": "https://endoflife.date/composer",
+            "policy": null,
+            "releases": [
+                {
+                    "version": "2.10",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-05-28",
+                    "activeUntil": null,
+                    "eol": null,
+                    "ended": false,
+                    "latest": "2.10.3",
+                    "latestLink": "https://getcomposer.org/changelog/2.10.3"
+                },
+                {
+                    "version": "2.9",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-11-13",
+                    "activeUntil": null,
+                    "eol": "2026-05-28",
+                    "ended": null,
+                    "latest": "2.9.8",
+                    "latestLink": "https://getcomposer.org/changelog/2.9.8"
+                },
+                {
+                    "version": "2.8",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2024-10-02",
+                    "activeUntil": null,
+                    "eol": "2025-11-13",
+                    "ended": null,
+                    "latest": "2.8.12",
+                    "latestLink": "https://getcomposer.org/changelog/2.8.12"
+                },
+                {
+                    "version": "2.2",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2021-12-22",
+                    "activeUntil": null,
+                    "eol": "2026-12-31",
+                    "ended": null,
+                    "latest": "2.2.30",
+                    "latestLink": "https://getcomposer.org/changelog/2.2.30"
+                }
+            ]
+        }
+    },
+    "Frameworks and CMS": {
+        "laravel": {
+            "label": "Laravel",
+            "link": "https://endoflife.date/laravel",
+            "policy": "https://laravel.com/framework/docs/releases#support-policy",
+            "releases": [
+                {
+                    "version": "13",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-03-17",
+                    "activeUntil": "2027-09-30",
+                    "eol": "2028-03-17",
+                    "ended": null,
+                    "latest": "13.38.0",
+                    "latestLink": "https://laravel.com/framework/docs/13.x/releases"
+                },
+                {
+                    "version": "12",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-02-24",
+                    "activeUntil": "2026-08-13",
+                    "eol": "2027-02-24",
+                    "ended": null,
+                    "latest": "12.70.1",
+                    "latestLink": "https://laravel.com/framework/docs/12.x/releases"
+                },
+                {
+                    "version": "11",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2024-03-12",
+                    "activeUntil": "2025-09-03",
+                    "eol": "2026-03-12",
+                    "ended": null,
+                    "latest": "11.57.0",
+                    "latestLink": "https://laravel.com/framework/docs/11.x/releases"
+                }
+            ]
+        },
+        "symfony": {
+            "label": "Symfony",
+            "link": "https://endoflife.date/symfony",
+            "policy": "https://symfony.com/releases",
+            "releases": [
+                {
+                    "version": "8.1",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-05-29",
+                    "activeUntil": "2027-01-31",
+                    "eol": "2027-01-31",
+                    "ended": null,
+                    "latest": "8.1.9",
+                    "latestLink": "https://symfony.com/blog/symfony-8-1-9-released"
+                },
+                {
+                    "version": "8.0",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-11-27",
+                    "activeUntil": "2026-07-31",
+                    "eol": "2026-07-31",
+                    "ended": null,
+                    "latest": "8.0.16",
+                    "latestLink": "https://symfony.com/blog/symfony-8-0-16-released"
+                },
+                {
+                    "version": "7.4",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2025-11-27",
+                    "activeUntil": "2028-11-30",
+                    "eol": "2029-11-30",
+                    "ended": null,
+                    "latest": "7.4.21",
+                    "latestLink": "https://symfony.com/blog/symfony-7-4-21-released"
+                },
+                {
+                    "version": "7.3",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-05-29",
+                    "activeUntil": "2026-01-31",
+                    "eol": "2026-01-31",
+                    "ended": null,
+                    "latest": "7.3.11",
+                    "latestLink": "https://symfony.com/blog/symfony-7-3-11-released"
+                },
+                {
+                    "version": "6.4",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2023-11-29",
+                    "activeUntil": "2026-11-30",
+                    "eol": "2027-11-30",
+                    "ended": null,
+                    "latest": "6.4.48",
+                    "latestLink": "https://symfony.com/blog/symfony-6-4-48-released"
+                },
+                {
+                    "version": "5.4",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2021-11-29",
+                    "activeUntil": "2024-11-30",
+                    "eol": "2029-02-28",
+                    "ended": null,
+                    "latest": "5.4.54",
+                    "latestLink": "https://symfony.com/blog/symfony-5-4-54-released"
+                }
+            ]
+        },
+        "wordpress": {
+            "label": "WordPress",
+            "link": "https://endoflife.date/wordpress",
+            "policy": "https://codex.wordpress.org/Supported_Versions",
+            "releases": [
+                {
+                    "version": "7.1",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-08-19",
+                    "activeUntil": null,
+                    "eol": null,
+                    "ended": false,
+                    "latest": "7.1.3",
+                    "latestLink": "https://wordpress.org/documentation/wordpress-version/version-7-1-3/"
+                },
+                {
+                    "version": "7.0",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-05-20",
+                    "activeUntil": "2026-08-19",
+                    "eol": null,
+                    "ended": false,
+                    "latest": "7.0.7",
+                    "latestLink": "https://wordpress.org/documentation/wordpress-version/version-7-0-7/"
+                },
+                {
+                    "version": "6.9",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-12-02",
+                    "activeUntil": "2026-05-20",
+                    "eol": null,
+                    "ended": false,
+                    "latest": "6.9.10",
+                    "latestLink": "https://wordpress.org/documentation/wordpress-version/version-6-9-10/"
+                },
+                {
+                    "version": "6.8",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-04-15",
+                    "activeUntil": "2025-12-02",
+                    "eol": null,
+                    "ended": false,
+                    "latest": "6.8.11",
+                    "latestLink": "https://wordpress.org/documentation/wordpress-version/version-6-8-11/"
+                }
+            ]
+        },
+        "drupal": {
+            "label": "Drupal",
+            "link": "https://endoflife.date/drupal",
+            "policy": "https://www.drupal.org/about/core/policies/core-release-cycles/schedule",
+            "releases": [
+                {
+                    "version": "11.4",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-07-01",
+                    "activeUntil": "2027-01-01",
+                    "eol": "2027-07-07",
+                    "ended": null,
+                    "latest": "11.4.11",
+                    "latestLink": "https://www.drupal.org/project/drupal/releases/11.4.11"
+                },
+                {
+                    "version": "11.3",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-12-17",
+                    "activeUntil": "2026-06-16",
+                    "eol": "2026-12-16",
+                    "ended": null,
+                    "latest": "11.3.20",
+                    "latestLink": "https://www.drupal.org/project/drupal/releases/11.3.20"
+                },
+                {
+                    "version": "10.6",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-12-17",
+                    "activeUntil": "2026-06-16",
+                    "eol": "2026-12-16",
+                    "ended": null,
+                    "latest": "10.6.20",
+                    "latestLink": "https://www.drupal.org/project/drupal/releases/10.6.20"
+                },
+                {
+                    "version": "11.2",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-06-18",
+                    "activeUntil": "2025-12-10",
+                    "eol": "2026-07-01",
+                    "ended": null,
+                    "latest": "11.2.14",
+                    "latestLink": "https://www.drupal.org/project/drupal/releases/11.2.14"
+                },
+                {
+                    "version": "10.5",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-06-18",
+                    "activeUntil": "2025-12-17",
+                    "eol": "2026-07-01",
+                    "ended": null,
+                    "latest": "10.5.12",
+                    "latestLink": "https://www.drupal.org/project/drupal/releases/10.5.12"
+                },
+                {
+                    "version": "10.4",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2024-12-17",
+                    "activeUntil": "2025-06-18",
+                    "eol": "2025-12-10",
+                    "ended": null,
+                    "latest": "10.4.10",
+                    "latestLink": "https://www.drupal.org/project/drupal/releases/10.4.10"
+                }
+            ]
+        },
+        "magento": {
+            "label": "Magento / Adobe Commerce",
+            "link": "https://endoflife.date/magento",
+            "policy": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy",
+            "releases": [
+                {
+                    "version": "2.4.9",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-05-12",
+                    "activeUntil": null,
+                    "eol": "2029-05-31",
+                    "ended": null,
+                    "latest": "2.4.9",
+                    "latestLink": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/magento-open-source/2-4-9.html"
+                },
+                {
+                    "version": "2.4.8",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-04-03",
+                    "activeUntil": null,
+                    "eol": "2028-05-31",
+                    "ended": null,
+                    "latest": "2.4.8",
+                    "latestLink": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/magento-open-source/2-4-8.html"
+                },
+                {
+                    "version": "2.4.7",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2024-04-04",
+                    "activeUntil": null,
+                    "eol": "2028-05-31",
+                    "ended": null,
+                    "latest": "2.4.7",
+                    "latestLink": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/magento-open-source/2-4-7.html"
+                },
+                {
+                    "version": "2.4.6",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2023-02-28",
+                    "activeUntil": null,
+                    "eol": "2027-08-31",
+                    "ended": null,
+                    "latest": "2.4.6",
+                    "latestLink": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/magento-open-source/2-4-6.html"
+                },
+                {
+                    "version": "2.4.5",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2022-08-01",
+                    "activeUntil": "2024-11-25",
+                    "eol": "2026-08-11",
+                    "ended": null,
+                    "latest": "2.4.5",
+                    "latestLink": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/magento-open-source/2-4-5.html"
+                },
+                {
+                    "version": "2.4.4",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2022-03-30",
+                    "activeUntil": "2024-11-25",
+                    "eol": "2026-04-14",
+                    "ended": null,
+                    "latest": "2.4.4",
+                    "latestLink": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/magento-open-source/2-4-4.html"
+                }
+            ]
+        }
+    },
+    "Databases and caching": {
+        "mysql": {
+            "label": "MySQL",
+            "link": "https://endoflife.date/mysql",
+            "policy": "https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf",
+            "releases": [
+                {
+                    "version": "26.7",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-07-28",
+                    "activeUntil": null,
+                    "eol": null,
+                    "ended": false,
+                    "latest": "26.7.0",
+                    "latestLink": "https://dev.mysql.com/doc/relnotes/mysql/26.7/en/news-26-7-0.html"
+                },
+                {
+                    "version": "9.7",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2026-04-21",
+                    "activeUntil": "2031-04-30",
+                    "eol": "2034-04-30",
+                    "ended": null,
+                    "latest": "9.7.4",
+                    "latestLink": "https://dev.mysql.com/doc/relnotes/mysql/9.7/en/news-9-7-0.html"
+                },
+                {
+                    "version": "8.4",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2024-04-30",
+                    "activeUntil": "2029-04-30",
+                    "eol": "2032-04-30",
+                    "ended": null,
+                    "latest": "8.4.13",
+                    "latestLink": "https://dev.mysql.com/doc/relnotes/mysql/8.4/en/news-8-4-13.html"
+                },
+                {
+                    "version": "8.0",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2018-04-19",
+                    "activeUntil": "2025-04-30",
+                    "eol": "2026-04-30",
+                    "ended": null,
+                    "latest": "8.0.46",
+                    "latestLink": "https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-46.html"
+                }
+            ]
+        },
+        "mariadb": {
+            "label": "MariaDB",
+            "link": "https://endoflife.date/mariadb",
+            "policy": "https://mariadb.org/about/#maintenance-policy",
+            "releases": [
+                {
+                    "version": "13.0",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-09-15",
+                    "activeUntil": null,
+                    "eol": "2026-12-31",
+                    "ended": null,
+                    "latest": "13.0.2",
+                    "latestLink": "https://mariadb.com/docs/release-notes/community-server/changelogs/13.0/13.0.2"
+                },
+                {
+                    "version": "12.3",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2026-05-28",
+                    "activeUntil": null,
+                    "eol": "2029-06-12",
+                    "ended": null,
+                    "latest": "12.3.3",
+                    "latestLink": "https://mariadb.com/docs/release-notes/community-server/changelogs/12.3/12.3.3"
+                },
+                {
+                    "version": "11.8",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2025-06-04",
+                    "activeUntil": null,
+                    "eol": "2028-06-04",
+                    "ended": null,
+                    "latest": "11.8.9",
+                    "latestLink": "https://mariadb.com/docs/release-notes/community-server/changelogs/11.8/11.8.9"
+                },
+                {
+                    "version": "11.4",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2024-05-29",
+                    "activeUntil": null,
+                    "eol": "2029-05-29",
+                    "ended": null,
+                    "latest": "11.4.13",
+                    "latestLink": "https://mariadb.com/docs/release-notes/community-server/changelogs/11.4/11.4.13"
+                },
+                {
+                    "version": "10.11",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2023-02-16",
+                    "activeUntil": null,
+                    "eol": "2028-02-16",
+                    "ended": null,
+                    "latest": "10.11.19",
+                    "latestLink": "https://mariadb.com/docs/release-notes/community-server/changelogs/10.11/10.11.19"
+                },
+                {
+                    "version": "10.6",
+                    "codename": null,
+                    "lts": true,
+                    "released": "2021-07-06",
+                    "activeUntil": null,
+                    "eol": "2026-07-06",
+                    "ended": null,
+                    "latest": "10.6.28",
+                    "latestLink": "https://mariadb.com/docs/release-notes/community-server/changelogs/10.6/10.6.28"
+                }
+            ]
+        },
+        "postgresql": {
+            "label": "PostgreSQL",
+            "link": "https://endoflife.date/postgresql",
+            "policy": "https://www.postgresql.org/support/versioning/",
+            "releases": [
+                {
+                    "version": "18",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-09-25",
+                    "activeUntil": null,
+                    "eol": "2030-11-14",
+                    "ended": null,
+                    "latest": "18.6",
+                    "latestLink": "https://www.postgresql.org/docs/release/18.6/"
+                },
+                {
+                    "version": "17",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2024-09-26",
+                    "activeUntil": null,
+                    "eol": "2029-11-08",
+                    "ended": null,
+                    "latest": "17.11",
+                    "latestLink": "https://www.postgresql.org/docs/release/17.11/"
+                },
+                {
+                    "version": "16",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2023-09-14",
+                    "activeUntil": null,
+                    "eol": "2028-11-09",
+                    "ended": null,
+                    "latest": "16.15",
+                    "latestLink": "https://www.postgresql.org/docs/release/16.15/"
+                },
+                {
+                    "version": "15",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2022-10-13",
+                    "activeUntil": null,
+                    "eol": "2027-11-11",
+                    "ended": null,
+                    "latest": "15.19",
+                    "latestLink": "https://www.postgresql.org/docs/release/15.19/"
+                },
+                {
+                    "version": "14",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2021-09-30",
+                    "activeUntil": null,
+                    "eol": "2026-11-12",
+                    "ended": null,
+                    "latest": "14.24",
+                    "latestLink": "https://www.postgresql.org/docs/release/14.24/"
+                },
+                {
+                    "version": "13",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2020-09-24",
+                    "activeUntil": null,
+                    "eol": "2025-11-13",
+                    "ended": null,
+                    "latest": "13.23",
+                    "latestLink": "https://www.postgresql.org/docs/release/13.23/"
+                }
+            ]
+        },
+        "redis": {
+            "label": "Redis",
+            "link": "https://endoflife.date/redis",
+            "policy": "https://redis.io/docs/latest/operate/oss_and_stack/install/version-mgmt/",
+            "releases": [
+                {
+                    "version": "8.10",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-07-29",
+                    "activeUntil": null,
+                    "eol": null,
+                    "ended": false,
+                    "latest": "8.10.2",
+                    "latestLink": "https://raw.githubusercontent.com/redis/redis/8.10/00-RELEASENOTES"
+                },
+                {
+                    "version": "8.8",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-05-25",
+                    "activeUntil": "2026-07-29",
+                    "eol": null,
+                    "ended": false,
+                    "latest": "8.8.3",
+                    "latestLink": "https://raw.githubusercontent.com/redis/redis/8.8/00-RELEASENOTES"
+                },
+                {
+                    "version": "8.6",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-02-11",
+                    "activeUntil": "2026-05-25",
+                    "eol": null,
+                    "ended": false,
+                    "latest": "8.6.7",
+                    "latestLink": "https://raw.githubusercontent.com/redis/redis/8.6/00-RELEASENOTES"
+                },
+                {
+                    "version": "8.4",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-11-18",
+                    "activeUntil": "2026-02-11",
+                    "eol": null,
+                    "ended": false,
+                    "latest": "8.4.7",
+                    "latestLink": "https://raw.githubusercontent.com/redis/redis/8.4/00-RELEASENOTES"
+                },
+                {
+                    "version": "8.2",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-08-04",
+                    "activeUntil": "2025-11-18",
+                    "eol": "2030-09-01",
+                    "ended": null,
+                    "latest": "8.2.10",
+                    "latestLink": "https://raw.githubusercontent.com/redis/redis/8.2/00-RELEASENOTES"
+                },
+                {
+                    "version": "8.0",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2025-05-02",
+                    "activeUntil": "2025-08-04",
+                    "eol": "2026-12-01",
+                    "ended": null,
+                    "latest": "8.0.6",
+                    "latestLink": "https://raw.githubusercontent.com/redis/redis/8.0/00-RELEASENOTES"
+                }
+            ]
+        }
+    },
+    "Servers and hosting": {
+        "ubuntu": {
+            "label": "Ubuntu",
+            "link": "https://endoflife.date/ubuntu",
+            "policy": "https://ubuntu.com/project/docs/release-team/list-of-releases/",
+            "releases": [
+                {
+                    "version": "26.10",
+                    "codename": "Stonking Stingray",
+                    "lts": false,
+                    "released": "2026-10-15",
+                    "activeUntil": "2027-07-01",
+                    "eol": "2027-07-01",
+                    "ended": null,
+                    "latest": "26.10",
+                    "latestLink": "https://wiki.ubuntu.com/StonkingStingray/ReleaseNotes/"
+                },
+                {
+                    "version": "26.04",
+                    "codename": "Resolute Raccoon",
+                    "lts": true,
+                    "released": "2026-04-23",
+                    "activeUntil": "2031-05-29",
+                    "eol": "2031-05-29",
+                    "ended": null,
+                    "latest": "26.04.1",
+                    "latestLink": "https://wiki.ubuntu.com/ResoluteRaccoon/ReleaseNotes/"
+                },
+                {
+                    "version": "24.04",
+                    "codename": "Noble Numbat",
+                    "lts": true,
+                    "released": "2024-04-25",
+                    "activeUntil": "2029-05-31",
+                    "eol": "2029-05-31",
+                    "ended": null,
+                    "latest": "24.04.5",
+                    "latestLink": "https://wiki.ubuntu.com/NobleNumbat/ReleaseNotes/"
+                },
+                {
+                    "version": "22.04",
+                    "codename": "Jammy Jellyfish",
+                    "lts": true,
+                    "released": "2022-04-21",
+                    "activeUntil": "2024-09-30",
+                    "eol": "2027-06-01",
+                    "ended": null,
+                    "latest": "22.04.5",
+                    "latestLink": "https://wiki.ubuntu.com/JammyJellyfish/ReleaseNotes/"
+                }
+            ]
+        },
+        "debian": {
+            "label": "Debian",
+            "link": "https://endoflife.date/debian",
+            "policy": "https://wiki.debian.org/DebianReleases",
+            "releases": [
+                {
+                    "version": "13",
+                    "codename": "Trixie",
+                    "lts": false,
+                    "released": "2025-08-09",
+                    "activeUntil": "2028-08-09",
+                    "eol": "2030-06-30",
+                    "ended": null,
+                    "latest": "13.7",
+                    "latestLink": "https://www.debian.org/News/2026/20260912"
+                },
+                {
+                    "version": "12",
+                    "codename": "Bookworm",
+                    "lts": false,
+                    "released": "2023-06-10",
+                    "activeUntil": "2026-07-11",
+                    "eol": "2028-06-30",
+                    "ended": null,
+                    "latest": "12.15",
+                    "latestLink": "https://www.debian.org/News/2026/2026051602"
+                },
+                {
+                    "version": "11",
+                    "codename": "Bullseye",
+                    "lts": false,
+                    "released": "2021-08-14",
+                    "activeUntil": "2024-08-14",
+                    "eol": "2026-08-31",
+                    "ended": null,
+                    "latest": "11.11",
+                    "latestLink": "https://lists.debian.org/debian-release/2024/06/msg00700.html"
+                }
+            ]
+        },
+        "plesk": {
+            "label": "Plesk",
+            "link": "https://endoflife.date/plesk",
+            "policy": "https://www.plesk.com/lifecycle-policy/",
+            "releases": [
+                {
+                    "version": "18.0.81",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-09-15",
+                    "activeUntil": null,
+                    "eol": "2026-12-08",
+                    "ended": null,
+                    "latest": "18.0.81.4",
+                    "latestLink": "https://docs.plesk.com/release-notes/obsidian/change-log/#plesk-18081"
+                },
+                {
+                    "version": "18.0.80",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-08-04",
+                    "activeUntil": null,
+                    "eol": "2026-10-27",
+                    "ended": null,
+                    "latest": "18.0.80.11",
+                    "latestLink": "https://docs.plesk.com/release-notes/obsidian/change-log/#plesk-18080"
+                },
+                {
+                    "version": "18.0.79",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-06-23",
+                    "activeUntil": null,
+                    "eol": "2026-09-23",
+                    "ended": null,
+                    "latest": "18.0.79.11",
+                    "latestLink": "https://docs.plesk.com/release-notes/obsidian/change-log/#plesk-18079"
+                },
+                {
+                    "version": "18.0.78",
+                    "codename": null,
+                    "lts": false,
+                    "released": "2026-05-12",
+                    "activeUntil": null,
+                    "eol": "2026-08-04",
+                    "ended": null,
+                    "latest": "18.0.78.5",
+                    "latestLink": "https://docs.plesk.com/release-notes/obsidian/change-log/#plesk-18078"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,35 @@
+name: Update end of life data
+
+on:
+  schedule:
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
+      - name: Fetch data from endoflife.date
+        run: php scripts/fetch-eol.php
+
+      # Commit only when the data changed, so Netlify only rebuilds then
+      - name: Commit changes
+        run: |
+          if git diff --quiet content/data/eol.json; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add content/data/eol.json
+          git commit -m "Update end of life data"
+          git push

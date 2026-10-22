@@ -207,3 +207,146 @@ body {
     0 0 20px rgba(255, 255, 255, 0.08);
   @apply -translate-y-0.5;
 }
+
+/* End of life tracker timelines */
+.eol-chart {
+  --eol-active: var(--color-blue-600);
+  --eol-security: var(--color-sky-300);
+  --eol-soon: var(--color-amber-400);
+  --eol-ended: var(--color-stone-300);
+  --eol-today: var(--color-red-500);
+  @apply grid items-center gap-x-3 text-sm;
+  grid-template-columns: max-content 1fr max-content;
+}
+
+.eol-grid {
+  @apply relative self-stretch;
+  grid-column: 2;
+  grid-row: 1 / -1;
+}
+
+.eol-year {
+  @apply absolute top-0 bottom-0 border-l border-stone-200 pl-1 text-xs leading-5 text-zinc-400 tabular-nums;
+}
+
+.eol-today {
+  @apply absolute top-5 bottom-0 z-10 w-0.5 -ml-px rounded-full;
+  background: var(--eol-today);
+}
+
+.eol-row {
+  display: contents;
+}
+
+.eol-row > * {
+  grid-row: var(--row);
+}
+
+.eol-version {
+  @apply font-semibold text-stone-800 tabular-nums whitespace-nowrap;
+  grid-column: 1;
+}
+
+.eol-version small {
+  @apply ml-1 text-[0.625rem] font-semibold text-zinc-400;
+}
+
+.eol-track {
+  @apply relative h-2.5;
+  grid-column: 2;
+}
+
+.eol-bar {
+  @apply absolute inset-y-0;
+}
+
+.eol-bar:first-child {
+  @apply rounded-l-full;
+}
+
+.eol-bar-end {
+  @apply rounded-r-full;
+}
+
+.eol-bar-active {
+  background: var(--eol-active);
+}
+
+.eol-bar-security {
+  background: var(--eol-security);
+}
+
+/* Open-ended bars run off the right edge of the chart */
+.eol-fade {
+  @apply absolute inset-y-0 right-0 w-8;
+  background: linear-gradient(to right, transparent, var(--color-white));
+}
+
+.eol-date {
+  @apply text-right text-zinc-600 tabular-nums whitespace-nowrap;
+  grid-column: 3;
+}
+
+.eol-row[data-status="soon"] .eol-bar-end {
+  background: var(--eol-soon);
+}
+
+.eol-row[data-status="soon"] .eol-date {
+  @apply font-semibold text-amber-700;
+}
+
+.eol-row[data-status="ended"] .eol-bar {
+  background: var(--eol-ended);
+}
+
+.eol-row[data-status="ended"] .eol-version,
+.eol-row[data-status="ended"] .eol-date {
+  @apply text-red-700;
+}
+
+.eol-legend {
+  @apply flex flex-wrap gap-x-6 gap-y-2 text-sm text-zinc-600;
+}
+
+.eol-legend span {
+  @apply inline-flex items-center gap-2;
+}
+
+.eol-swatch {
+  @apply inline-block h-2.5 w-5 rounded-full;
+}
+
+.eol-swatch-active { background: var(--color-blue-600); }
+.eol-swatch-security { background: var(--color-sky-300); }
+.eol-swatch-soon { background: var(--color-amber-400); }
+.eol-swatch-ended { background: var(--color-stone-300); }
+.eol-swatch-today { @apply h-4 w-0.5; background: var(--color-red-500); }
+
+/* End of life tracker: coming up, one column per month */
+.eol-months {
+  @apply grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-7 gap-x-6 gap-y-8;
+}
+
+.eol-month {
+  @apply border-t-2 border-stone-300 pt-3;
+}
+
+.eol-month-current {
+  @apply border-amber-400;
+}
+
+.eol-month-name {
+  @apply mb-3 text-sm font-semibold text-zinc-500;
+}
+
+.eol-month-current .eol-month-name {
+  @apply text-amber-700;
+}
+
+.eol-month-item {
+  @apply flex gap-2 text-sm leading-snug text-stone-800 hover:text-blue-700;
+}
+
+.eol-month-day {
+  @apply w-5 shrink-0 text-right font-semibold tabular-nums text-zinc-500;
+}
