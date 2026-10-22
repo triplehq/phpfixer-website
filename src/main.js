@@ -91,6 +91,48 @@ Alpine.store('currency', {
     }
 });
 
+// End of life tracker: status of one release, worked out from today's date so it
+// stays correct between rebuilds. Mirrors $status in content/pages/tools/end-of-life.php.
+Alpine.data('eolStatus', (release) => ({
+    get today() {
+        return new Date().toISOString().slice(0, 10);
+    },
+    get isPast() {
+        return release.eol === null ? release.ended : release.eol <= this.today;
+    },
+    get status() {
+        if (this.isPast) return 'ended';
+
+        const soon = new Date();
+        soon.setMonth(soon.getMonth() + 6);
+        if (release.eol !== null && release.eol <= soon.toISOString().slice(0, 10)) return 'soon';
+
+        if (release.activeUntil !== null && release.activeUntil <= this.today) return 'security';
+        return 'supported';
+    },
+    get label() {
+        return {
+            ended: 'No longer supported',
+            soon: 'Support ends soon',
+            security: 'Security fixes only',
+            supported: 'Supported',
+        }[this.status];
+    },
+    get relative() {
+        if (release.eol === null) return '';
+
+        const days = Math.round((new Date(release.eol) - new Date(this.today)) / 86400000);
+        const abs = Math.abs(days);
+        let amount;
+        if (abs < 45) amount = abs === 1 ? '1 day' : abs + ' days';
+        else if (abs < 365 * 2) amount = Math.round(abs / 30.4) + ' months';
+        else amount = Math.round(abs / 365) + ' years';
+
+        if (days === 0) return 'today';
+        return days > 0 ? 'in ' + amount : amount + ' ago';
+    },
+}));
+
 // Make Alpine available on the window object
 window.Alpine = Alpine;
 
