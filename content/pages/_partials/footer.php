@@ -58,7 +58,7 @@
         </div>
 
         <div class="border-t border-stone-100 pt-6 pb-4 text-sm text-zinc-500 text-center">
-            PHPFixer is a trading name of <a href="https://tripleweb.co.uk" class="underline decoration-stone-300 underline-offset-2 hover:text-blue-700">Tripleweb Ltd</a> registered in England and Wales (No. 474923167). All rights reserved &copy; <?php echo date('Y') ?>.
+            PHPFixer is a trading name of <a href="https://tripleweb.co.uk" class="underline decoration-stone-300 underline-offset-2 hover:text-blue-700">Tripleweb Ltd</a> registered in England and Wales (No. 15828285). All rights reserved &copy; <?php echo date('Y') ?>.
         </div>
     </footer>
 

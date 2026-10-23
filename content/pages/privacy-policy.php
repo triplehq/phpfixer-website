@@ -24,7 +24,7 @@ include 'content/pages/_partials/header.php';
                               Doncaster
                               DN10 6JH
                               United Kingdom</li>
-                            <li><span class="font-medium text-stone-800">Company number:</span> 474923167</li>
+                            <li><span class="font-medium text-stone-800">Company number:</span> 15828285</li>
                         </ul>
                         <p class="mt-4">We are registered with the Information Commissioner's Office (ICO) (registration number: ZC020850).</p>
                     </section>
