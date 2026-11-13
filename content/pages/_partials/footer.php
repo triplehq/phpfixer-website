@@ -22,8 +22,8 @@
               <div class="w-full sm:w-1/4 md:w-36">
                   <h3 class="text-sm font-bold text-stone-800 mb-2">Services</h3>
                   <ul class="space-y-1 text-sm text-zinc-500">
-                      <li><a href="<?php echo url('services'); ?>" class="hover:text-blue-700">Services</a></li>
-                      <li><a href="<?php echo url('pricing'); ?>" class="hover:text-blue-700">Pricing</a></li>
+                      <li><a href="<?php echo url('services/'); ?>" class="hover:text-blue-700">Services</a></li>
+                      <li><a href="<?php echo url('pricing/'); ?>" class="hover:text-blue-700">Pricing</a></li>
                   </ul>
               </div>
 
@@ -31,7 +31,7 @@
               <div class="w-full sm:w-1/4 md:w-36">
                   <h3 class="text-sm font-bold text-stone-800 mb-2">Tools</h3>
                   <ul class="space-y-1 text-sm text-zinc-500">
-                      <li><a href="<?php echo url('tools/eol-tracker'); ?>" class="hover:text-blue-700">EoL tracker</a></li>
+                      <li><a href="<?php echo url('tools/eol-tracker/'); ?>" class="hover:text-blue-700">EoL tracker</a></li>
                   </ul>
               </div>
 
@@ -39,9 +39,9 @@
               <div class="w-full sm:w-1/4 md:w-36">
                   <h3 class="text-sm font-bold text-stone-800 mb-2">Company</h3>
                   <ul class="space-y-1 text-sm text-zinc-500">
-                      <li><a href="<?php echo url('about'); ?>" class="hover:text-blue-700">About</a></li>
-                      <li><a href="<?php echo url('blog'); ?>" class="hover:text-blue-700">Blog</a></li>
-                      <li><a href="<?php echo url('contact'); ?>" class="hover:text-blue-700">Contact</a></li>
+                      <li><a href="<?php echo url('about/'); ?>" class="hover:text-blue-700">About</a></li>
+                      <li><a href="<?php echo url('blog/'); ?>" class="hover:text-blue-700">Blog</a></li>
+                      <li><a href="<?php echo url('contact/'); ?>" class="hover:text-blue-700">Contact</a></li>
                   </ul>
               </div>
 
@@ -49,8 +49,8 @@
               <div class="w-full sm:w-1/4 md:w-36">
                   <h3 class="text-sm font-bold text-stone-800 mb-2">Legal</h3>
                   <ul class="space-y-1 text-sm text-zinc-500">
-                      <li><a href="<?php echo url('privacy-policy'); ?>" class="hover:text-blue-700">Privacy Policy</a></li>
-                      <li><a href="<?php echo url('terms-of-service'); ?>" class="hover:text-blue-700">Terms of Service</a></li>
+                      <li><a href="<?php echo url('privacy-policy/'); ?>" class="hover:text-blue-700">Privacy Policy</a></li>
+                      <li><a href="<?php echo url('terms-of-service/'); ?>" class="hover:text-blue-700">Terms of Service</a></li>
                   </ul>
               </div>
 

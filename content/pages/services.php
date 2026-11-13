@@ -53,7 +53,7 @@ include 'content/pages/_partials/header.php';
                                 <p class="mt-3 text-sky-200 font-light text-base">Tell me what's happening and I'll tell you if I can fix it. If I can't, you don't pay.</p>
                                 <div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-4">
                                     <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block px-6 py-3 font-semibold text-center rounded-xl bg-white text-sky-800 shadow-lg hover:scale-105 transition duration-100">Get help now</a>
-                                    <a href="<?php echo url('blog/emergency-php-checklist'); ?>" class="text-sky-100 hover:text-white underline">Try the emergency checklist first</a>
+                                    <a href="<?php echo url('blog/emergency-php-checklist/'); ?>" class="text-sky-100 hover:text-white underline">Try the emergency checklist first</a>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ include 'content/pages/_partials/header.php';
                     <div id="upgrades" class="service-target scroll-mt-6 p-6 md:p-10 border-b border-neutral-200">
                         <h2 class="text-2xl font-bold tracking-tight text-neutral-800 mb-2">PHP version upgrades and modernisation</h2>
                         <p class="text-base text-neutral-600 font-light leading-relaxed mb-4">Running an old PHP version is a security risk and often the reason things start breaking. I handle the upgrade without taking your site offline.</p>
-                        <p class="text-base text-neutral-600 font-light leading-relaxed mb-4">Newer versions of PHP drop old features, so code written years ago can stop working after an upgrade. I check your site against the new version first, fix what would break, and test everything before your live site is switched over. <a href="<?php echo url('blog/php-8-0-and-8-1-end-of-life'); ?>" class="underline hover:text-neutral-900">What end of life means for your site</a>, or check when your versions lose support on the <a href="<?php echo url('tools/eol-tracker'); ?>" class="underline hover:text-neutral-900">EoL tracker</a>.</p>
+                        <p class="text-base text-neutral-600 font-light leading-relaxed mb-4">Newer versions of PHP drop old features, so code written years ago can stop working after an upgrade. I check your site against the new version first, fix what would break, and test everything before your live site is switched over. <a href="<?php echo url('blog/php-8-0-and-8-1-end-of-life/'); ?>" class="underline hover:text-neutral-900">What end of life means for your site</a>, or check when your versions lose support on the <a href="<?php echo url('tools/eol-tracker/'); ?>" class="underline hover:text-neutral-900">EoL tracker</a>.</p>
                         <ul class="space-y-1 text-neutral-700">
                             <li class="flex items-start"><span class="text-neutral-600 font-bold mr-2">&#8594;</span><span class="font-light">Version upgrades (PHP 5.6 → 8.4)</span></li>
                             <li class="flex items-start"><span class="text-neutral-600 font-bold mr-2">&#8594;</span><span class="font-light">Modern practices and coding standards</span></li>
@@ -85,7 +85,7 @@ include 'content/pages/_partials/header.php';
                             <li class="flex items-start"><span class="text-neutral-600 font-bold mr-2">&#8594;</span><span class="font-light">Backup strategy implementation</span></li>
                         </ul>
                         <p class="mt-5 text-sm leading-relaxed text-neutral-600 font-light"><span class="font-semibold text-neutral-700">What you get:</span> An up-to-date site, a fresh backup, and a rollback plan.</p>
-                        <p class="mt-2 text-sm leading-relaxed text-neutral-600 font-light">Related: <a href="<?php echo url('blog/what-to-do-when-your-developer-disappears'); ?>" class="underline hover:text-neutral-900">What to do when your web developer disappears</a></p>
+                        <p class="mt-2 text-sm leading-relaxed text-neutral-600 font-light">Related: <a href="<?php echo url('blog/what-to-do-when-your-developer-disappears/'); ?>" class="underline hover:text-neutral-900">What to do when your web developer disappears</a></p>
                     </div>
 
                     <!-- Box 4: Database & Performance -->
@@ -122,7 +122,7 @@ include 'content/pages/_partials/header.php';
             <div class="flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-center px-10 py-8 bg-neutral-700 rounded-b-xl">
                 <div>
                     <h3 class="text-3xl lg:text-4xl text-center md:text-left font-semibold text-white leading-tight tracking-tight">Not sure what you need?</h3>
-                    <p class="mt-3 text-neutral-400 font-light text-base text-center md:text-left">Your website is down right now? <a href="<?php echo url('blog/emergency-php-checklist'); ?>" class="text-neutral-300 hover:text-white underline">Start with our emergency checklist →</a></p>
+                    <p class="mt-3 text-neutral-400 font-light text-base text-center md:text-left">Your website is down right now? <a href="<?php echo url('blog/emergency-php-checklist/'); ?>" class="text-neutral-300 hover:text-white underline">Start with our emergency checklist →</a></p>
                 </div>
                 <div>
                     <a href="https://cal.com/phpfixer/introduction?utm_source=phpfixer.com&utm_medium=cta&utm_campaign=intro-call&utm_content=services-consultation" target="_blank" rel="noopener" @click="fathom.trackEvent('book intro call clicked')" class="inline-block px-6 py-3 md:text-lg font-semibold rounded-xl bg-white text-neutral-700 shadow-lg hover:scale-110 transition duration-100">
@@ -156,7 +156,7 @@ include 'content/pages/_partials/header.php';
                         <li class="flex items-start"><span class="text-sky-600 font-bold mr-2">&#8594;</span><span class="font-light">Dependencies nobody updated or reviewed</span></li>
                     </ul>
                     <p class="mt-5 text-sm leading-relaxed text-neutral-600 font-light"><span class="font-semibold text-neutral-700">What you get:</span> An app that holds up under real use, with the weak spots found and fixed.</p>
-                    <p class="mt-2 text-sm leading-relaxed text-neutral-600 font-light">Related: <a href="<?php echo url('blog/using-ai-to-fix-code'); ?>" class="underline hover:text-neutral-900">Why you shouldn't rely on AI alone to fix broken code</a></p>
+                    <p class="mt-2 text-sm leading-relaxed text-neutral-600 font-light">Related: <a href="<?php echo url('blog/using-ai-to-fix-code/'); ?>" class="underline hover:text-neutral-900">Why you shouldn't rely on AI alone to fix broken code</a></p>
                 </div>
 
                 <!-- CTA cell — spans full width -->

@@ -31,7 +31,7 @@ include 'content/pages/_partials/header.php';
             </div>
 
             <footer class="py-8">
-                <a href="<?php echo url('blog'); ?>" class="text-blue-600 text-sm font-medium hover:underline">← Back to the blog</a>
+                <a href="<?php echo url('blog/'); ?>" class="text-blue-600 text-sm font-medium hover:underline">← Back to the blog</a>
             </footer>
 
         </div>

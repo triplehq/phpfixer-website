@@ -69,6 +69,6 @@ Most business owners and site managers can't supply that judgment independently 
 <div class="blog-cta">
 <p class="blog-cta-heading">Things getting stranger instead of better?</p>
 <p>If you've been applying AI-assisted fixes and the site keeps getting more unpredictable rather than more stable, the next step is a clear diagnosis from someone who can see the whole picture.</p>
-<p>I've spent 25 years untangling broken PHP, Laravel, and WordPress codebases. <a href="/services">Here's what PHPFixer can do for you.</a></p>
+<p>I've spent 25 years untangling broken PHP, Laravel, and WordPress codebases. <a href="/services/">Here's what PHPFixer can do for you.</a></p>
 <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('blog cta clicked')" class="blog-cta-button">Request a free bug check</a>
 </div>
