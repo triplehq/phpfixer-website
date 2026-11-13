@@ -3,14 +3,18 @@ $metaTitle = 'PHPFixer – PHP Bug Fixes & Maintenance for Businesses';
 $metaDescription = 'Expert PHP maintenance, bug fixes, and legacy code rescue. Fixed pricing, no-fix no-fee. Trusted by UK & EU agencies and founders.';
 $preloadImage = asset('images/mechanic-elephant.png');
 include 'content/pages/_partials/header.php';
+require_once 'content/pages/_partials/posts.php';
 ?>
 
     <!-- Hero Section -->
     <section class="px-6 md:px-4 pb-4 py-0 relative">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
             <div class="w-full lg:w-2/3">
-                <h1 class="text-center my-8 md:my-0 md:text-left text-5xl title md:text-7xl font-bold md:mb-4 leading-[1.02] tracking-tight text-zinc-700">The PHP handyman businesses keep on speed dial</h1>
+                <h1 class="text-center my-8 md:my-0 md:text-left text-5xl title md:text-6xl font-bold md:mb-4 leading-[1.02] tracking-tight text-zinc-700">The PHP handyman for bug fixes, upgrades and maintenance</h1>
                 <p class="text-center md:text-left text-lg font-light md:text-xl/8 md:pr-10 mt-5 text-stone-700">For small and mid-size businesses tired of agencies, ghosted developers and being told they need a full rebuild. No fix, no fee.</p>
+                <div class="mt-8 text-center md:text-left">
+                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block px-6 py-3 md:text-lg font-semibold bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:scale-110 transition duration-100">Get a free quote</a>
+                </div>
                 <div class="show sm:hidden w-64 justify-center mt-8 md:mt-0 mx-auto">
                     <img src="<?php echo asset('images/mechanic-elephant.png'); ?>" alt="" fetchpriority="high">
                 </div>
@@ -90,6 +94,36 @@ include 'content/pages/_partials/header.php';
                         <li><span class="text-neutral-100 font-bold mr-2">&#8594;</span>Peace of mind</li>
                     </ul>
                 </div>
+            </div>
+            <div class="mt-8 flex flex-col md:flex-row md:justify-center gap-3 md:gap-8 text-neutral-200 md:text-center">
+                <a href="<?php echo url('services/'); ?>" class="underline hover:text-white">How each service works</a>
+                <a href="<?php echo url('pricing/'); ?>" class="underline hover:text-white">Pricing</a>
+                <a href="<?php echo url('tools/eol-tracker/'); ?>" class="underline hover:text-white">Is your PHP version still supported?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest guides -->
+    <section class="px-6 md:px-4 py-8 pb-10">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-3xl md:text-4xl text-center font-bold mb-6 md:mb-10 bg-gradient-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent leading-tight tracking-tight">Free guides to fixing, upgrading and securing PHP sites</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <?php foreach (blog_posts(3) as $post) : ?>
+                    <a href="<?php echo $post['url']; ?>" class="group flex flex-col bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-blue-300 hover:shadow-md transition">
+                        <?php if ($post['image']) : ?>
+                            <img src="<?php echo asset($post['image']); ?>" alt="" loading="lazy" class="w-full aspect-video object-cover">
+                        <?php endif; ?>
+                        <div class="flex flex-col flex-1 p-6">
+                            <div class="text-xs font-medium uppercase tracking-wide text-stone-500 mb-2">Guide · <?php echo date('j M Y', strtotime($post['date'])); ?></div>
+                            <div class="font-semibold text-lg leading-snug tracking-tight text-zinc-700 group-hover:text-blue-600 mb-2"><?php echo $post['title']; ?></div>
+                            <p class="text-base/6 font-light text-neutral-700 line-clamp-3 mb-4"><?php echo $post['description']; ?></p>
+                            <span class="mt-auto text-blue-600 font-medium">Read the guide →</span>
+                        </div>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+            <div class="mt-10 text-center">
+                <a href="<?php echo url('blog/'); ?>" class="inline-block px-6 py-3 font-semibold text-blue-600 border-2 border-blue-100 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition">Browse all guides</a>
             </div>
         </div>
     </section>
