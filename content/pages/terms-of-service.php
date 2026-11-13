@@ -96,7 +96,7 @@ include 'content/pages/_partials/header.php';
 
                     <section>
                         <h2 class="text-2xl md:text-3xl font-bold mb-4 leading-tight tracking-tight bg-linear-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent">12. Privacy</h2>
-                        <p>Our handling of personal data is governed by our <a href="<?php echo url('privacy-policy'); ?>" class="text-blue-600 underline hover:opacity-80">Privacy Policy</a>.</p>
+                        <p>Our handling of personal data is governed by our <a href="<?php echo url('privacy-policy/'); ?>" class="text-blue-600 underline hover:opacity-80">Privacy Policy</a>.</p>
                     </section>
 
                     <section>

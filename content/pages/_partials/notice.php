@@ -1,6 +1,6 @@
 <?php
 // Site-wide notice bar. Remove the include in header.php once the notice is no longer relevant.
-$noticeUrl = url('blog/critical-php-vulnerabilities-october-2026');
+$noticeUrl = url('blog/critical-php-vulnerabilities-october-2026/');
 ?>
 <?php if (!str_contains($page->url, 'critical-php-vulnerabilities-october-2026')) : ?>
 <div class="bg-zinc-800 text-zinc-100 text-sm px-6 py-2.5 text-center">

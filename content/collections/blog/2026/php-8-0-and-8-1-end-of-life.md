@@ -8,7 +8,7 @@ image: "images/blog/php-8-0-and-8-1-end-of-life.jpg"
 
 If your website runs on PHP 8.0 or 8.1, it is now running on an unsupported version of PHP. PHP 8.0 stopped receiving security fixes in November 2023, and PHP 8.1 followed at the end of December 2025. That doesn't mean your site stopped working. It's probably running exactly as it did last year. But nobody is patching the engine underneath it anymore, and that's a slow-burning problem worth understanding properly.
 
-PHP is open source: the language your site runs on is maintained by a community that keeps evolving the code, and that effort only covers current versions, so keeping up with it is simply part of the deal of building on it. A website is never "done" the day it goes live. Recurring maintenance is a normal part of the lifecycle of any web project, and <a href="/services">PHP upgrades are a standard part of that ongoing care</a>.
+PHP is open source: the language your site runs on is maintained by a community that keeps evolving the code, and that effort only covers current versions, so keeping up with it is simply part of the deal of building on it. A website is never "done" the day it goes live. Recurring maintenance is a normal part of the lifecycle of any web project, and <a href="/services/">PHP upgrades are a standard part of that ongoing care</a>.
 
 This post covers what "end of life" actually means in practice, why the upgrade is worth doing sooner rather than later, the things that genuinely make it harder than "just change the PHP version", and how I approach it for client sites.
 
