@@ -106,9 +106,16 @@ require_once 'content/pages/_partials/posts.php';
             <h3 class="text-3xl md:text-4xl text-center font-bold mb-6 md:mb-10 bg-gradient-to-b from-stone-800 to-stone-600 bg-clip-text text-transparent leading-tight tracking-tight">Practical guides for when PHP breaks</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                 <?php foreach (blog_posts(3) as $post) : ?>
-                    <a href="<?php echo $post['url']; ?>" class="block bg-neutral-100 rounded-xl p-6 shadow-sm hover:bg-neutral-200 transition-colors">
-                        <div class="font-semibold text-lg leading-snug tracking-tight text-zinc-700 mb-2"><?php echo $post['title']; ?></div>
-                        <p class="text-base/6 font-light text-neutral-700"><?php echo $post['description']; ?></p>
+                    <a href="<?php echo $post['url']; ?>" class="group flex flex-col bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-blue-300 hover:shadow-md transition">
+                        <?php if ($post['image']) : ?>
+                            <img src="<?php echo asset($post['image']); ?>" alt="" loading="lazy" class="w-full aspect-video object-cover">
+                        <?php endif; ?>
+                        <div class="flex flex-col flex-1 p-6">
+                            <div class="text-xs font-medium uppercase tracking-wide text-stone-500 mb-2">Guide · <?php echo date('j M Y', strtotime($post['date'])); ?></div>
+                            <div class="font-semibold text-lg leading-snug tracking-tight text-zinc-700 group-hover:text-blue-600 mb-2"><?php echo $post['title']; ?></div>
+                            <p class="text-base/6 font-light text-neutral-700 line-clamp-3 mb-4"><?php echo $post['description']; ?></p>
+                            <span class="mt-auto text-blue-600 font-medium">Read the guide →</span>
+                        </div>
                     </a>
                 <?php endforeach; ?>
             </div>

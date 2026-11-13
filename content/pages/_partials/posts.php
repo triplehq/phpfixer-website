@@ -7,7 +7,7 @@ if (! function_exists('blog_posts')) {
      * Blog posts, newest first. Phanstatic only exposes the collection to its own
      * index template, so other pages read the Markdown frontmatter directly.
      *
-     * @return list<array{title: string, url: string, description: string, date: string}>
+     * @return list<array{title: string, url: string, description: string, date: string, image: ?string}>
      */
     function blog_posts(int $limit = PHP_INT_MAX, ?string $excludeUrl = null): array
     {
@@ -30,6 +30,7 @@ if (! function_exists('blog_posts')) {
                 'url' => $url,
                 'description' => $meta['description'] ?? '',
                 'date' => (string) $meta['date'],
+                'image' => $meta['image'] ?? null,
             ];
         }
 
