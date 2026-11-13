@@ -10,8 +10,12 @@ require_once 'content/pages/_partials/posts.php';
     <section class="px-6 md:px-4 pb-4 py-0 relative">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
             <div class="w-full lg:w-2/3">
-                <h1 class="text-center my-8 md:my-0 md:text-left text-5xl title md:text-7xl font-bold md:mb-4 leading-[1.02] tracking-tight text-zinc-700">The PHP handyman for bug fixes, upgrades and maintenance</h1>
+                <h1 class="text-center my-8 md:my-0 md:text-left text-5xl title md:text-6xl font-bold md:mb-4 leading-[1.02] tracking-tight text-zinc-700">The PHP handyman for bug fixes, upgrades and maintenance</h1>
                 <p class="text-center md:text-left text-lg font-light md:text-xl/8 md:pr-10 mt-5 text-stone-700">For small and mid-size businesses tired of agencies, ghosted developers and being told they need a full rebuild. No fix, no fee.</p>
+                <div class="mt-8 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center md:justify-start">
+                    <a href="#contact" @click.prevent="showContact = true; fathom.trackEvent('contact modal opened')" class="inline-block px-6 py-3 md:text-lg font-semibold bg-gradient-to-b from-cyan-500 to-blue-600 text-white rounded-xl shadow-lg hover:scale-110 transition duration-100">Get a free quote</a>
+                    <a href="<?php echo url('pricing/'); ?>" class="text-blue-600 font-medium hover:underline">See prices, from £150</a>
+                </div>
                 <div class="show sm:hidden w-64 justify-center mt-8 md:mt-0 mx-auto">
                     <img src="<?php echo asset('images/mechanic-elephant.png'); ?>" alt="" fetchpriority="high">
                 </div>
